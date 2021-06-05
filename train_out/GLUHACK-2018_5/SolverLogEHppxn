@@ -1,0 +1,153 @@
+% [WARNING]: Not found: autofolio_arff/train/GLUHACK-2018_5/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/GLUHACK-2018_5/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/GLUHACK-2018_5/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/GLUHACK-2018_5/tmpFtFwSv --test-set (1;3) --train-set (1;0),(1;1),(1;2),(1;4),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize zscore --svm-C 0.6775 --approx-weights nrmsd --mem-limit 2048 --aslib-dir autofolio_arff/train/GLUHACK-2018_5 --time-pre-solvers 72 --performance_trans zscore --opt-mode 6 --time-limit 100 --concentrate --impute none --aspeed-opt --max-solver 27 --svm-gamma 0.0039 --approach CLASSVOTER --classifier SVM
+% Read autofolio_arff/train/GLUHACK-2018_5/description.txt
+% Read autofolio_arff/train/GLUHACK-2018_5/algorithm_runs.arff
+% Read autofolio_arff/train/GLUHACK-2018_5/feature_values.arff
+% Read autofolio_arff/train/GLUHACK-2018_5/feature_runstatus.arff
+% Read autofolio_arff/train/GLUHACK-2018_5/cv.arff
+% 1-th repetition: 32,32,31,32,32,32,32,31,32,32 distribution
+% Used Feature Steps: ALL
+% Used features: reducedVars,VCG.CLAUSE.entropy,POSNEG.RATIO.VAR.entropy,HORNY.VAR.entropy,cluster.coeff.min,VCG.VAR.mean,VCG.VAR.entropy,HORNY.VAR.mean,nvarsOrig,POSNEG.RATIO.VAR.stdev,POSNEG.RATIO.VAR.max,nclauses,HORNY.VAR.min,VCG.VAR.coeff.variation,TRINARY.,VG.min,CG.entropy,cluster.coeff.coeff.variation,UNARY,cluster.coeff.entropy,horn.clauses.fraction,cluster.coeff.mean,CG.min,CG.max,VG.max,VCG.VAR.min,VCG.CLAUSE.coeff.variation,VCG.CLAUSE.min,VCG.VAR.max,VG.mean,nvars,POSNEG.RATIO.CLAUSE.coeff.variation,VCG.CLAUSE.mean,BINARY.,POSNEG.RATIO.CLAUSE.min,cluster.coeff.max,VCG.CLAUSE.max,HORNY.VAR.coeff.variation,HORNY.VAR.max,POSNEG.RATIO.VAR.mean,POSNEG.RATIO.CLAUSE.entropy,POSNEG.RATIO.CLAUSE.max,POSNEG.RATIO.CLAUSE.mean,nclausesOrig,POSNEG.RATIO.VAR.min,CG.coeff.variation,vars.clauses.ratio,VG.coeff.variation,reducedClauses,CG.mean
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 318
+% Algorithms: 		 8
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 106
+% Unsolvable Instances (runtime): 	 106
+% Valid Instances: 	 212
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 255
+% Size Test Set: 31
+% Backup Solver: GHackCOMSPS_drup
+% 
+% >>> Algorithm Scheduler: Aspeed <<<
+% 
+% >>> 1-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 230 (-unsolvable)
+% Used Instances for Training: 230 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 20693.96 (25 instances)
+% >>> 2-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 230 (-unsolvable)
+% Used Instances for Training: 230 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 20492.97 (25 instances)
+% >>> 3-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 230 (-unsolvable)
+% Used Instances for Training: 230 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 24119.18 (25 instances)
+% >>> 4-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 230 (-unsolvable)
+% Used Instances for Training: 230 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 12762.25 (25 instances)
+% >>> 5-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 230 (-unsolvable)
+% Used Instances for Training: 230 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 20546.23 (25 instances)
+% >>> 6-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 229 (-unsolvable)
+% Used Instances for Training: 229 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 23603.31 (26 instances)
+% >>> 7-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 229 (-unsolvable)
+% Used Instances for Training: 229 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 29205.34 (26 instances)
+% >>> 8-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 229 (-unsolvable)
+% Used Instances for Training: 229 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on cuwrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+rrent test set: 19952.35 (26 instances)
+% >>> 9-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 229 (-unsolvable)
+% Used Instances for Training: 229 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 21459.94 (26 instances)
+% >>> 10-th iteration<<<
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 229 (-unsolvable)
+% Used Instances for Training: 229 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 27123.34 (26 instances)
+% 
+%  >>> Instances: 255 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 83
+% PAR1 time: 2037.328163 (607.666753)
+% Par10 time: 16684.061496 (607.184195)
+% #TOs: 83 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 110
+% Solved (perc) (with unsolved): 0.5686
+% PAR1 (with unsolved): 2628.69
+% PAR10 (with unsolved): 22040.45
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 27
+% Solved (perc) (without unsolved): 0.8430
+% PAR1 (without unsolved): 1484.40
+% PAR10 (without unsolved): 8548.35
+% 
+% Time used by each solver: {'glucose.3.0_PADC_3': 15983.879679000001, 'glucose3.0': 147.667992, 'Glucose_Hack_Kiel_fastBVE': 14574.954079000003, 'glu_mix': 375222.6782860001, 'glucose.3.0_PADC_10': 55038.366993, 'inIDGlucose': 42668.730984999995, 'GHackCOMSPS_drup': 150984.18659999996, 'gluHack': 15695.504974000001}
+% Optimal Time used by each solver: {'glucose.3.0_PADC_3': 420927.416822, 'glucose3.0': 3415.748685, 'Glucose_Hack_Kiel_fastBVE': 1114.9138580000001, 'glu_mix': 35695.084459, 'glucose.3.0_PADC_10': 5759.393593, 'inIDGlucose': 5146.255036, 'GHackCOMSPS_drup': 39028.04197300001, 'gluHack': 8431.827172999998}
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/gringo wrappers/flexfolio/../../selectors/flexfolio/src/trainer/aspeed/enc/encoding-bounded-paper-Step1.lp /home/academic/toliu/af/autofolio_asc/train_out/GLUHACK-2018_5/tmpFtFwSv/ASPEEDlizScc.facts -c maxsolver=27 -c optMode=6 -c maxPreSlice=72 -c cores=1 -c featTime=500
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/clasp /home/academic/toliu/af/autofolio_asc/train_out/GLUHACK-2018_5/tmpFtFwSv/GROUNDd9TkPz.gr --quiet=1,1
+% 
+% Schedule {1: {'claspfolio': 5000.0}}
+% 
+% >>> End of Algorithm Scheduler <<<
+% 
+% Input Instances for Training: 255 (-unsolvable)
+% Used Instances for Training: 255 (-unsolvable)
+% Train with SVM-CLASSVOTER
+Traceback (most recent call last):
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 567, in <module>
+    trainer.main(sys.argv[1:])
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 150, in main
+    evaluator.evaluate(self, meta_info, instance_dic, config_dic)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/ttValidator.py", line 56, in evaluate
+    selection_dic, solver_schedule = self.training(instance_train, meta_info, config_dic, trainer)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/validator.py", line 118, in training
+    selection_dic = trainer.train(meta_info, instance_train, config_dic, save_models=False)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 454, in train
+    self.__add_schedule_2_selection_dict(selection_dic, pre_solver_dict, args_.pre_schedule)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 547, in __add_schedule_2_selection_dict
+    for pre_entry in external_pre_schedule:
+TypeError: 'NoneType' object is not iterable
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

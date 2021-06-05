@@ -1,0 +1,74 @@
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_8/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_8/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_8/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.02,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/MAXSAT19-UCMS_8/tmpFTlphP --test-set (1;8) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;5),(1;6),(1;7),(1;9) --normalize none --gb-max_depth 5 --approx-weights None --gb-max_features log2 --mem-limit 2048 --aslib-dir autofolio_arff/train/MAXSAT19-UCMS_8 --performance_trans log --time-limit 100 --impute median --gb-min_samples_leaf 1 --approach CLASSVOTER --classifier GRADIENTBOOSTING
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/description.txt
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/algorithm_runs.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/feature_values.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/feature_runstatus.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/cv.arff
+% 1-th repetition: 52,51,51,52,52,51,51,52,52,51 distribution
+% Used Feature Steps: ALL
+% Used features: reducedVars,VCG.CLAUSE.entropy,POSNEG.RATIO.VAR.entropy,HORNY.VAR.entropy,cluster.coeff.min,VCG.VAR.mean,VCG.VAR.entropy,HORNY.VAR.mean,nvarsOrig,POSNEG.RATIO.VAR.stdev,POSNEG.RATIO.VAR.max,nclauses,HORNY.VAR.min,VCG.VAR.coeff.variation,TRINARY.,VG.min,CG.entropy,cluster.coeff.coeff.variation,UNARY,cluster.coeff.entropy,horn.clauses.fraction,cluster.coeff.mean,CG.min,CG.max,Basic.featuretime,VG.max,VCG.VAR.min,Pre.featuretime,CG.featuretime,cluster.coeff.max,VCG.CLAUSE.min,VCG.VAR.max,VG.mean,nvars,POSNEG.RATIO.CLAUSE.coeff.variation,VCG.CLAUSE.mean,BINARY.,KLB.featuretime,POSNEG.RATIO.CLAUSE.min,VCG.CLAUSE.coeff.variation,VCG.CLAUSE.max,HORNY.VAR.coeff.variation,HORNY.VAR.max,POSNEG.RATIO.VAR.mean,POSNEG.RATIO.CLAUSE.entropy,POSNEG.RATIO.CLAUSE.max,POSNEG.RATIO.CLAUSE.mean,nclausesOrig,POSNEG.RATIO.VAR.min,CG.coeff.variation,vars.clauses.ratio,VG.coeff.variation,reducedClauses,CG.mean
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 515
+% Algorithms: 		 7
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 118
+% Unsolvable Instances (runtime): 	 118
+% Valid Instances: 	 397
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 412
+% Size Test Set: 52
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 412 (-unsolvable)
+% Used Instances for Training: 412 (-unsolvable)
+% Train with GRADIENTBOOSTING-CLASSVOTER
+% PAR10 on current test set: 9092.68 (52 instances)
+% 
+%  >>> Instances: 52 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 561.347976 (88.668772)
+% Par10 time: 4922.751822 (88.513217)
+% #TOs: 7 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 13
+% Solved (perc) (with unsolved): 0.7500
+% PAR1 (with unsolved): 992.68
+% PAR10 (with unsolved): 9092.68
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 13
+% Solved (perc) (without unsolved): 0.7500
+% PAR1 (without unsolved): 992.68
+% PAR10 (without unsolved): 9092.68
+% 
+% Time used by each solver: {'QMaxSAT2018': 35654.74901, 'UWrMaxSAT': 15497.757547999998, 'Open.WBO.ms.pre': 36.7999, 'Open.WBO.g': 114.891368, 'MaxHS': 65.7146, 'Open.WBO.ms': 0, 'maxino2018': 249.48141400000003}
+% Optimal Time used by each solver: {'QMaxSAT2018': 25217.718910999996, 'UWrMaxSAT': 147.21358800000002, 'Open.WBO.ms.pre': 318.9376, 'Open.WBO.g': 39.939529, 'MaxHS': 3443.432169999999, 'Open.WBO.ms': 0, 'maxino2018': 22.852954}
+Result for SMAC: 220819.393840
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

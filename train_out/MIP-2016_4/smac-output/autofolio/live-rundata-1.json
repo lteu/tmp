@@ -1,0 +1,830 @@
+[ {
+  "@pi-id" : 2,
+  "pi-name" : "1",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 1
+}, {
+  "@pi-id" : 3,
+  "pi-name" : "2",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 2
+}, {
+  "@pi-id" : 4,
+  "pi-name" : "3",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 3
+}, {
+  "@pi-id" : 5,
+  "pi-name" : "4",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 4
+}, {
+  "@pi-id" : 6,
+  "pi-name" : "5",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 5
+}, {
+  "@pi-id" : 7,
+  "pi-name" : "6",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 6
+}, {
+  "@pi-id" : 8,
+  "pi-name" : "7",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 7
+}, {
+  "@pi-id" : 9,
+  "pi-name" : "8",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 8
+}, {
+  "@pi-id" : 10,
+  "pi-name" : "9",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 9
+}, {
+  "@pi-id" : 11,
+  "pi-name" : "10",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 10
+} ] {
+  "r-rc" : {
+    "@rc-id" : 2,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2,
+      "algo-exec" : "python wrappers/flexfolio/ff_wrapper.py train_out/MIP-2016_4/config_wrapper.json",
+      "algo-exec-dir" : "/home/academic/toliu/af/autofolio_asc/.",
+      "algo-pcs" : {
+        "@pcs-id" : 2,
+        "pcs-filename" : "/home/academic/toliu/af/autofolio_asc/train_out/MIP-2016_4/autofolio.pcs",
+        "pcs-text" : "# claspfolio-2.0.0 parameter file\n# *** NOTE: *** works only with revision clasp-2.1.0 or higher!\n# F: flag (yes = flag set; no = flag removed)\n# S: skip (only to model constraints for the parameters; won't be given to\n# clasp)\n# :[String]: will not be parsed for clasp (only syntatic sugar for the parameter file)\n# :[int]: alignment of complex parameters\n# i : integer range\n# l : logarithmic transformation (n > 0)\n# ---\n@1:separator {W}[W] \n@1:solver {selectors/flexfolio/src/flexfolio_train.py}[selectors/flexfolio/src/flexfolio_train.py]\n# ---\n@1:approach {CLASSVOTER, SBS}[CLASSVOTER]\n@1:classifier {SVM, GRADIENTBOOSTING, RANDOMFOREST}[RANDOMFOREST]\n#@1:max-feature-time [1,600][60]il\n# Performance Preprocessing\n@1:approx-weights {None,max,rmsd,nrmsd}[None]\n@1:performance_trans {None,log,zscore}[None]\n#@1:contr-filter [0.0,0.32][0.0] # removing this option since it has some problems with the pre-specified pre-solver\n#normalization\n@1:normalize {zscore,linear,dec,pca,none}[zscore]\n@1:pca-dims[2,12][7]i\n@1:impute {none, median, mean, most_frequent}[mean]\n#svm\n@1:voting:svm-gamma[0.001,1.0][1]l\n@1:voting:svm-C[0.1,102.4][1.6]l\n#random forrest\n@1:voting:rf-max_features {sqrt, log2, None}[sqrt]\n@1:voting:rf-criterion {gini,entropy} [entropy]\n@1:voting:rf-min_samples_leaf [1,128][10]li\n#gradient boosting\n@1:voting:gb-max_depth [1,16][4]i\n@1:voting:gb-min_samples_leaf [1,128][16]li\n@1:voting:gb-max_features {sqrt, log2, None}[sqrt]\n\n#--aspeed-opt\n@1:F:aspeed-opt {no,yes}[no]\n@1:F:concentrate {yes,no}[no]\n@1:max-solver [1,100][3]il\n@1:opt-mode {1,2,3,4,5,6}[1]\n@1:aspeed:time-limit {100}[100] # maximal time for grounding and solving\n@1:time-pre-solvers [1,2048][256]il\n\n@1:classifier | @1:approach in {CLASSVOTER}\n@1:pca-dims | @1:normalize in {pca}\n@1:voting:svm-gamma | @1:classifier in {SVM}\n@1:voting:svm-C | @1:classifier in {SVM}\n@1:voting:rf-max_features | @1:classifier in {RANDOMFOREST}\n@1:voting:rf-criterion | @1:classifier in {RANDOMFOREST}\n@1:voting:rf-min_samples_leaf | @1:classifier in {RANDOMFOREST}\n@1:voting:gb-max_depth | @1:classifier in {GRADIENTBOOSTING}\n@1:voting:gb-min_samples_leaf | @1:classifier in {GRADIENTBOOSTING}\n@1:voting:gb-max_features | @1:classifier in {GRADIENTBOOSTING}\n\n@1:F:concentrate | @1:F:aspeed-opt in {yes}\n@1:max-solver | @1:F:aspeed-opt in {yes}\n@1:opt-mode | @1:F:aspeed-opt in {yes}\n@1:time-pre-solvers | @1:F:aspeed-opt in {yes}\n\n@1:aslib-dir{autofolio_arff/train/MIP-2016_4}[autofolio_arff/train/MIP-2016_4]\n@1:mem-limit {2048}[2048]\n",
+        "pcs-subspace" : { }
+      },
+      "algo-cutoff" : 1800.0,
+      "algo-deterministic" : true,
+      "algo-tae-context" : { }
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 2,
+      "pisp-pi" : {
+        "@pi-id" : 6
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/MIP-2016_4",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "3",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "zscore",
+        "@1:opt-mode" : "1",
+        "@1:pca-dims" : "7",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "256",
+        "@1:voting:gb-max_depth" : "4",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "16",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "10",
+        "@1:voting:svm-C" : "1.6",
+        "@1:voting:svm-gamma" : "1.0"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:rf-criterion", "@1:voting:rf-max_features", "@1:voting:rf-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : true
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 3879.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 2.005
+} {
+  "r-rc" : {
+    "@rc-id" : 3,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3,
+      "pisp-pi" : {
+        "@pi-id" : 4
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 19921.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.723
+} {
+  "r-rc" : {
+    "@rc-id" : 4,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 4,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/MIP-2016_4",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "median",
+        "@1:max-solver" : "36",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "dec",
+        "@1:opt-mode" : "4",
+        "@1:pca-dims" : "11",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1",
+        "@1:voting:gb-max_depth" : "7",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "1",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "2",
+        "@1:voting:svm-C" : "0.629751460478415",
+        "@1:voting:svm-gamma" : "0.005424039753327186"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 146390.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 2.876
+} {
+  "r-rc" : {
+    "@rc-id" : 5,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 5,
+      "pisp-pi" : {
+        "@pi-id" : 10
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 5021.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 2.037
+} {
+  "r-rc" : {
+    "@rc-id" : 6,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 6,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/MIP-2016_4",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "none",
+        "@1:max-solver" : "69",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "4",
+        "@1:pca-dims" : "5",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "17",
+        "@1:voting:gb-max_depth" : "9",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "43",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "3",
+        "@1:voting:svm-C" : "2.5963420995289663",
+        "@1:voting:svm-gamma" : "0.6742444893376904"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers", "@1:voting:svm-C", "@1:voting:svm-gamma" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 5.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 146390.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 5.124
+} {
+  "r-rc" : {
+    "@rc-id" : 7,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 7,
+      "pisp-pi" : {
+        "@pi-id" : 7
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 7856.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.727
+} {
+  "r-rc" : {
+    "@rc-id" : 8,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 5
+    },
+    "rc-pc" : {
+      "@pc-id" : 8,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/MIP-2016_4",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "GRADIENTBOOSTING",
+        "@1:impute" : "none",
+        "@1:max-solver" : "2",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "zscore",
+        "@1:opt-mode" : "3",
+        "@1:pca-dims" : "12",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "2",
+        "@1:voting:gb-max_depth" : "11",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "2",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "1",
+        "@1:voting:svm-C" : "43.92738534415931",
+        "@1:voting:svm-gamma" : "0.1344602415105447"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 145303.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.434
+} {
+  "r-rc" : {
+    "@rc-id" : 9,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 8
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 14639.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.129
+} {
+  "r-rc" : {
+    "@rc-id" : 10,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 8
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 73491.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.111
+} {
+  "r-rc" : {
+    "@rc-id" : 11,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.306500373753905,
+    "rc-pisp" : {
+      "@pisp-id" : 7
+    },
+    "rc-pc" : {
+      "@pc-id" : 8
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 149742.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.39
+} {
+  "r-rc" : {
+    "@rc-id" : 12,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 12,
+      "pisp-pi" : {
+        "@pi-id" : 9
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 76591.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 2.328
+} {
+  "r-rc" : {
+    "@rc-id" : 13,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 0.0,
+    "rc-pisp" : {
+      "@pisp-id" : 7
+    },
+    "rc-pc" : {
+      "@pc-id" : 6
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "TIMEOUT",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 0.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "",
+  "r-wallclock-time" : 0.0
+} {
+  "r-rc" : {
+    "@rc-id" : 14,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 14,
+      "pisp-pi" : {
+        "@pi-id" : 5
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 76487.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.615
+} {
+  "r-rc" : {
+    "@rc-id" : 15,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.60260001232028,
+    "rc-pisp" : {
+      "@pisp-id" : 12
+    },
+    "rc-pc" : {
+      "@pc-id" : 15,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/MIP-2016_4",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "3",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "none",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "11",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1",
+        "@1:voting:gb-max_depth" : "10",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "2",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "log2",
+        "@1:voting:rf-min_samples_leaf" : "1",
+        "@1:voting:svm-C" : "23.82662257494946",
+        "@1:voting:svm-gamma" : "0.004237275224418624"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 5379.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.138
+} {
+  "r-rc" : {
+    "@rc-id" : 16,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.905200487348438,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 15
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 73491.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.428
+} {
+  "r-rc" : {
+    "@rc-id" : 17,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 7
+    },
+    "rc-pc" : {
+      "@pc-id" : 15
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 149742.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.342
+} {
+  "r-rc" : {
+    "@rc-id" : 18,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.209100911739469,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 15
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 14639.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.102
+} {
+  "r-rc" : {
+    "@rc-id" : 19,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.90910033543706,
+    "rc-pisp" : {
+      "@pisp-id" : 5
+    },
+    "rc-pc" : {
+      "@pc-id" : 15
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 145303.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.363
+} {
+  "r-rc" : {
+    "@rc-id" : 20,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6091008487820626,
+    "rc-pisp" : {
+      "@pisp-id" : 14
+    },
+    "rc-pc" : {
+      "@pc-id" : 15
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 75621.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.432
+} {
+  "r-rc" : {
+    "@rc-id" : 21,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 21,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 15
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 16367.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.103
+} {
+  "r-rc" : {
+    "@rc-id" : 22,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0104007351875306,
+    "rc-pisp" : {
+      "@pisp-id" : 21
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 3.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 76760.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 3.226
+} {
+  "r-rc" : {
+    "@rc-id" : 23,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 23,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/MIP-2016_4",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "18",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "zscore",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "5",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "608",
+        "@1:voting:gb-max_depth" : "12",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "116",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "24",
+        "@1:voting:svm-C" : "1.4415476654415813",
+        "@1:voting:svm-gamma" : "0.1685357204237032"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers", "@1:voting:rf-criterion", "@1:voting:rf-max_features", "@1:voting:rf-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 5.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 146390.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 5.223
+} {
+  "r-rc" : {
+    "@rc-id" : 24,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 24,
+      "pisp-pi" : {
+        "@pi-id" : 3
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 15
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 80812.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.134
+} {
+  "r-rc" : {
+    "@rc-id" : 25,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 0.0,
+    "rc-pisp" : {
+      "@pisp-id" : 24
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "TIMEOUT",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 0.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "",
+  "r-wallclock-time" : 0.0
+}

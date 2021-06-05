@@ -1,0 +1,97 @@
+% [WARNING]: Not found: autofolio_arff/train/SAT03-16_INDU_5/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/SAT03-16_INDU_5/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/SAT03-16_INDU_5/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/maris05/DriverLog/driverlog1_v01i.renamed-as.sat05-3960.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11773.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Race-2010-CNF/software-verification/post/zfcp.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11817.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/xinetd_vc56703.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/xinetd_vc56687.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Race-2010-CNF/software-verification/nec/hard-11-U-7061.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2011-CNF/leberre/2dimensionalstrippacking/E15N15.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Race-2010-CNF/software-verification/nec/hard-20-U-10652.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Race-2010-CNF/software-verification/nec/hard-25-U-7061.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc1093.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/maris05/DriverLog/driverlog1_ks99i.shuffled-as.sat05-4018.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc1081.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11803.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11935.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/narain05/vpn/clauses-10.shuffled-as.sat05-1965.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/maris05/Depots/depots1_v01a.renamed-as.sat05-3946.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/maris05/DriverLog/driverlog1_v01a.renamed-as.sat05-3959.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of SAT-Comp-2016-CNF/app16/gaussian.c.75.smt2-cvc4.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc12016.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc12070.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/itox_vc1216.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc1103.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/itox_vc979.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc950.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc962.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc12062.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11944.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2011-CNF/jarvisalo/smtqfbv-aigs/smtlib-qfbv-aigs-ext_con_032_008_0256-tseitin.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/narain/clauses-10.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc949.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc12072.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of SAT-Comp-2016-CNF/app16/sokoban-p20.sas.ex.13.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc1080.cnf.gz are NA although the corresponding feature step is not OK.
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/SAT03-16_INDU_5/tmpgcnEjw --test-set (1;5) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;6),(1;7),(1;8),(1;9) --normalize dec --approx-weights rmsd --mem-limit 2048 --aslib-dir autofolio_arff/train/SAT03-16_INDU_5 --time-pre-solvers 73 --performance_trans None --opt-mode 1 --time-limit 100 --concentrate --impute none --aspeed-opt --max-solver 1 --approach SBS
+% Read autofolio_arff/train/SAT03-16_INDU_5/description.txt
+% Read autofolio_arff/train/SAT03-16_INDU_5/algorithm_runs.arff
+% Read autofolio_arff/train/SAT03-16_INDU_5/feature_values.arff
+% Read autofolio_arff/train/SAT03-16_INDU_5/feature_runstatus.arff
+% Read autofolio_arff/train/SAT03-16_INDU_5/cv.arff
+% 1-th repetition: 180,180,180,180,180,180,180,180,180,180 distribution
+% Used Feature Steps: base,tud_base
+% Used features: VCG-VAR-entropy,tud_SymmTime1_valuesRate,POSNEG-RATIO-VAR-entropy,tud_SymmTime0_zcount,POSNEG-RATIO-VAR-mean,tud_clause-variable_polarity_valuesRate,POSNEG-RATIO-CLAUSE-entropy,tud_Clause-Var_steps,tud_SymmTime0_entropy,tud_SymmTime2_min,tud_clause-variable_polarity_max,tud_clauses,tud_SymmTime0_mean,tud_clauses_size_>=_9,tud_SymmTime1_mode,HORNY-VAR-mean,tud_SymmTime0_stdev,tud_SymmTime0_mode,tud_variable-clause_polarity_min,tud_SymmTime2_mean,nvars,tud_variable-clause_degree_mean,vars-clauses-ratio,tud_variable-clause_degree_mode,tud_SymmTime2_max,VCG-CLAUSE-mean,POSNEG-RATIO-VAR-stdev,VG-mean,tud_SymmTime2_Q1,tud_SymmTime2_Q3,tud_SymmTime2_Q2,VCG-CLAUSE-min,CG-mean,tud_variable-clause_polarity_entropy,reducedClauses,BINARYp,tud_SymmTime0_Q3,tud_SymmTime0_Q2,tud_SymmTime0_Q1,POSNEG-RATIO-CLAUSE-min,tud_variable-clause_polarity_zcount,tud_variable-clause_degree_Q1,tud_variable-clause_degree_Q2,tud_variable-clause_degree_Q3,nvarsOrig,CG-coeff-variation,CG-max,CG-min,tud_variable-clause_polarity_valuesRate,POSNEG-RATIO-CLAUSE-max,tud_SymmTime1_stdev,tud_clause-variable_degree_mode,tud_clause-variable_degree_stdev,VCG-VAR-max,VCG-VAR-min,tud_clause-variable_degree_entropy,tud_variable-clause_polarity_Q1,tud_variable-clause_degree_zcount,tud_variable-clause_polarity_stdev,tud_clause-variable_degree_min,VCG-VAR-coeff-variation,tud_clause-variable_degree_max,tud_SymmTime1_max,reducedVars,tud_Symmetry1_steps,tud_SymmTime2_mode,tud_vars,POSNEG-RATIO-CLAUSE-coeff-variation,nclauses,UNARY,tud_SymmTime2_zcount,tud_clause-variable_polarity_mode,tud_variable-clause_polarity_Q2,tud_variable-clause_polarity_Q3,tud_variable-clause_polarity_mode,cluster-coeff-coeff-variation,VCG-CLAUSE-entropy,tud_clauses_size_3,cluster-coeff-max,tud_clauses_size_2,tud_clause-variable_polarity_stdev,cluster-coeff-min,tud_clauses_size_1,tud_SymmTime2_valuesRate,POSNEG-RATIO-VAR-min,HORNY-VAR-min,tud_clauses_size_7,POSNEG-RATIO-VAR-max,nclausesOrig,tud_clause-variable_degree_Q2,tud_clause-variable_degree_Q3,tud_clause-variable_degree_Q1,tud_variable-clause_degree_entropy,VCG-CLAUSE-coeff-variation,VG-coeff-variation,HORNY-VAR-entropy,cluster-coeff-entropy,tud_Symmetry_computation_steps,tud_SymmTime0_min,tud_SymmTime1_zcount,HORNY-VAR-max,tud_SymmTime1_Q1,tud_SymmTime1_Q2,tud_SymmTime1_Q3,tud_clauses_size_8,tud_SymmTime0_valuesRate,VCG-CLAUSE-max,VCG-VAR-mean,tud_variable-clause_polarity_mean,tud_clauses_size_6,tud_clauses_size_5,tud_clauses_size_4,HORNY-VAR-coeff-variation,tud_variable-clause_degree_min,tud_clause-variable_polarity_min,tud_clause-variable_polarity_Q1,tud_clause-variable_polarity_Q2,tud_clause-variable_polarity_Q3,tud_variable-clause_degree_max,tud_clause-variable_polarity_mean,tud_variable-clause_polarity_max,tud_SymmTime1_min,tud_SymmTime2_entropy,tud_SymmTime1_mean,tud_SymmTime0_max,TRINARYp,tud_horn_clauses,tud_SymmTime2_stdev,tud_variable-clause_degree_valuesRate,tud_Symmetry0_steps,horn-clauses-fraction,CG-entropy,tud_variable-clause_degree_stdev,cluster-coeff-mean,tud_clause-variable_polarity_entropy,VG-min,tud_clause-variable_degree_valuesRate,tud_SymmTime1_entropy,tud_Symmetry2_steps,POSNEG-RATIO-CLAUSE-mean,twrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+ud_clause-variable_degree_mean,VG-max
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 1800
+% Algorithms: 		 10
+% Incomplete Feature Vector: 	 30 (maybe imputed)
+% Unsolvable Instances (status): 	 246
+% Unsolvable Instances (runtime): 	 246
+% Valid Instances: 	 1524
+% Presolved: 		 29
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 1440
+% Size Test Set: 180
+% Backup Solver: maplecomsps_lrb
+% 
+% >>> Algorithm Scheduler: Aspeed <<<
+% 
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/gringo wrappers/flexfolio/../../selectors/flexfolio/src/trainer/aspeed/enc/encoding-bounded-paper-Step1.lp /home/academic/toliu/af/autofolio_asc/train_out/SAT03-16_INDU_5/tmpgcnEjw/ASPEEDcYfUYm.facts -c maxsolver=1 -c optMode=1 -c maxPreSlice=73 -c cores=1 -c featTime=500
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/clasp /home/academic/toliu/af/autofolio_asc/train_out/SAT03-16_INDU_5/tmpgcnEjw/GROUNDKwgobs.gr --quiet=1,1
+% 
+% Schedule {1: {'claspfolio': 5000.0}}
+% 
+% >>> End of Algorithm Scheduler <<<
+% 
+% Input Instances for Training: 1440 (-unsolvable)
+% Used Instances for Training: 1417 (-unsolvable)
+% Train with SBS
+Traceback (most recent call last):
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 567, in <module>
+    trainer.main(sys.argv[1:])
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 150, in main
+    evaluator.evaluate(self, meta_info, instance_dic, config_dic)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/ttValidator.py", line 56, in evaluate
+    selection_dic, solver_schedule = self.training(instance_train, meta_info, config_dic, trainer)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/validator.py", line 118, in training
+    selection_dic = trainer.train(meta_info, instance_train, config_dic, save_models=False)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 454, in train
+    self.__add_schedule_2_selection_dict(selection_dic, pre_solver_dict, args_.pre_schedule)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 547, in __add_schedule_2_selection_dict
+    for pre_entry in external_pre_schedule:
+TypeError: 'NoneType' object is not iterable
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

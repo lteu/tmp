@@ -1,0 +1,10 @@
+execdir = .
+deterministic = 1
+run_obj = runtime
+overall_obj = mean
+cutoff_time = 1800
+wallclock-limit = 35805
+paramfile = train_out/MAXSAT-WPMS-2016_5/autofolio.pcs
+algo = python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT-WPMS-2016_5/config_wrapper.json
+test_instance_file = train_out/MAXSAT-WPMS-2016_5/test.txt
+instance_file = train_out/MAXSAT-WPMS-2016_5/train.txt

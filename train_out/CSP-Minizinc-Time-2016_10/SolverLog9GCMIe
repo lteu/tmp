@@ -1,0 +1,153 @@
+% [WARNING]: Not found: autofolio_arff/train/CSP-Minizinc-Time-2016_10/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CSP-Minizinc-Time-2016_10/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CSP-Minizinc-Time-2016_10/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Feature vector found twice: 2.99119,3.37381,1.19435,0.0,0.0,0.0,2.32199,2.07869,0.32315,0.0,1.70699,2.28246,0.775131,16957.0,19446.4,226.0,232.82,7.82018,1.0,2.0,1.0,12595.0,0.0,1.2085,28770.0,42493.2,15042.8,4337.0,1904.0,7196.0,0.0,0.0,2516.0,3226.0,0.344343,0.151171,0.690462,0.0,0.0,0.199762,0.309538,0.0666931,0.0,840.0,0.0,0.0,0.0,None,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,5.0,5.0,5.0,5.0,0.0,0.0,0.0,3.61485,2.17242,0.912533,1.26469,1.78002,2.68539,10258.0,1.17239,0.154063,0.601875,12640.0,14576.4,10849.1,37.0,226.0,226.0,0.0,2.0,0.0540541,2610.0,1627.0,10422.0,0.406544,0.827471,37674.0,22641.0,9510.42
+% [WARNING]: Feature vector found twice: 2.75627,3.18185,1.21657,0.0,0.0,0.0,2.11849,1.86568,0.33199,0.0,1.4762,2.09287,0.825535,10811.3,12679.5,170.0,176.409,7.40939,1.0,2.0,1.0,8497.0,0.0,1.23611,19680.0,27036.2,10337.2,2618.0,1416.0,4757.0,0.0,0.0,1894.0,2117.0,0.308109,0.166647,0.692028,0.0,0.0,0.222902,0.307972,0.0734377,0.0,624.0,0.0,0.0,0.0,None,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,5.0,5.0,5.0,5.0,0.0,0.0,0.0,3.40704,2.19625,0.906051,0.945796,1.63497,2.50399,6758.0,1.26425,0.17195,0.650492,8247.0,9695.29,7198.67,19.0,170.0,170.0,0.0,2.0,0.105263,1661.0,940.0,6874.0,0.378382,0.808991,23420.0,15097.0,6228.2
+% [WARNING]: Feature vector found twice: 2.94712,2.95185,1.00074,0.0,0.0,0.0,0.488125,0.49928,0.0166215,0.0,1.18798,1.1902,0.000503628,48240.6,48270.6,25.0,58.0482,2.32193,1.0,1.0,1.0,32637.0,0.0,2.06825,96231.0,96339.7,32661.2,2188.0,1616.0,12840.0,0.0,0.0,27465.0,2940.0,0.0670405,0.0495144,0.813688,0.0,0.0,0.84153,0.186312,0.0,0.0,0.0,0.0,0.0,0.0,None,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,5.0,0.0,5.0,5.0,0.0,5.0,0.0,6.09537,2.01445,0.889764,2.28677,0.103103,0.416183,14880.0,1.30511,0.0440063,0.493224,15065.0,23081.6,15880.5,153.0,5.0,5.0,0.0,2.0,0.0130719,693.0,69.0,15780.0,0.048289,0.4835,96185.0,31788.0,14040.5
+% [WARNING]: Feature vector found twice: 2.94712,2.95185,1.00074,0.0,0.0,0.0,0.488125,0.49928,0.0166215,0.0,1.18798,1.1902,0.000503628,48240.6,48270.6,25.0,58.0482,2.32193,1.0,1.0,1.0,32637.0,0.0,2.06825,96231.0,96339.7,32661.2,2188.0,1616.0,12840.0,0.0,0.0,27465.0,2940.0,0.0670405,0.0495144,0.813688,0.0,0.0,0.84153,0.186312,0.0,0.0,0.0,0.0,0.0,0.0,None,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,5.0,0.0,5.0,5.0,0.0,5.0,0.0,6.09537,2.01445,0.889764,2.28677,0.103103,0.416183,14880.0,1.30511,0.0440063,0.493224,15065.0,23081.6,15880.5,153.0,5.0,5.0,0.0,2.0,0.0130719,693.0,69.0,15780.0,0.048289,0.4835,96185.0,31788.0,14040.5
+% [WARNING]: Feature vector found twice: 2.94712,2.95185,1.00074,0.0,0.0,0.0,0.488125,0.49928,0.0166215,0.0,1.18798,1.1902,0.000503628,48240.6,48270.6,25.0,58.0482,2.32193,1.0,1.0,1.0,32637.0,0.0,2.06825,96231.0,96339.7,32661.2,2188.0,1616.0,12840.0,0.0,0.0,27465.0,2940.0,0.0670405,0.0495144,0.813688,0.0,0.0,0.84153,0.186312,0.0,0.0,0.0,0.0,0.0,0.0,None,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,5.0,0.0,5.0,5.0,0.0,5.0,0.0,6.09537,2.01445,0.889764,2.28677,0.103103,0.416183,14880.0,1.30511,0.0440063,0.493224,15065.0,23081.6,15880.5,153.0,5.0,5.0,0.0,2.0,0.0130719,693.0,69.0,15780.0,0.048289,0.4835,96185.0,31788.0,14040.5
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/CSP-Minizinc-Time-2016_10/tmpEZbRPh --test-set (1;5) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;6),(1;7),(1;8),(1;9) --normalize zscore --svm-C 2.8636 --approx-weights None --mem-limit 2048 --aslib-dir autofolio_arff/train/CSP-Minizinc-Time-2016_10 --time-pre-solvers 52 --performance_trans None --opt-mode 4 --time-limit 100 --impute mean --aspeed-opt --max-solver 2 --svm-gamma 0.1062 --approach CLASSVOTER --classifier SVM
+% Read autofolio_arff/train/CSP-Minizinc-Time-2016_10/description.txt
+% Read autofolio_arff/train/CSP-Minizinc-Time-2016_10/algorithm_runs.arff
+% Read autofolio_arff/train/CSP-Minizinc-Time-2016_10/feature_values.arff
+% Read autofolio_arff/train/CSP-Minizinc-Time-2016_10/feature_runstatus.arff
+% Read autofolio_arff/train/CSP-Minizinc-Time-2016_10/cv.arff
+% 1-th repetition: 9,9,9,9,9,9,9,9,9,9 distribution
+% Used Feature Steps: base
+% Used features: d_ratio_bool_cons,c_sum_domdeg_cons,v_cv_dom_vars,d_ratio_int_cons,c_min_deg_cons,d_set_vars,d_ratio_int_vars,d_array_cons,o_deg_cons,v_def_vars,c_ent_dom_cons,v_num_vars,d_ratio_float_cons,v_min_domdeg_vars,o_deg_avg,c_avg_domdeg_cons,s_set_search,c_logprod_dom_cons,s_goal,s_input_order,s_first_fail,v_avg_deg_vars,s_int_search,d_int_vars,c_sum_dom_cons,v_sum_dom_vars,c_cv_domdeg_cons,c_priority,v_min_dom_vars,v_ent_dom_vars,o_dom_std,c_cv_dom_cons,v_logprod_deg_vars,v_ratio_bounded,o_dom_avg,v_min_deg_vars,s_other_val,d_ratio_array_cons,c_min_domdeg_cons,v_sum_domdeg_vars,v_ent_domdeg_vars,c_max_dom_cons,c_ent_deg_cons,d_bool_cons,s_other_var,d_bool_vars,c_domain,v_logprod_dom_vars,v_sum_deg_vars,c_min_dom_cons,d_set_cons,o_dom,c_logprod_deg_cons,c_bounds_d,v_ent_deg_vars,c_ent_domdeg_cons,c_bounds_z,c_bounds_r,o_dom_deg,s_indomain_max,c_avg_dom_cons,c_max_deg_cons,gc_global_cons,d_ratio_set_cons,s_bool_search,gc_ratio_diff,s_indomain_min,o_deg_std,d_ratio_bool_vars,d_int_cons,v_max_deg_vars,v_num_consts,c_sum_ari_cons,s_labeled_vars,v_num_aliases,d_float_cons,c_max_domdeg_cons,d_ratio_set_vars,v_ratio_vars,gc_diff_globs,d_float_vars,v_avg_domdeg_vars,gc_ratio_globs,v_cv_deg_vars,c_avg_deg_cons,v_intro_vars,o_deg,v_max_dom_vars,c_cv_deg_cons,d_ratio_float_vars,v_max_domdeg_vars,c_ratio_cons,v_avg_dom_vars,c_num_cons,v_cv_domdeg_vars
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 90
+% Algorithms: 		 20
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 16
+% Unsolvable Instances (runtime): 	 16
+% Valid Instances: 	 74
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 72
+% Size Test Set: 9
+% Backup Solver: LCG-Glucose-UC-free
+% 
+% >>> Algorithm Scheduler: Aspeed <<<
+% 
+% >>> 1-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 65 (-unsolvable)
+% Used Instances for Training: 65 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 3429.67 (7 instances)
+% >>> 2-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 65 (-unsolvable)
+% Used Instances for Training: 65 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 6.30 (7 instances)
+% >>> 3-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 65 (-unsolvable)
+% Used Instances for Training: 65 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 3430.00 (7 instances)
+% >>> 4-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 65 (-unsolvable)
+% Used Instances for Training: 65 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 1717.46 (7 instances)
+% >>> 5-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 65 (-unsolvable)
+% Used Instances for Training: 65 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 5142.97 (7 instances)
+% >>> 6-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 65 (-unsolvable)
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+Used Instances for Training: 65 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 5144.61 (7 instances)
+% >>> 7-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 65 (-unsolvable)
+% Used Instances for Training: 65 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 3437.81 (7 instances)
+% >>> 8-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 65 (-unsolvable)
+% Used Instances for Training: 65 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 3435.26 (7 instances)
+% >>> 9-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 64 (-unsolvable)
+% Used Instances for Training: 64 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 34.26 (8 instances)
+% >>> 10-th iteration<<<
+% Backup Solver: LCG-Glucose-UC-free
+% Input Instances for Training: 64 (-unsolvable)
+% Used Instances for Training: 64 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 7.81 (8 instances)
+% 
+%  >>> Instances: 72 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 12
+% PAR1 time: 205.725444 (6.870533)
+% Par10 time: 2005.558778 (6.670533)
+% #TOs: 12 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 15
+% Solved (perc) (with unsolved): 0.7917
+% PAR1 (with unsolved): 257.57
+% PAR10 (with unsolved): 2507.57
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 3
+% Solved (perc) (without unsolved): 0.9500
+% PAR1 (without unsolved): 69.09
+% PAR10 (without unsolved): 609.09
+% 
+% Time used by each solver: {'Chuffed-free': 15.194, 'LCG-Glucose-free': 11.461, 'Mistral-free': 1200.0, 'Concrete-free': 0, 'MZN/Gurobi-free': 39.866, 'Choco-free': 0, 'LCG-Glucose-UC-free': 13366.216, 'HaifaCSP-free': 1224.5, 'MZN/Cbc-free': 0, 'iZplus-free': 0, 'MZN/SCIP-free': 264.02000000000004, 'Picat-CP-fd': 0, 'OR-Tools-free': 0, 'G12FD-free': 0, 'SICStus-Prolog-fd': 0, 'Gecode-free': 0, 'Picat-SAT-free': 2400.0, 'MZN/CPLEX-free': 23.906999999999996, 'JaCoP-fd': 0, 'MinisatID-free': 0}
+% Optimal Time used by each solver: {'Chuffed-free': 14563.53, 'LCG-Glucose-free': 54.61000000000001, 'Mistral-free': 1.834, 'Concrete-free': 0, 'MZN/Gurobi-free': 48.164, 'Choco-free': 0, 'LCG-Glucose-UC-free': 93.907, 'HaifaCSP-free': 10.232000000000001, 'MZN/Cbc-free': 0.042, 'iZplus-free': 0.981, 'MZN/SCIP-free': 29.38, 'Picat-CP-fd': 0, 'OR-Tools-free': 0.165, 'G12FD-free': 0, 'SICStus-Prolog-fd': 0, 'Gecode-free': 0, 'Picat-SAT-free': 4.766, 'MZN/CPLEX-free': 4.621, 'JaCoP-fd': 0, 'MinisatID-free': 0}
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/gringo wrappers/flexfolio/../../selectors/flexfolio/src/trainer/aspeed/enc/encoding-bounded-paper-Step1.lp /home/academic/toliu/af/autofolio_asc/train_out/CSP-Minizinc-Time-2016_10/tmpEZbRPh/ASPEEDRoHbAB.facts -c maxsolver=2 -c optMode=4 -c maxPreSlice=52 -c cores=1 -c featTime=120
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/clasp /home/academic/toliu/af/autofolio_asc/train_out/CSP-Minizinc-Time-2016_10/tmpEZbRPh/GROUNDhh6gYi.gr --quiet=1,1
+% 
+% Schedule {1: {'claspfolio': 1200.0}}
+% 
+% >>> End of Algorithm Scheduler <<<
+% 
+% Input Instances for Training: 72 (-unsolvable)
+% Used Instances for Training: 72 (-unsolvable)
+% Train with SVM-CLASSVOTER
+Traceback (most recent call last):
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 567, in <module>
+    trainer.main(sys.argv[1:])
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 150, in main
+    evaluator.evaluate(self, meta_info, instance_dic, config_dic)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/ttValidator.py", line 56, in evaluate
+    selection_dic, solver_schedule = self.training(instance_train, meta_info, config_dic, trainer)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/validator.py", line 118, in training
+    selection_dic = trainer.train(meta_info, instance_train, config_dic, save_models=False)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 454, in train
+    self.__add_schedule_2_selection_dict(selection_dic, pre_solver_dict, args_.pre_schedule)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 547, in __add_schedule_2_selection_dict
+    for pre_entry in external_pre_schedule:
+TypeError: 'NoneType' object is not iterable
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

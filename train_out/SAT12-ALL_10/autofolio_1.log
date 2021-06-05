@@ -1,0 +1,71 @@
+[INFO ] Logging to: /home/academic/toliu/af/autofolio_asc/train_out/SAT12-ALL_10/smac-output/autofolio/log-run1.txt
+[INFO ] Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f), running on OpenJDK 64-Bit Server VM (11.0.11) and Linux 4.15.0-143-generic (amd64) 
+[INFO ] Call String: smac --scenarioFile train_out/SAT12-ALL_10/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/SAT12-ALL_10/smac-output 
+[INFO ] SMAC started at: Jun 2, 2021, 11:51:28 AM. Minimizing mean runtime.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun (file:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar) to field java.lang.ProcessImpl.pid
+WARNING: Please consider reporting this to the maintainers of ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO ] First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 100.0; estimate based on 1 runs.
+[INFO ] Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 99.5; estimate now based on 2 runs.
+[INFO ] Incumbent changed to: config 2 (internal ID: 0x41B2), with mean runtime: 64.5; estimate based on 2 runs.
+[INFO ] Sample call for new incumbent config 2 (internal ID: 0x41B2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'yes' -@1:F:concentrate 'yes' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:max-solver '36' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:opt-mode '4' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:time-pre-solvers '1'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 63.333333333333336; estimate now based on 3 runs.
+[WARN ] Algorithm Run Result reported a runtime of 119.0 (secs) that exceeded it's cutoff time of 85.50260036100747 (secs) by 33.49739963899253 (secs). Next warning at 34.49739963899253 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 119.782 (secs) that exceeded it's cutoff time of 85.50260036100747 (secs) by 34.27939963899253 (secs). Next warning at 35.27939963899253 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 63.0; estimate now based on 4 runs.
+[WARN ] Algorithm Run Result reported a runtime of 105.0 (secs) that exceeded it's cutoff time of 69.90650092099905 (secs) by 35.09349907900095 (secs). Next warning at 36.09349907900095 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 105.207 (secs) that exceeded it's cutoff time of 69.90650092099905 (secs) by 35.30049907900094 (secs). Next warning at 36.30049907900094 (secs)  
+[INFO ] Incumbent changed to: config 4 (internal ID: 0xA1C2), with mean runtime: 31.5; estimate based on 4 runs.
+[INFO ] Sample call for new incumbent config 4 (internal ID: 0xA1C2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 31.4; estimate now based on 5 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 31.5; estimate now based on 6 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 31.428571428571427; estimate now based on 7 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 31.375; estimate now based on 8 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 31.22222222222222; estimate now based on 9 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 31.2; estimate now based on 10 runs.
+[INFO ] Incumbent changed to: config 24 (internal ID: 0x59914), with mean runtime: 30.9; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 24 (internal ID: 0x59914): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 47 (internal ID: 0xEA3DD), with mean runtime: 30.6; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 47 (internal ID: 0xEA3DD): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 38 (internal ID: 0xF19E7), with mean runtime: 30.2; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 38 (internal ID: 0xF19E7): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 129 (internal ID: 0x2479F8), with mean runtime: 30.0; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 129 (internal ID: 0x2479F8): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 182 (internal ID: 0x381A19), with mean runtime: 29.3; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 182 (internal ID: 0x381A19): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 82 (internal ID: 0x3C854C), with mean runtime: 29.2; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 82 (internal ID: 0x3C854C): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 203 (internal ID: 0x3FBB51), with mean runtime: 28.5; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 203 (internal ID: 0x3FBB51): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 231 (internal ID: 0x48FDCC), with mean runtime: 27.7; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 231 (internal ID: 0x48FDCC): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 339 (internal ID: 0x711837), with mean runtime: 27.5; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 339 (internal ID: 0x711837): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] 
+=======================================================================================
+SMAC has finished. Reason: wall-clock time limit (34357.164 s) has been reached.   
+Total number of runs performed: 860, total configurations tried: 356.
+Total CPU time used: 33976 s, total wallclock time used: 34357 s.
+SMAC's final incumbent: config 339 (internal ID: 0x711837), with estimated mean runtime: 27.5, based on 10 run(s) on 10 training instance(s).
+Sample call for this final incumbent:
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/SAT12-ALL_10/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/SAT12-ALL_10' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'
+=======================================================================================
+[INFO ] 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Additional information about run 1 in:/home/academic/toliu/af/autofolio_asc/train_out/SAT12-ALL_10/smac-output/autofolio
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

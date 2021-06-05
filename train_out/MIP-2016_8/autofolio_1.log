@@ -1,0 +1,44 @@
+[INFO ] Logging to: /home/academic/toliu/af/autofolio_asc/train_out/MIP-2016_8/smac-output/autofolio/log-run1.txt
+[INFO ] Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f), running on OpenJDK 64-Bit Server VM (11.0.11) and Linux 4.15.0-143-generic (amd64) 
+[INFO ] Call String: smac --scenarioFile train_out/MIP-2016_8/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/MIP-2016_8/smac-output 
+[INFO ] SMAC started at: May 28, 2021, 7:19:32 AM. Minimizing mean runtime.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun (file:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar) to field java.lang.ProcessImpl.pid
+WARNING: Please consider reporting this to the maintainers of ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO ] First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 0.0; estimate based on 1 runs.
+[INFO ] Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MIP-2016_8/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/MIP-2016_8' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 2 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 3 runs.
+[WARN ] Algorithm Run Result reported a runtime of 3.0 (secs) that exceeded it's cutoff time of 1.0026010390102864 (secs) by 1.9973989609897136 (secs). Next warning at 2.9973989609897136 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 4 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 5 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 6 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 7 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 8 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 9 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 10 runs.
+[WARN ] Killed run <Instance:4, Seed:-1, Config:0x1501624, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.32 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:4, Seed:-1, Config:0x1501624, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.32 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Algorithm Run Result reported a runtime of 10.32 (secs) that exceeded it's cutoff time of 1.0026010390102864 (secs) by 9.317398960989713 (secs). Next warning at 10.317398960989713 (secs)  
+[WARN ] Killed run <Instance:4, Seed:-1, Config:0x35DAF0B, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.27 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:7, Seed:-1, Config:0x364AC4F, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.3 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:2, Seed:-1, Config:0x42D3D05, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.24 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:9, Seed:-1, Config:0x447C28E, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.39 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:7, Seed:-1, Config:0x4BE6663, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.35 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:2, Seed:-1, Config:0x4EBFCFF, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.32 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[INFO ] 
+=======================================================================================
+SMAC has finished. Reason: wall-clock time limit (35980.26 s) has been reached.   
+Total number of runs performed: 35599, total configurations tried: 5401.
+Total CPU time used: 9792 s, total wallclock time used: 35980 s.
+SMAC's final incumbent: config 1 (internal ID: 0x000D), with estimated mean runtime: 0.0, based on 10 run(s) on 10 training instance(s).
+Sample call for this final incumbent:
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MIP-2016_8/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/MIP-2016_8' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'
+=======================================================================================
+[INFO ] 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Additional information about run 1 in:/home/academic/toliu/af/autofolio_asc/train_out/MIP-2016_8/smac-output/autofolio
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,42 @@
+% [WARNING]: Not found: autofolio_arff/train/MIP-2016_8/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MIP-2016_8/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MIP-2016_8/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/MIP-2016_8/tmptfPt6P --test-set (1;2) --train-set (1;0),(1;1),(1;3),(1;4),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize linear --rf-min_samples_leaf 62 --approx-weights rmsd --mem-limit 2048 --aslib-dir autofolio_arff/train/MIP-2016_8 --time-pre-solvers 3 --performance_trans None --opt-mode 6 --time-limit 100 --impute median --aspeed-opt --max-solver 28 --rf-max_features log2 --approach CLASSVOTER --classifier RANDOMFOREST --rf-criterion entropy
+% Read autofolio_arff/train/MIP-2016_8/description.txt
+% Read autofolio_arff/train/MIP-2016_8/algorithm_runs.arff
+% Read autofolio_arff/train/MIP-2016_8/feature_values.arff
+% Read autofolio_arff/train/MIP-2016_8/feature_runstatus.arff
+% Read autofolio_arff/train/MIP-2016_8/cv.arff
+% 1-th repetition: 20,19,20,19,20,20,19,20,19,20 distribution
+% Used Feature Steps: base
+% Used features: rhs_c_0_avg,obj_coef_per_sqr_constr2_avg,diffGap_varcoef,a_normalized_varcoefs2_varcoef,diffObj_median,obj_coef_per_sqr_constr2_std,diffObj_q90mq10,new_col,mipgap,obj_coef_per_sqr_constr1_std,vcg_var_weight0_varcoef,vcg_constr_deg1_varcoef,vcg_constr_deg0_q90mq10,obj_coefs1_avg,obj_coef_per_constr1_std,vcg_constr_deg0_median,vcg_constr_weight2_varcoef,n_constr,lp_avg,ratio_unbounded_disc,vcg_constr_deg0_avg,rhs_c_1_avg,vcg_var_weight2_avg,obj_coefs2_avg,clique_table,lp_l2_avg,vcg_constr_deg2_q90mq10,vcg_var_deg0_varcoef,obj_coef_per_constr2_avg,diffObj_avg,a_normalized_varcoefs2_avg,vcg_var_weight1_avg,vcg_var_deg1_varcoef,diffBestObjUp_q90mq10,probtype,diffBestObjUp_median,obj_coef_per_constr1_avg,vcg_var_deg0_avg,nq_constr,obj_coef_per_constr0_avg,A_ij_normalized2_avg,lp_linf,rhs_c_2_avg,ratio_i+_variables,itcnt_max,iinf_varcoef,obj_coef_per_sqr_constr0_std,impliedBoundCuts,cliqueCuts,vcg_var_weight0_avg,vcg_constr_weight1_varcoef,num_b_variables,support_size_q90mq10,diffGap_avg,pre_t,obj_coef_per_constr0_std,vcg_constr_weight2_avg,numnewsolution_sum,ratio_s_variables,num_unbounded_disc,diffBestInt_avg,num_c_variables,gomoryFractionalCuts,A_ij_normalized1_avg,diffGap_median,support_size_varcoef,numcuts_sum,diffBestObjUp_varcoef,a_normalized_varcoefs1_varcoef,obj_coef_per_sqr_constr0_avg,vcg_constr_deg1_avg,obj_coef_per_sqr_constr1_avg,vcg_constr_deg2_varcoef,vcg_var_deg2_avg,vcg_constr_deg2_avg,num_n_variables,iinf_avg,ratio_n_variables,vcg_var_deg0_q90mq10,obj_coefs0_std,a_normalized_varcoefs0_avg,vcg_var_deg2_median,ratio_b_variables,covcnt,A_ij_normalized1_varcoef,nodeleft_varcoef,vcg_var_deg2_varcoef,diffBestInt_q90mq10,obj_coefs0_avg,nodeleft_avg,vcg_constr_weight1_avg,nq_nzcnt,diffBestInt_median,n_nzcnt,vcg_var_deg1_q90mq10,vcg_var_weight1_varcoef,ratio_c_variables,vcg_var_deg1_avg,new_nonzero,vcg_constr_deg1_median,vcg_var_deg1_median,diffGap_q90mq10,iinf_median,vcg_constr_deg0_varcoef,A_ij_normalized0_avg,a_normalized_varcoefs0_varcoef,diffBestObjUp_avg,support_size_median,new_row,nodecnt,obj_coef_per_constr2_std,obj_coefs2_std,vcg_var_deg2_q90mq10,rhs_c_0_varcoef,mixedIntegerRoundingCuts,iinf_q90mq10,rel_t,clqcnt,vcg_constr_weight0_varcoef,lp_objval,A_ij_normalized0_varcoef,vcg_constr_weight0_avg,a_normalized_varcoefs1_avg,num_s_variables,nq_vars,diffBestInt_varcoef,vcg_constr_deg1_q90mq10,vcg_constr_deg2_median,vcg_var_deg0_median,ratio_i_variables,obj_coefs1_std,num_i+_variables,support_size_avg,newin_sum,numfeas,num_i_variables,flowCuts,vcg_var_weight2_varcoef,diffObj_varcoef,n_vars,rhs_c_1_varcoef,rhs_c_2_varcoef,A_ij_normalized2_varcoef
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 196
+% Algorithms: 		 5
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 0
+% Unsolvable Instances (runtime): 	 0
+% Valid Instances: 	 196
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 157
+% Size Test Set: 19
+% Backup Solver: Gurobi
+% 
+% >>> Algorithm Scheduler: Aspeed <<<
+% 
+% >>> 1-th iteration<<<
+% Backup Solver: Gurobi
+% Input Instances for Training: 142 (-unsolvable)
+% Used Insta/home/academic/toliu/af/autofolio_asc/test/local/lib/python2.7/site-packages/sklearn/ensemble/forest.py:246: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
+  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

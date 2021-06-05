@@ -1,0 +1,69 @@
+% [WARNING]: Not found: autofolio_arff/train/GLUHACK-2018_7/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/GLUHACK-2018_7/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/GLUHACK-2018_7/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/GLUHACK-2018_7/tmpKGWse3 --test-set (1;2) --train-set (1;0),(1;1),(1;3),(1;4),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize none --gb-max_depth 2 --approx-weights None --gb-max_features sqrt --mem-limit 2048 --aslib-dir autofolio_arff/train/GLUHACK-2018_7 --performance_trans log --time-limit 100 --impute none --gb-min_samples_leaf 14 --approach CLASSVOTER --classifier GRADIENTBOOSTING
+% Read autofolio_arff/train/GLUHACK-2018_7/description.txt
+% Read autofolio_arff/train/GLUHACK-2018_7/algorithm_runs.arff
+% Read autofolio_arff/train/GLUHACK-2018_7/feature_values.arff
+% Read autofolio_arff/train/GLUHACK-2018_7/feature_runstatus.arff
+% Read autofolio_arff/train/GLUHACK-2018_7/cv.arff
+% 1-th repetition: 32,32,31,32,32,32,32,31,32,32 distribution
+% Used Feature Steps: ALL
+% Used features: reducedVars,VCG.CLAUSE.entropy,POSNEG.RATIO.VAR.entropy,HORNY.VAR.entropy,cluster.coeff.min,VCG.VAR.mean,VCG.VAR.entropy,HORNY.VAR.mean,nvarsOrig,POSNEG.RATIO.VAR.stdev,POSNEG.RATIO.VAR.max,nclauses,HORNY.VAR.min,VCG.VAR.coeff.variation,TRINARY.,VG.min,CG.entropy,cluster.coeff.coeff.variation,UNARY,cluster.coeff.entropy,horn.clauses.fraction,cluster.coeff.mean,CG.min,CG.max,VG.max,VCG.VAR.min,VCG.CLAUSE.coeff.variation,VCG.CLAUSE.min,VCG.VAR.max,VG.mean,nvars,POSNEG.RATIO.CLAUSE.coeff.variation,VCG.CLAUSE.mean,BINARY.,POSNEG.RATIO.CLAUSE.min,cluster.coeff.max,VCG.CLAUSE.max,HORNY.VAR.coeff.variation,HORNY.VAR.max,POSNEG.RATIO.VAR.mean,POSNEG.RATIO.CLAUSE.entropy,POSNEG.RATIO.CLAUSE.max,POSNEG.RATIO.CLAUSE.mean,nclausesOrig,POSNEG.RATIO.VAR.min,CG.coeff.variation,vars.clauses.ratio,VG.coeff.variation,reducedClauses,CG.mean
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 318
+% Algorithms: 		 8
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 105
+% Unsolvable Instances (runtime): 	 105
+% Valid Instances: 	 213
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 254
+% Size Test Set: 32
+% Backup Solver: GHackCOMSPS_drup
+% Input Instances for Training: 254 (-unsolvable)
+% Used Instances for Training: 254 (-unsolvable)
+% Train with GRADIENTBOOSTING-CLASSVOTER
+% PAR10 on current test set: 28471.29 (32 instances)
+% 
+%  >>> Instances: 32 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 2217.088292 (952.128425)
+% Par10 time: 16279.275792 (951.673879)
+% #TOs: 10 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 18
+% Solved (perc) (with unsolved): 0.4375
+% PAR1 (with unsolved): 3158.79
+% PAR10 (with unsolved): 28471.29
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 18
+% Solved (perc) (without unsolved): 0.4375
+% PAR1 (without unsolved): 3158.79
+% PAR10 (without unsolved): 28471.29
+% 
+% Time used by each solver: {'glucose.3.0_PADC_3': 69095.41444, 'glucose3.0': 0, 'Glucose_Hack_Kiel_fastBVE': 1531.486097, 'glu_mix': 16383.743139, 'glucose.3.0_PADC_10': 0, 'inIDGlucose': 1.731988, 'GHackCOMSPS_drup': 6350.3801539999995, 'gluHack': 7718.38917}
+% Optimal Time used by each solver: {'glucose.3.0_PADC_3': 50010.0, 'glucose3.0': 2026.417727, 'Glucose_Hack_Kiel_fastBVE': 0, 'glu_mix': 7750.969193000002, 'glucose.3.0_PADC_10': 1045.364539, 'inIDGlucose': 1.731988, 'GHackCOMSPS_drup': 7918.796482, 'gluHack': 2193.5454179999997}
+Result for SMAC: 411081.144988
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

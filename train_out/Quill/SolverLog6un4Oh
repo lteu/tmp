@@ -1,0 +1,57 @@
+% [WARNING]: Not found: autofolio_arff/train/Quill/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/Quill/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/Quill/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Feature vector found twice: 48.0,2.0,50.0,123.0,355.0,3.0,2.0,5.0,4.0,10.0,109.0,66.0,68.0,2.10569105691,0.780487804878,16.0,0.390243902439,0.390243902439,3.5,48.0,24.0,11.66,144.0,72.0,38.1458333333,0.507042253521,0.357746478873,0.509652509653,0.733333333333,0.135211267606,1.0,0.972222222222,0.759976525822,0.387323943662,0.5,0.509652509653,0.763888888889,1.0,0.886178861789,0.552845528455,0.50718512257,0.386552550014,3.04311073542,0.490502793296,0.784376786735,6.0
+% [WARNING]: Feature vector found twice: 1274.0,35.0,1309.0,3523.0,8638.0,36.0,35.0,71.0,21.0,2231.0,1271.0,2731.0,2488.0,2.43201816634,0.0198694294635,35.3888888889,0.00993471473176,0.00993471473176,3.11993888464,2.0,1.0,113.925897632,72.0,36.0,576.186813187,0.527205371614,0.468742764529,0.527427637722,0.992314448836,0.00405186385737,1.0,0.896794027229,1.01914616988,0.537525856871,0.5,0.527427637722,1.01957583479,1.0,0.360772069259,0.706216292932,0.527166020914,0.48171916766,0.149413115024,0.47261517416,1.01879134954,0.283427059213
+% [WARNING]: Feature vector found twice: 1274.0,35.0,1309.0,3523.0,8638.0,36.0,35.0,71.0,21.0,2231.0,1271.0,2731.0,2488.0,2.43201816634,0.0198694294635,35.3888888889,0.00993471473176,0.00993471473176,3.11993888464,2.0,1.0,113.925897632,72.0,36.0,576.186813187,0.527205371614,0.468742764529,0.527427637722,0.992314448836,0.00405186385737,1.0,0.896794027229,1.01914616988,0.537525856871,0.5,0.527427637722,1.01957583479,1.0,0.360772069259,0.706216292932,0.527166020914,0.48171916766,0.149413115024,0.47261517416,1.01879134954,0.283427059213
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/Quill/tmps9WBPH --test-set (1;6) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;5),(1;7),(1;8),(1;9) --normalize pca --approx-weights nrmsd --mem-limit 2048 --aslib-dir autofolio_arff/train/Quill --performance_trans None --time-limit 100 --impute most_frequent --pca-dims 11 --approach SBS
+% Read autofolio_arff/train/Quill/description.txt
+% Read autofolio_arff/train/Quill/algorithm_runs.arff
+% Read autofolio_arff/train/Quill/feature_values.arff
+% Read autofolio_arff/train/Quill/feature_runstatus.arff
+% Read autofolio_arff/train/Quill/cv.arff
+% 1-th repetition: 55,55,55,55,55,55,55,55,55,55 distribution
+% Used Feature Steps: step_1
+% Used features: feature_38,feature_39,feature_18,feature_19,feature_14,feature_15,feature_16,feature_17,feature_10,feature_37,feature_12,feature_13,feature_8,feature_9,feature_2,feature_3,feature_1,feature_6,feature_7,feature_4,feature_5,feature_32,feature_33,feature_46,feature_45,feature_44,feature_43,feature_30,feature_41,feature_40,feature_29,feature_28,feature_31,feature_21,feature_20,feature_23,feature_22,feature_25,feature_24,feature_27,feature_11,feature_34,feature_26,feature_36,feature_35,feature_42
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 550
+% Algorithms: 		 24
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 38
+% Unsolvable Instances (runtime): 	 38
+% Valid Instances: 	 512
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 440
+% Size Test Set: 55
+% Backup Solver: algorithm_20
+% Input Instances for Training: 440 (-unsolvable)
+% Used Instances for Training: 440 (-unsolvable)
+Traceback (most recent call last):
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 567, in <module>
+    trainer.main(sys.argv[1:])
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 150, in main
+    evaluator.evaluate(self, meta_info, instance_dic, config_dic)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/ttValidator.py", line 56, in evaluate
+    selection_dic, solver_schedule = self.training(instance_train, meta_info, config_dic, trainer)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/validator.py", line 118, in training
+    selection_dic = trainer.train(meta_info, instance_train, config_dic, save_models=False)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 289, in train
+    instance_dic, norm_stats, feature_indicator = normalizer.normalize(instance_dic, args_.norm, feature_indicator, args_.pca_dims)  
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/featurepreprocessing/normalizer.py", line 48, in normalize
+    normed_feature_dic = normalizer.normalize_features()
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/featurepreprocessing/PCAPreprocessorSklearn.py", line 57, in normalize_features
+    self.__STD_SCALER = scaler.std_.tolist()
+AttributeError: 'StandardScaler' object has no attribute 'std_'
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

@@ -1,0 +1,52 @@
+[INFO ] Logging to: /home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_4/smac-output/autofolio/log-run1.txt
+[INFO ] Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f), running on OpenJDK 64-Bit Server VM (11.0.11) and Linux 4.15.0-143-generic (amd64) 
+[INFO ] Call String: smac --scenarioFile train_out/GRAPHS-2015_4/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/GRAPHS-2015_4/smac-output 
+[INFO ] SMAC started at: Jun 2, 2021, 9:40:13 PM. Minimizing mean runtime.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun (file:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar) to field java.lang.ProcessImpl.pid
+WARNING: Please consider reporting this to the maintainers of ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO ] First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 29.0; estimate based on 1 runs.
+[INFO ] Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_4/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_4' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 29.0; estimate now based on 2 runs.
+[WARN ] Algorithm Run Result reported a runtime of 44.0 (secs) that exceeded it's cutoff time of 38.702600317421556 (secs) by 5.297399682578444 (secs). Next warning at 6.297399682578444 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 29.0; estimate now based on 3 runs.
+[WARN ] Algorithm Run Result reported a runtime of 63.0 (secs) that exceeded it's cutoff time of 38.702600317421556 (secs) by 24.297399682578444 (secs). Next warning at 25.297399682578444 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 63.786 (secs) that exceeded it's cutoff time of 38.702600317421556 (secs) by 25.083399682578445 (secs). Next warning at 26.083399682578445 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 29.25; estimate now based on 4 runs.
+[INFO ] Incumbent changed to: config 4 (internal ID: 0xA1C2), with mean runtime: 22.75; estimate based on 4 runs.
+[INFO ] Sample call for new incumbent config 4 (internal ID: 0xA1C2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_4/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_4' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 22.6; estimate now based on 5 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 22.5; estimate now based on 6 runs.
+[WARN ] Algorithm Run Result reported a runtime of 50.0 (secs) that exceeded it's cutoff time of 24.409100262793903 (secs) by 25.590899737206097 (secs). Next warning at 26.590899737206097 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 22.714285714285715; estimate now based on 7 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 22.625; estimate now based on 8 runs.
+[WARN ] Algorithm Run Result reported wallclock time of 45.774 (secs) that exceeded it's cutoff time of 19.211700035604835 (secs) by 26.562299964395166 (secs). Next warning at 27.562299964395166 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 22.666666666666668; estimate now based on 9 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 22.7; estimate now based on 10 runs.
+[WARN ] Algorithm Run Result reported a runtime of 57.0 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 27.397399358105655 (secs). Next warning at 28.397399358105655 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 57.215 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 27.61239935810566 (secs). Next warning at 28.61239935810566 (secs)  
+[WARN ] Algorithm Run Result reported a runtime of 53.0 (secs) that exceeded it's cutoff time of 24.403900465342407 (secs) by 28.596099534657593 (secs). Next warning at 29.596099534657593 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 53.821 (secs) that exceeded it's cutoff time of 24.403900465342407 (secs) by 29.41709953465759 (secs). Next warning at 30.41709953465759 (secs)  
+[WARN ] Algorithm Run Result reported a runtime of 45.0 (secs) that exceeded it's cutoff time of 4.910400284799934 (secs) by 40.089599715200066 (secs). Next warning at 41.089599715200066 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 45.321 (secs) that exceeded it's cutoff time of 4.910400284799934 (secs) by 40.410599715200064 (secs). Next warning at 41.410599715200064 (secs)  
+[WARN ] Algorithm Run Result reported a runtime of 72.0 (secs) that exceeded it's cutoff time of 30.90260012854934 (secs) by 41.09739987145066 (secs). Next warning at 42.09739987145066 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 71.632 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 42.029399358105664 (secs). Next warning at 43.029399358105664 (secs)  
+[WARN ] Algorithm Run Result reported a runtime of 72.0 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 42.39739935810566 (secs). Next warning at 43.39739935810566 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 75.666 (secs) that exceeded it's cutoff time of 32.20260070485175 (secs) by 43.46339929514825 (secs). Next warning at 44.46339929514825 (secs)  
+[INFO ] 
+=======================================================================================
+SMAC has finished. Reason: wall-clock time limit (35089.027 s) has been reached.   
+Total number of runs performed: 771, total configurations tried: 476.
+Total CPU time used: 34742 s, total wallclock time used: 35089 s.
+SMAC's final incumbent: config 4 (internal ID: 0xA1C2), with estimated mean runtime: 22.7, based on 10 run(s) on 10 training instance(s).
+Sample call for this final incumbent:
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_4/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_4' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'
+=======================================================================================
+[INFO ] 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Additional information about run 1 in:/home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_4/smac-output/autofolio
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

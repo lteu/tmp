@@ -1,0 +1,10 @@
+execdir = .
+deterministic = 1
+run_obj = runtime
+overall_obj = mean
+cutoff_time = 1800
+wallclock-limit = 71059
+paramfile = train_out/Quill/autofolio.pcs
+algo = python wrappers/flexfolio/ff_wrapper.py train_out/Quill/config_wrapper.json
+test_instance_file = train_out/Quill/test.txt
+instance_file = train_out/Quill/train.txt

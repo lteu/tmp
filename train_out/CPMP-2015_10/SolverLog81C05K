@@ -1,0 +1,6 @@
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/citation.bib (maybe you want to add it)
+% [WARNING]: Have not found algorithms_stochastic
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

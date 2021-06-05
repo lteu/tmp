@@ -1,0 +1,75 @@
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_7/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_7/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_7/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.02,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 12161.0,35092.0,0.0,0.0,-512.0,-512.0,7.46,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/MAXSAT19-UCMS_7/tmpyl8vQ4 --test-set (1;1) --train-set (1;0),(1;2),(1;3),(1;4),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize zscore --gb-max_depth 3 --approx-weights rmsd --gb-max_features log2 --mem-limit 2048 --aslib-dir autofolio_arff/train/MAXSAT19-UCMS_7 --performance_trans log --time-limit 100 --impute mean --gb-min_samples_leaf 2 --approach CLASSVOTER --classifier GRADIENTBOOSTING
+% Read autofolio_arff/train/MAXSAT19-UCMS_7/description.txt
+% Read autofolio_arff/train/MAXSAT19-UCMS_7/algorithm_runs.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_7/feature_values.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_7/feature_runstatus.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_7/cv.arff
+% 1-th repetition: 52,51,51,52,52,51,51,52,52,51 distribution
+% Used Feature Steps: ALL
+% Used features: reducedVars,VCG.CLAUSE.entropy,POSNEG.RATIO.VAR.entropy,HORNY.VAR.entropy,cluster.coeff.min,VCG.VAR.mean,VCG.VAR.entropy,HORNY.VAR.mean,nvarsOrig,POSNEG.RATIO.VAR.stdev,POSNEG.RATIO.VAR.max,nclauses,HORNY.VAR.min,VCG.VAR.coeff.variation,TRINARY.,VG.min,CG.entropy,cluster.coeff.coeff.variation,UNARY,cluster.coeff.entropy,horn.clauses.fraction,cluster.coeff.mean,CG.min,CG.max,Basic.featuretime,VG.max,VCG.VAR.min,Pre.featuretime,CG.featuretime,cluster.coeff.max,VCG.CLAUSE.min,VCG.VAR.max,VG.mean,nvars,POSNEG.RATIO.CLAUSE.coeff.variation,VCG.CLAUSE.mean,BINARY.,KLB.featuretime,POSNEG.RATIO.CLAUSE.min,VCG.CLAUSE.coeff.variation,VCG.CLAUSE.max,HORNY.VAR.coeff.variation,HORNY.VAR.max,POSNEG.RATIO.VAR.mean,POSNEG.RATIO.CLAUSE.entropy,POSNEG.RATIO.CLAUSE.max,POSNEG.RATIO.CLAUSE.mean,nclausesOrig,POSNEG.RATIO.VAR.min,CG.coeff.variation,vars.clauses.ratio,VG.coeff.variation,reducedClauses,CG.mean
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 515
+% Algorithms: 		 7
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 115
+% Unsolvable Instances (runtime): 	 115
+% Valid Instances: 	 400
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 412
+% Size Test Set: 52
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 412 (-unsolvable)
+% Used Instances for Training: 412 (-unsolvable)
+% Train with GRADIENTBOOSTING-CLASSVOTER
+% PAR10 on current test set: 17354.15 (52 instances)
+% 
+%  >>> Instances: 52 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 1282.052943 (156.192944)
+% Par10 time: 11874.033712 (155.707230)
+% #TOs: 17 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 25
+% Solved (perc) (with unsolved): 0.5192
+% PAR1 (with unsolved): 1777.22
+% PAR10 (with unsolved): 17354.15
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 25
+% Solved (perc) (without unsolved): 0.5192
+% PAR1 (without unsolved): 1777.22
+% PAR10 (without unsolved): 17354.15
+% 
+% Time used by each solver: {'QMaxSAT2018': 43402.03103, 'UWrMaxSAT': 38095.024581000005, 'Open.WBO.ms.pre': 0, 'Open.WBO.g': 61.1099, 'MaxHS': 3657.5266, 'Open.WBO.ms': 0, 'maxino2018': 7200.0}
+% Optimal Time used by each solver: {'QMaxSAT2018': 61727.288629999995, 'UWrMaxSAT': 603.7552969999999, 'Open.WBO.ms.pre': 477.813, 'Open.WBO.g': 37.707541000000006, 'MaxHS': 3256.6564, 'Open.WBO.ms': 81.8478, 'maxino2018': 481.684382}
+Result for SMAC: 290415.692111
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

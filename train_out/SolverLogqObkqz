@@ -1,0 +1,75 @@
+% [WARNING]: Not found: autofolio_arff/train/TSP-LION2015_1/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/TSP-LION2015_1/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/TSP-LION2015_1/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algortihms_deterministics
+% [WARNING]: Empty feature set - fall back to default feature set.
+% [WARNING]: Empty feature set - fall back to default feature set.
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/tmpjFcPEG --test-set (1;6) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;5),(1;7),(1;8),(1;9) --normalize dec --approx-weights None --mem-limit 2048 --aslib-dir autofolio_arff/train/TSP-LION2015_1 --performance_trans log --time-limit 100 --impute median --approach SBS
+% Read autofolio_arff/train/TSP-LION2015_1/description.txt
+% Read autofolio_arff/train/TSP-LION2015_1/algorithm_runs.arff
+% Read autofolio_arff/train/TSP-LION2015_1/feature_values.arff
+% Read autofolio_arff/train/TSP-LION2015_1/feature_runstatus.arff
+% Read autofolio_arff/train/TSP-LION2015_1/cv.arff
+% 1-th repetition: 280,279,279,280,280,279,279,280,280,279 distribution
+% Used Feature Steps: ubc_cheap
+% Used features: 
+% 
+% Used Feature Steps: ubc_cheap
+% Used features: 
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 2795
+% Algorithms: 		 4
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 0
+% Unsolvable Instances (runtime): 	 0
+% Valid Instances: 	 2795
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 2237
+% Size Test Set: 279
+([3, 0, 1, 2], 'ranks')
+% Backup Solver: eax.restart
+% Input Instances for Training: 2237 (-unsolvable)
+% Used Instances for Training: 2237 (-unsolvable)
+% Train with SBS
+% PAR10 on current test set: 192.39 (279 instances)
+% 
+%  >>> Instances: 279 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 30.528280 (30.528280)
+% Par10 time: 30.528280 (30.528280)
+% #TOs: 0 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 1
+% Solved (perc) (with unsolved): 0.9964
+% PAR1 (with unsolved): 76.26
+% PAR10 (with unsolved): 192.39
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 1
+% Solved (perc) (without unsolved): 0.9964
+% PAR1 (without unsolved): 76.26
+% PAR10 (without unsolved): 192.39
+% 
+% Time used by each solver: {'eax': 0, 'eax.restart': 21275.50999999999, 'lkh.restart': 0, 'lkh': 0}
+% Optimal Time used by each solver: {'eax': 753.5799999999999, 'eax.restart': 3013.5799999999995, 'lkh.restart': 1142.4399999999998, 'lkh': 3607.7900000000004}
+Result for SMAC: 53675.510000
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

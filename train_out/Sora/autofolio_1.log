@@ -1,0 +1,84 @@
+[INFO ] Logging to: /home/academic/toliu/af/autofolio_asc/train_out/Sora/smac-output/autofolio/log-run1.txt
+[INFO ] Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f), running on OpenJDK 64-Bit Server VM (11.0.11) and Linux 4.15.0-143-generic (amd64) 
+[INFO ] Call String: smac --scenarioFile train_out/Sora/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/Sora/smac-output 
+[INFO ] SMAC started at: May 20, 2021, 5:01:02 AM. Minimizing mean runtime.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun (file:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar) to field java.lang.ProcessImpl.pid
+WARNING: Please consider reporting this to the maintainers of ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO ] First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 28.0; estimate based on 1 runs.
+[INFO ] Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 28.5; estimate now based on 2 runs.
+[INFO ] Incumbent changed to: config 2 (internal ID: 0x41B2), with mean runtime: 24.0; estimate based on 2 runs.
+[INFO ] Sample call for new incumbent config 2 (internal ID: 0x41B2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'yes' -@1:F:concentrate 'yes' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:max-solver '36' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:opt-mode '4' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:time-pre-solvers '1'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 23.666666666666668; estimate now based on 3 runs.
+[WARN ] Algorithm Run Result reported a runtime of 33.0 (secs) that exceeded it's cutoff time of 19.205200288790465 (secs) by 13.794799711209535 (secs). Next warning at 14.794799711209535 (secs)  
+[WARN ] Algorithm Run Result reported wallclock time of 33.584 (secs) that exceeded it's cutoff time of 19.205200288790465 (secs) by 14.378799711209538 (secs). Next warning at 15.378799711209538 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 24.5; estimate now based on 4 runs.
+[INFO ] Incumbent changed to: config 4 (internal ID: 0xA1C2), with mean runtime: 12.25; estimate based on 4 runs.
+[INFO ] Sample call for new incumbent config 4 (internal ID: 0xA1C2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 12.2; estimate now based on 5 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 12.333333333333334; estimate now based on 6 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 12.571428571428571; estimate now based on 7 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 12.5; estimate now based on 8 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 12.555555555555555; estimate now based on 9 runs.
+[WARN ] Algorithm Run Result reported a runtime of 33.0 (secs) that exceeded it's cutoff time of 17.90260090340972 (secs) by 15.09739909659028 (secs). Next warning at 16.09739909659028 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 12.6; estimate now based on 10 runs.
+[WARN ] Algorithm Run Result reported wallclock time of 30.021 (secs) that exceeded it's cutoff time of 14.014300898063183 (secs) by 16.006699101936817 (secs). Next warning at 17.006699101936817 (secs)  
+[INFO ] Incumbent changed to: config 9 (internal ID: 0x2054B), with mean runtime: 12.2; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 9 (internal ID: 0x2054B): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[WARN ] Algorithm Run Result reported a runtime of 33.0 (secs) that exceeded it's cutoff time of 16.60260032710731 (secs) by 16.39739967289269 (secs). Next warning at 17.39739967289269 (secs)  
+[INFO ] Incumbent changed to: config 12 (internal ID: 0x2C873), with mean runtime: 12.1; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 12 (internal ID: 0x2C873): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 17 (internal ID: 0x3E8D2), with mean runtime: 11.8; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 17 (internal ID: 0x3E8D2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 19 (internal ID: 0x43412), with mean runtime: 11.4; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 19 (internal ID: 0x43412): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 57 (internal ID: 0xE32EB), with mean runtime: 11.3; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 57 (internal ID: 0xE32EB): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 63 (internal ID: 0xFA854), with mean runtime: 11.2; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 63 (internal ID: 0xFA854): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 65 (internal ID: 0xFDAC1), with mean runtime: 11.1; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 65 (internal ID: 0xFDAC1): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 78 (internal ID: 0x1346D9), with mean runtime: 10.8; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 78 (internal ID: 0x1346D9): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 91 (internal ID: 0x16CED4), with mean runtime: 10.6; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 91 (internal ID: 0x16CED4): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 121 (internal ID: 0x201236), with mean runtime: 10.1; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 121 (internal ID: 0x201236): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 133 (internal ID: 0x3C7AE0), with mean runtime: 7.2; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 133 (internal ID: 0x3C7AE0): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 205 (internal ID: 0x3E2157), with mean runtime: 6.0; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 205 (internal ID: 0x3E2157): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 206 (internal ID: 0x3E2169), with mean runtime: 5.9; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 206 (internal ID: 0x3E2169): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 212 (internal ID: 0x3FFF10), with mean runtime: 5.6; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 212 (internal ID: 0x3FFF10): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 243 (internal ID: 0x4C0673), with mean runtime: 5.4; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 243 (internal ID: 0x4C0673): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 356 (internal ID: 0x79F46A), with mean runtime: 5.2; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 356 (internal ID: 0x79F46A): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 549 (internal ID: 0xD03BFA), with mean runtime: 5.1; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 549 (internal ID: 0xD03BFA): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/Sora/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/Sora' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Making best attempt to save state. This state may be dirty, in that it was taken in the middle of an iteration and consequently may not be restorable. It may also be corrupt depending on the exact reason we are shutting down.

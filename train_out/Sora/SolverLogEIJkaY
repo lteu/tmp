@@ -1,0 +1,91 @@
+% [WARNING]: Not found: autofolio_arff/train/Sora/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/Sora/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/Sora/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Not all features of instance_1355 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1351 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1350 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1188 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1358 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1361 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1367 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1366 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1365 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1187 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1186 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_85 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1374 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1376 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1371 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1373 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1644 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1995 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1363 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1362 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1348 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1996 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_240 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1359 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1301 are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of instance_1645 are NA although the corresponding feature step is not OK.
+wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/Sora/tmpXjmIlQ --test-set (1;8) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;5),(1;6),(1;7),(1;9) --normalize linear --approx-weights max --mem-limit 2048 --aslib-dir autofolio_arff/train/Sora --time-pre-solvers 758 --performance_trans None --opt-mode 6 --time-limit 100 --impute most_frequent --aspeed-opt --max-solver 1 --approach SBS
+% Read autofolio_arff/train/Sora/description.txt
+% Read autofolio_arff/train/Sora/algorithm_runs.arff
+% Read autofolio_arff/train/Sora/feature_values.arff
+% Read autofolio_arff/train/Sora/feature_runstatus.arff
+% Read autofolio_arff/train/Sora/cv.arff
+% 1-th repetition: 133,134,133,133,133,134,133,133,134,133 distribution
+% Used Feature Steps: step_9,step_1
+% Used features: feature_46,feature_58,feature_59,feature_50,feature_51,feature_52,feature_53,feature_54,feature_55,feature_56,feature_57,feature_38,feature_39,feature_32,feature_33,feature_30,feature_31,feature_36,feature_37,feature_34,feature_35,feature_49,feature_48,feature_47,feature_90,feature_45,feature_44,feature_43,feature_42,feature_41,feature_91,feature_29,feature_28,feature_92,feature_21,feature_20,feature_23,feature_22,feature_25,feature_24,feature_27,feature_26,feature_40,feature_295,feature_294,feature_297,feature_296,feature_291,feature_290,feature_293,feature_292,feature_299,feature_298,feature_18,feature_19,feature_14,feature_15,feature_16,feature_17,feature_10,feature_11,feature_12,feature_13,feature_288,feature_289,feature_282,feature_283,feature_280,feature_281,feature_286,feature_287,feature_284,feature_285,feature_277,feature_276,feature_275,feature_274,feature_273,feature_272,feature_271,feature_270,feature_279,feature_278,feature_76,feature_77,feature_74,feature_75,feature_72,feature_73,feature_70,feature_71,feature_78,feature_79,feature_8,feature_9,feature_2,feature_3,feature_1,feature_6,feature_7,feature_4,feature_5,feature_89,feature_88,feature_83,feature_82,feature_81,feature_80,feature_87,feature_86,feature_85,feature_84,feature_309,feature_308,feature_303,feature_302,feature_301,feature_300,feature_307,feature_306,feature_305,feature_304,feature_65,feature_64,feature_67,feature_66,feature_61,feature_60,feature_63,feature_62,feature_69,feature_68,feature_318,feature_319,feature_310,feature_311,feature_312,feature_313,feature_314,feature_315,feature_316,feature_317
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 1333
+% Algorithms: 		 10
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 175
+% Unsolvable Instances (runtime): 	 175
+% Valid Instances: 	 1158
+% Presolved: 		 22
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 1067
+% Size Test Set: 133
+% Backup Solver: algorithm_8
+% 
+% >>> Algorithm Scheduler: Aspeed <<<
+% 
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/gringo wrappers/flexfolio/../../selectors/flexfolio/src/trainer/aspeed/enc/encoding-bounded-paper-Step1.lp /home/academic/toliu/af/autofolio_asc/train_out/Sora/tmpXjmIlQ/ASPEED83nu52.facts -c maxsolver=1 -c optMode=6 -c maxPreSlice=758 -c cores=1 -c featTime=500
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/clasp /home/academic/toliu/af/autofolio_asc/train_out/Sora/tmpXjmIlQ/GROUND2CeQem.gr --quiet=1,1
+% 
+% Schedule {1: {'claspfolio': 5000.0}}
+% 
+% >>> End of Algorithm Scheduler <<<
+% 
+% Input Instances for Training: 1067 (-unsolvable)
+% Used Instances for Training: 1067 (-unsolvable)
+% Train with SBS
+Traceback (most recent call last):
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 567, in <module>
+    trainer.main(sys.argv[1:])
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 150, in main
+    evaluator.evaluate(self, meta_info, instance_dic, config_dic)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/ttValidator.py", line 56, in evaluate
+    selection_dic, solver_schedule = self.training(instance_train, meta_info, config_dic, trainer)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/validator.py", line 118, in training
+    selection_dic = trainer.train(meta_info, instance_train, config_dic, save_models=False)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 454, in train
+    self.__add_schedule_2_selection_dict(selection_dic, pre_solver_dict, args_.pre_schedule)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 547, in __add_schedule_2_selection_dict
+    for pre_entry in external_pre_schedule:
+TypeError: 'NoneType' object is not iterable
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

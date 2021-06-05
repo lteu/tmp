@@ -1,0 +1,10 @@
+execdir = .
+deterministic = 1
+run_obj = runtime
+overall_obj = mean
+cutoff_time = 1800
+wallclock-limit = 35452
+paramfile = train_out/SAT03-16_INDU_8/autofolio.pcs
+algo = python wrappers/flexfolio/ff_wrapper.py train_out/SAT03-16_INDU_8/config_wrapper.json
+test_instance_file = train_out/SAT03-16_INDU_8/test.txt
+instance_file = train_out/SAT03-16_INDU_8/train.txt

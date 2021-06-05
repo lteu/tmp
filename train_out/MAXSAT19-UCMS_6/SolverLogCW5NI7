@@ -1,0 +1,98 @@
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_6/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_6/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_6/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Feature vector found twice: 1600.0,9444.0,1600.0,7844.0,0.0,0.203978,0.07,0.203978,0.576492,0.252212,0.0,0.666667,0.953571,0.003202,0.238887,0.00125,0.00375,0.953571,0.0,0.025625,0.128251,0.0,0.003202,7.812845,0.00051,1.0,1.985141,1.0,0.0,1.0,1.0,0.0,0.003202,7.812845,0.00051,1.0,1.985141,1.0,0.002684,1.967747,0.00051,0.20385,0.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.02,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 12161.0,35092.0,0.0,0.0,-512.0,-512.0,7.46,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/MAXSAT19-UCMS_6/tmppBd_eg --test-set (1;4) --train-set (1;0),(1;1),(1;2),(1;3),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize linear --svm-C 14.5357 --approx-weights None --mem-limit 2048 --aslib-dir autofolio_arff/train/MAXSAT19-UCMS_6 --time-pre-solvers 3 --performance_trans log --opt-mode 1 --time-limit 100 --concentrate --impute none --aspeed-opt --max-solver 2 --svm-gamma 0.1647 --approach CLASSVOTER --classifier SVM
+% Read autofolio_arff/train/MAXSAT19-UCMS_6/description.txt
+% Read autofolio_arff/train/MAXSAT19-UCMS_6/algorithm_runs.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_6/feature_values.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_6/feature_runstatus.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_6/cv.arff
+% 1-th repetition: 52,51,51,52,52,51,51,52,52,51 distribution
+% Used Feature Steps: ALL
+% Used features: reducedVars,VCG.CLAUSE.entropy,POSNEG.RATIO.VAR.entropy,HORNY.VAR.entropy,cluster.coeff.min,VCG.VAR.mean,VCG.VAR.entropy,HORNY.VAR.mean,nvarsOrig,POSNEG.RATIO.VAR.stdev,POSNEG.RATIO.VAR.max,nclauses,HORNY.VAR.min,VCG.VAR.coeff.variation,TRINARY.,VG.min,CG.entropy,cluster.coeff.coeff.variation,UNARY,cluster.coeff.entropy,horn.clauses.fraction,cluster.coeff.mean,CG.min,CG.max,Basic.featuretime,VG.max,VCG.VAR.min,Pre.featuretime,CG.featuretime,cluster.coeff.max,VCG.CLAUSE.min,VCG.VAR.max,VG.mean,nvars,POSNEG.RATIO.CLAUSE.coeff.variation,VCG.CLAUSE.mean,BINARY.,KLB.featuretime,POSNEG.RATIO.CLAUSE.min,VCG.CLAUSE.coeff.variation,VCG.CLAUSE.max,HORNY.VAR.coeff.variation,HORNY.VAR.max,POSNEG.RATIO.VAR.mean,POSNEG.RATIO.CLAUSE.entropy,POSNEG.RATIO.CLAUSE.max,POSNEG.RATIO.CLAUSE.mean,nclausesOrig,POSNEG.RATIO.VAR.min,CG.coeff.variation,vars.clauses.ratio,VG.coeff.variation,reducedClauses,CG.mean
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 515
+% Algorithms: 		 7
+% Incomplete Feature Vector: 	 101 (maybe imputed)
+% Unsolvable Instances (status): 	 119
+% Unsolvable Instances (runtime): 	 119
+% Valid Instances: 	 329
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 412
+% Size Test Set: 52
+% Backup Solver: UWrMaxSAT
+% 
+% >>> Algorithm Scheduler: Aspeed <<<
+% 
+% >>> 1-th iteration<<<
+% Backup Solver: MaxHS
+% Input Instances for Training: 371 (-unsolvable)
+% Used Instances for Training: 299 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 7972.46 (41 instances)
+% >>> 2-th iteration<<<
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 371 (-unsolvable)
+% Used Instances for Training: 299 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 15008.82 (41 instances)
+% >>> 3-th iteration<<<
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 371 (-unsolvable)
+% Used Instances for Training: 294 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 12382.31 (41 instances)
+% >>> 4-th iteration<<<
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 371 (-unsolvable)
+% Used Instances for Training: 295 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 17598.38 (41 instances)
+% >>> 5-th iteration<<<
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 371 (-unsolvable)
+% Used Instances for Training: 298 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 12334.54 (41 instances)
+% >>> 6-th iteration<<<
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 371 (-unsolvable)
+% Used Instances for Training: 296 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 10634.63 (41 instances)
+% >>> 7-th iteration<<<
+% Backup Solver: MaxHS
+% Input Instances for Training: 371 (-unsolvable)
+% Used Instances for Training: 298 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 7083.52 (41 instances)
+% >>> 8-th iteration<<<
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 371 (-unsolvable)
+% Used Instances for Training: 298 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on currenwrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

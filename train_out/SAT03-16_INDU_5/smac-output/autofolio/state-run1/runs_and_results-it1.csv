@@ -1,0 +1,8 @@
+Run Number,Run History Configuration ID,Instance ID,Response Value (y),Censored?,Cutoff Time Used,Seed,Runtime,Run Length,Run Result Code,Run Quality,SMAC Iteration,SMAC Cumulative Runtime,Run Result,Additional Algorithm Run Data,Wall Clock Time,
+1,1,5,18.0,0,1800.0,-1,18.0,-1.0,1,515192.167,0,18.0,SAT,everything ok,18.2,
+2,1,3,18.0,0,1800.0,-1,18.0,-1.0,1,276311.718,1,36.0,SAT,everything ok,18.205,
+3,2,3,16.0,0,24.402600515979533,-1,16.0,-1.0,1,7201909.81,1,52.0,SAT,configuration crashed; runnning SBS,16.317,
+4,2,5,16.0,0,27.003900528299813,-1,16.0,-1.0,1,8208751.87,1,68.0,SAT,configuration crashed; runnning SBS,16.381,
+5,2,9,15.0,0,1800.0,-1,15.0,-1.0,1,5716795.41,1,83.0,SAT,configuration crashed; runnning SBS,15.796,
+6,1,9,25.0,0,15.305200739178062,-1,25.0,-1.0,1,5716795.41,1,108.0,SAT,configuration crashed; runnning SBS,25.386,
+7,3,3,31.0,0,21.802600453022126,-1,31.0,-1.0,1,7201909.81,1,139.0,SAT,configuration crashed; runnning SBS,31.289,

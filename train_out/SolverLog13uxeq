@@ -1,0 +1,65 @@
+% [WARNING]: Not found: autofolio_arff/train/TSP-LION2015_1/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/TSP-LION2015_1/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/TSP-LION2015_1/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algortihms_deterministics
+% [WARNING]: Empty feature set - fall back to default feature set.
+% [WARNING]: Empty feature set - fall back to default feature set.
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/tmpHuWiDz --test-set (1;10) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize linear --approx-weights max --mem-limit 2048 --aslib-dir autofolio_arff/train/TSP-LION2015_1 --performance_trans log --time-limit 100 --impute none --approach SBS
+% Read autofolio_arff/train/TSP-LION2015_1/description.txt
+% Read autofolio_arff/train/TSP-LION2015_1/algorithm_runs.arff
+% Read autofolio_arff/train/TSP-LION2015_1/feature_values.arff
+% Read autofolio_arff/train/TSP-LION2015_1/feature_runstatus.arff
+% Read autofolio_arff/train/TSP-LION2015_1/cv.arff
+% 1-th repetition: 280,279,279,280,280,279,279,280,280,279 distribution
+% Used Feature Steps: ubc_cheap
+% Used features: 
+% 
+% Used Feature Steps: ubc_cheap
+% Used features: 
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 2795
+% Algorithms: 		 4
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 0
+% Unsolvable Instances (runtime): 	 0
+% Valid Instances: 	 2795
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 2516
+% Size Test Set: 279
+([3, 0, 1, 2], 'ranks')
+% Backup Solver: eax.restart
+% Input Instances for Training: 2516 (-unsolvable)
+% Used Instances for Training: 2516 (-unsolvable)
+Traceback (most recent call last):
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 568, in <module>
+    trainer.main(sys.argv[1:])
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 150, in main
+    evaluator.evaluate(self, meta_info, instance_dic, config_dic)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/ttValidator.py", line 56, in evaluate
+    selection_dic, solver_schedule = self.training(instance_train, meta_info, config_dic, trainer)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/validator.py", line 118, in training
+    selection_dic = trainer.train(meta_info, instance_train, config_dic, save_models=False)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 290, in train
+    instance_dic, norm_stats, feature_indicator = normalizer.normalize(instance_dic, args_.norm, feature_indicator, args_.pca_dims)  
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/featurepreprocessing/normalizer.py", line 48, in normalize
+    normed_feature_dic = normalizer.normalize_features()
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/featurepreprocessing/LinearNormalizer.py", line 41, in normalize_features
+    trans_normed_features = self.__normalize(transposed_features)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/featurepreprocessing/LinearNormalizer.py", line 124, in __normalize
+    new_row.append(((value-min_) /(max_-min_)))
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

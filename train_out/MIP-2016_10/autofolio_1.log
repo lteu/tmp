@@ -1,0 +1,47 @@
+[INFO ] Logging to: /home/academic/toliu/af/autofolio_asc/train_out/MIP-2016_10/smac-output/autofolio/log-run1.txt
+[INFO ] Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f), running on OpenJDK 64-Bit Server VM (11.0.11) and Linux 4.15.0-143-generic (amd64) 
+[INFO ] Call String: smac --scenarioFile train_out/MIP-2016_10/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/MIP-2016_10/smac-output 
+[INFO ] SMAC started at: May 30, 2021, 3:55:01 PM. Minimizing mean runtime.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun (file:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar) to field java.lang.ProcessImpl.pid
+WARNING: Please consider reporting this to the maintainers of ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO ] First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 0.0; estimate based on 1 runs.
+[INFO ] Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MIP-2016_10/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/MIP-2016_10' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 2 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 3 runs.
+[WARN ] Algorithm Run Result reported a runtime of 3.0 (secs) that exceeded it's cutoff time of 1.0026010390102864 (secs) by 1.9973989609897136 (secs). Next warning at 2.9973989609897136 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 4 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 5 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 6 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 7 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 8 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 9 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 0.0; estimate now based on 10 runs.
+[WARN ] Killed run <Instance:3, Seed:-1, Config:0x8181C, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.73 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Algorithm Run Result reported a runtime of 10.73 (secs) that exceeded it's cutoff time of 1.0026010390102864 (secs) by 9.727398960989714 (secs). Next warning at 10.727398960989714 (secs)  
+[WARN ] Killed run <Instance:2, Seed:-1, Config:0xDE0FE6, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.639999 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:7, Seed:-1, Config:0x10E80C2, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.74 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:9, Seed:-1, Config:0x129F5FF, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.59 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:8, Seed:-1, Config:0x1334464, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.38 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:8, Seed:-1, Config:0x1334464, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.38 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:3, Seed:-1, Config:0x15B204F, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.39 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:3, Seed:-1, Config:0x15B204F, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.39 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:3, Seed:-1, Config:0x1684C8B, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.35 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:4, Seed:-1, Config:0x17F10DF, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.6 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:9, Seed:-1, Config:0x190F5FE, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.22 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:7, Seed:-1, Config:0x19F9A91, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.59 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:9, Seed:-1, Config:0x1C27A4A, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.53 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:7, Seed:-1, Config:0x1CF09C8, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.56 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:4, Seed:-1, Config:0x20D582B, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.58 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:4, Seed:-1, Config:0x20D582B, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.58 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:7, Seed:-1, Config:0x20EBDA0, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.64 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:3, Seed:-1, Config:0x272C26C, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.63 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:6, Seed:-1, Config:0x283F9B6, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.349999 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:6, Seed:-1, Config:0x283F9B6, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.349999 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:5, Seed:-1, Config:0x28F2550, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.63 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:5, Seed:-1, Config:0x2CC8B14, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.52 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[WARN ] Killed run <Instance:5, Seed:-1, Config:0x30DAF65, Kappa:1.0026010390102864, Execution Config: 0x0001> at 10.65 for exceeding 10.0 times its cutoff time of 1.0026010390102864 (secs)
+[INFO ] Making best attempt to save state. This state may be dirty, in that it was taken in the middle of an iteration and consequently may not be restorable. It may also be corrupt depending on the exact reason we are shutting down.

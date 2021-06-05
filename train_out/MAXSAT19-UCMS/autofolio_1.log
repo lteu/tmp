@@ -1,0 +1,51 @@
+[INFO ] Logging to: /home/academic/toliu/af/autofolio_asc/train_out/MAXSAT19-UCMS/smac-output/autofolio/log-run1.txt
+[INFO ] Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f), running on OpenJDK 64-Bit Server VM (11.0.11) and Linux 4.15.0-143-generic (amd64) 
+[INFO ] Call String: smac --scenarioFile train_out/MAXSAT19-UCMS/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/MAXSAT19-UCMS/smac-output 
+[INFO ] SMAC started at: May 20, 2021, 4:43:24 AM. Minimizing mean runtime.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun (file:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar) to field java.lang.ProcessImpl.pid
+WARNING: Please consider reporting this to the maintainers of ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO ] First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 3.0; estimate based on 1 runs.
+[INFO ] Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT19-UCMS/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/MAXSAT19-UCMS' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 3.0; estimate now based on 2 runs.
+[INFO ] Incumbent changed to: config 2 (internal ID: 0x41B2), with mean runtime: 2.0; estimate based on 2 runs.
+[INFO ] Sample call for new incumbent config 2 (internal ID: 0x41B2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT19-UCMS/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'yes' -@1:F:concentrate 'yes' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/MAXSAT19-UCMS' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:max-solver '36' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:opt-mode '4' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:time-pre-solvers '1'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 2.0; estimate now based on 3 runs.
+[WARN ] Algorithm Run Result reported a runtime of 3.0 (secs) that exceeded it's cutoff time of 1.0052009377360345 (secs) by 1.9947990622639655 (secs). Next warning at 2.9947990622639655 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 2.0; estimate now based on 4 runs.
+[INFO ] Incumbent changed to: config 4 (internal ID: 0xA1C2), with mean runtime: 1.0; estimate based on 4 runs.
+[INFO ] Sample call for new incumbent config 4 (internal ID: 0xA1C2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT19-UCMS/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/MAXSAT19-UCMS' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 5 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 6 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 7 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 8 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 9 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 10 runs.
+[WARN ] Algorithm Run Result reported a runtime of 4.0 (secs) that exceeded it's cutoff time of 1.0039009883731604 (secs) by 2.9960990116268396 (secs). Next warning at 3.9960990116268396 (secs)  
+[INFO ] Incumbent changed to: config 952 (internal ID: 0xE9193C), with mean runtime: 0.9; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 952 (internal ID: 0xE9193C): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT19-UCMS/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/MAXSAT19-UCMS' -@1:aspeed:time-limit '100' -@1:classifier 'SVM' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:svm-C '96.75364877956851' -@1:voting:svm-gamma '0.002541455064777374'  
+[INFO ] Incumbent changed to: config 954 (internal ID: 0xE98FBD), with mean runtime: 0.1; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 954 (internal ID: 0xE98FBD): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT19-UCMS/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/MAXSAT19-UCMS' -@1:aspeed:time-limit '100' -@1:classifier 'SVM' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:svm-C '96.75364877956851' -@1:voting:svm-gamma '0.002541455064777374'  
+[INFO ] Incumbent changed to: config 965 (internal ID: 0xECD643), with mean runtime: 0.0; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 965 (internal ID: 0xECD643): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT19-UCMS/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/MAXSAT19-UCMS' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] 
+=======================================================================================
+SMAC has finished. Reason: wall-clock time limit (71940.705 s) has been reached.   
+Total number of runs performed: 33909, total configurations tried: 17527.
+Total CPU time used: 48232 s, total wallclock time used: 71941 s.
+SMAC's final incumbent: config 965 (internal ID: 0xECD643), with estimated mean runtime: 0.0, based on 10 run(s) on 10 training instance(s).
+Sample call for this final incumbent:
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT19-UCMS/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'rmsd' -@1:aslib-dir 'autofolio_arff/train/MAXSAT19-UCMS' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'
+=======================================================================================
+[INFO ] 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Additional information about run 1 in:/home/academic/toliu/af/autofolio_asc/train_out/MAXSAT19-UCMS/smac-output/autofolio
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

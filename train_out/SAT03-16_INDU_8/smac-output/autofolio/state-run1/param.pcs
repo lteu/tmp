@@ -1,0 +1,62 @@
+# claspfolio-2.0.0 parameter file
+# *** NOTE: *** works only with revision clasp-2.1.0 or higher!
+# F: flag (yes = flag set; no = flag removed)
+# S: skip (only to model constraints for the parameters; won't be given to
+# clasp)
+# :[String]: will not be parsed for clasp (only syntatic sugar for the parameter file)
+# :[int]: alignment of complex parameters
+# i : integer range
+# l : logarithmic transformation (n > 0)
+# ---
+@1:separator {W}[W] 
+@1:solver {selectors/flexfolio/src/flexfolio_train.py}[selectors/flexfolio/src/flexfolio_train.py]
+# ---
+@1:approach {CLASSVOTER, SBS}[CLASSVOTER]
+@1:classifier {SVM, GRADIENTBOOSTING, RANDOMFOREST}[RANDOMFOREST]
+#@1:max-feature-time [1,600][60]il
+# Performance Preprocessing
+@1:approx-weights {None,max,rmsd,nrmsd}[None]
+@1:performance_trans {None,log,zscore}[None]
+#@1:contr-filter [0.0,0.32][0.0] # removing this option since it has some problems with the pre-specified pre-solver
+#normalization
+@1:normalize {zscore,linear,dec,pca,none}[zscore]
+@1:pca-dims[2,12][7]i
+@1:impute {none, median, mean, most_frequent}[mean]
+#svm
+@1:voting:svm-gamma[0.001,1.0][1]l
+@1:voting:svm-C[0.1,102.4][1.6]l
+#random forrest
+@1:voting:rf-max_features {sqrt, log2, None}[sqrt]
+@1:voting:rf-criterion {gini,entropy} [entropy]
+@1:voting:rf-min_samples_leaf [1,128][10]li
+#gradient boosting
+@1:voting:gb-max_depth [1,16][4]i
+@1:voting:gb-min_samples_leaf [1,128][16]li
+@1:voting:gb-max_features {sqrt, log2, None}[sqrt]
+
+#--aspeed-opt
+@1:F:aspeed-opt {no,yes}[no]
+@1:F:concentrate {yes,no}[no]
+@1:max-solver [1,100][3]il
+@1:opt-mode {1,2,3,4,5,6}[1]
+@1:aspeed:time-limit {100}[100] # maximal time for grounding and solving
+@1:time-pre-solvers [1,2048][256]il
+
+@1:classifier | @1:approach in {CLASSVOTER}
+@1:pca-dims | @1:normalize in {pca}
+@1:voting:svm-gamma | @1:classifier in {SVM}
+@1:voting:svm-C | @1:classifier in {SVM}
+@1:voting:rf-max_features | @1:classifier in {RANDOMFOREST}
+@1:voting:rf-criterion | @1:classifier in {RANDOMFOREST}
+@1:voting:rf-min_samples_leaf | @1:classifier in {RANDOMFOREST}
+@1:voting:gb-max_depth | @1:classifier in {GRADIENTBOOSTING}
+@1:voting:gb-min_samples_leaf | @1:classifier in {GRADIENTBOOSTING}
+@1:voting:gb-max_features | @1:classifier in {GRADIENTBOOSTING}
+
+@1:F:concentrate | @1:F:aspeed-opt in {yes}
+@1:max-solver | @1:F:aspeed-opt in {yes}
+@1:opt-mode | @1:F:aspeed-opt in {yes}
+@1:time-pre-solvers | @1:F:aspeed-opt in {yes}
+
+@1:aslib-dir{autofolio_arff/train/SAT03-16_INDU_8}[autofolio_arff/train/SAT03-16_INDU_8]
+@1:mem-limit {2048}[2048]

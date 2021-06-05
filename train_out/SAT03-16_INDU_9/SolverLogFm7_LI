@@ -1,0 +1,95 @@
+% [WARNING]: Not found: autofolio_arff/train/SAT03-16_INDU_9/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/SAT03-16_INDU_9/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/SAT03-16_INDU_9/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/maris05/DriverLog/driverlog1_v01i.renamed-as.sat05-3960.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc973.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11813.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11773.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Race-2010-CNF/software-verification/post/zfcp.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2011-CNF/leberre/2dimensionalstrippacking/E07N15.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/xinetd_vc56703.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/xinetd_vc56687.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Race-2010-CNF/software-verification/nec/hard-11-U-7061.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Race-2010-CNF/software-verification/nec/hard-20-U-10652.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Race-2010-CNF/software-verification/nec/hard-25-U-7061.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/itox_vc965.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc1093.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/maris05/DriverLog/driverlog1_ks99i.shuffled-as.sat05-4018.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11803.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc11935.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/narain05/vpn/clauses-10.shuffled-as.sat05-1965.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/maris05/Depots/depots1_v01a.renamed-as.sat05-3946.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2005-CNF/maris05/DriverLog/driverlog1_v01a.renamed-as.sat05-3959.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of SAT-Comp-2016-CNF/app16/gaussian.c.75.smt2-cvc4.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc12016.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc12070.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/itox_vc1216.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/xinetd/itox_vc979.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc950.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc962.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc12062.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2011-CNF/jarvisalo/smtqfbv-aigs/smtlib-qfbv-aigs-ext_con_032_008_0256-tseitin.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/narain/clauses-10.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc949.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/hsatv17/hsat_vc12072.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of SAT-Comp-2016-CNF/app16/sokoban-p20.sas.ex.13.cnf.gz are NA although the corresponding feature step is not OK.
+% [WARNING]: Not all features of industrial/SAT-Comp-2007-CNF/babic/dspam/dspam_dump_vc1080.cnf.gz are NA although the corresponding feature step is not OK.
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/SAT03-16_INDU_9/tmpMs9snl --preconf sbs --aslib-dir autofolio_arff/train/SAT03-16_INDU_9 --test-set (1;3) --train-set (1;0),(1;1),(1;2),(1;4),(1;5),(1;6),(1;7),(1;8),(1;9)
+% Read autofolio_arff/train/SAT03-16_INDU_9/description.txt
+% Read autofolio_arff/train/SAT03-16_INDU_9/algorithm_runs.arff
+% Read autofolio_arff/train/SAT03-16_INDU_9/feature_values.arff
+% Read autofolio_arff/train/SAT03-16_INDU_9/feature_runstatus.arff
+% Read autofolio_arff/train/SAT03-16_INDU_9/cv.arff
+% 1-th repetition: 180,180,180,180,180,180,180,180,180,180 distribution
+% Used Feature Steps: base,tud_base
+% Used features: VCG-VAR-entropy,tud_SymmTime1_valuesRate,POSNEG-RATIO-VAR-entropy,tud_SymmTime0_zcount,POSNEG-RATIO-VAR-mean,tud_clause-variable_polarity_valuesRate,POSNEG-RATIO-CLAUSE-entropy,tud_Clause-Var_steps,tud_SymmTime0_entropy,tud_SymmTime2_min,tud_clause-variable_polarity_max,tud_clauses,tud_SymmTime0_mean,tud_clauses_size_>=_9,tud_SymmTime1_mode,HORNY-VAR-mean,tud_SymmTime0_stdev,tud_SymmTime0_mode,tud_variable-clause_polarity_min,tud_SymmTime2_mean,nvars,tud_variable-clause_degree_mean,vars-clauses-ratio,tud_variable-clause_degree_mode,tud_SymmTime2_max,VCG-CLAUSE-mean,POSNEG-RATIO-VAR-stdev,VG-mean,tud_SymmTime2_Q1,tud_SymmTime2_Q3,tud_SymmTime2_Q2,VCG-CLAUSE-min,CG-mean,tud_variable-clause_polarity_entropy,reducedClauses,BINARYp,tud_SymmTime0_Q3,tud_SymmTime0_Q2,tud_SymmTime0_Q1,POSNEG-RATIO-CLAUSE-min,tud_variable-clause_polarity_zcount,tud_variable-clause_degree_Q1,tud_variable-clause_degree_Q2,tud_variable-clause_degree_Q3,nvarsOrig,CG-coeff-variation,CG-max,CG-min,tud_variable-clause_polarity_valuesRate,POSNEG-RATIO-CLAUSE-max,tud_SymmTime1_stdev,tud_clause-variable_degree_mode,tud_clause-variable_degree_stdev,VCG-VAR-max,VCG-VAR-min,tud_clause-variable_degree_entropy,tud_variable-clause_polarity_Q1,tud_variable-clause_degree_zcount,tud_variable-clause_polarity_stdev,tud_clause-variable_degree_min,VCG-VAR-coeff-variation,tud_clause-variable_degree_max,tud_SymmTime1_max,reducedVars,tud_Symmetry1_steps,tud_SymmTime2_mode,tud_vars,POSNEG-RATIO-CLAUSE-coeff-variation,nclauses,UNARY,tud_SymmTime2_zcount,tud_clause-variable_polarity_mode,tud_variable-clause_polarity_Q2,tud_variable-clause_polarity_Q3,tud_variable-clause_polarity_mode,cluster-coeff-coeff-variation,VCG-CLAUSE-entropy,tud_clauses_size_3,cluster-coeff-max,tud_clauses_size_2,tud_clause-variable_polarity_stdev,cluster-coeff-min,tud_clauses_size_1,tud_SymmTime2_valuesRate,POSNEG-RATIO-VAR-min,HORNY-VAR-min,tud_clauses_size_7,POSNEG-RATIO-VAR-max,nclausesOrig,tud_clause-variable_degree_Q2,tud_clause-variable_degree_Q3,tud_clause-variable_degree_Q1,tud_variable-clause_degree_entropy,VCG-CLAUSE-coeff-variation,VG-coeff-variation,HORNY-VAR-entropy,cluster-coeff-entropy,tud_Symmetry_computation_steps,tud_SymmTime0_min,tud_SymmTime1_zcount,HORNY-VAR-max,tud_SymmTime1_Q1,tud_SymmTime1_Q2,tud_SymmTime1_Q3,tud_clauses_size_8,tud_SymmTime0_valuesRate,VCG-CLAUSE-max,VCG-VAR-mean,tud_variable-clause_polarity_mean,tud_clauses_size_6,tud_clauses_size_5,tud_clauses_size_4,HORNY-VAR-coeff-variation,tud_variable-clause_degree_min,tud_clause-variable_polarity_min,tud_clause-variable_polarity_Q1,tud_clause-variable_polarity_Q2,tud_clause-variable_polarity_Q3,tud_variable-clause_degree_max,tud_clause-variable_polarity_mean,tud_variable-clause_polarity_max,tud_SymmTime1_min,tud_SymmTime2_entropy,tud_SymmTime1_mean,tud_SymmTime0_max,TRINARYp,tud_horn_clauses,tud_SymmTime2_stdev,tud_variable-clause_degree_valuesRate,tud_Symmetry0_steps,horn-clauses-fraction,CG-entropy,tud_variable-clause_degree_stdev,cluster-coeff-mean,tud_clause-variable_polarity_entropy,VG-min,tud_clause-variable_degree_valuesRate,tud_SymmTime1_entropy,tud_Symmetry2_steps,POSNEG-RATIO-CLAUSE-mean,tud_clause-variable_degree_mean,VG-max
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 1800
+% Algorithms: 		 10
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 236
+% Unsolvable Instances (runtime): 	 236
+% Valid Instances: 	 1564
+% Presolved: 		 28
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 1440
+% Size Test Set: 180
+% Backup Solver: maplecomsps_lrb
+% Input Instances for Training: 1440 (-unsolvable)
+% Used Instances for Training: 1440 (-unsolvable)
+% Train with SBS
+% PAR10 on current test set: 10746.26 (180 instances)
+% 
+%  >>> Instances: 180 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 1084.031628 (422.894110)
+% Par10 time: 7583.887183 (422.725279)
+% #TOs: 26 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 37
+% Solved (perc) (with unsolved): 0.7944
+% PAR1 (with unsolved): 1496.26
+% PAR10 (with unsolved): 10746.26
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 37
+% Solved (perc) (without unsolved): 0.7944
+% PAR1 (without unsolved): 1496.26
+% PAR10 (without unsolved): 10746.26
+% 
+% Time used by each solver: {'maplecomsps': 0, 'glucose_kiel': 0, 'maple_glucose': 0, 'maplecms': 0, 'scavel_sat': 0, 'maplecomsps_lrb': 269327.04699999985, 'beans_and_eggs': 0, 'splatz': 0, 'cominisatps': 0, 'riss5': 0}
+% Optimal Time used by each solver: {'maplecomsps': 141258.74300000002, 'glucose_kiel': 11699.162000000004, 'maple_glucose': 5981.263999999999, 'maplecms': 4826.384, 'scavel_sat': 581.7299999999999, 'maplecomsps_lrb': 10540.224, 'beans_and_eggs': 264.036, 'splatz': 15412.442, 'cominisatps': 1251.04, 'riss5': 3310.668}
+Result for SMAC: 634327.047000

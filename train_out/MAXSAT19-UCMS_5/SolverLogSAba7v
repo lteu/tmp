@@ -1,0 +1,19 @@
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_5/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_5/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_5/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Feature vector found twice: 1600.0,9444.0,1600.0,7844.0,0.0,0.203978,0.07,0.203978,0.576492,0.252212,0.0,0.666667,0.953571,0.003202,0.238887,0.00125,0.00375,0.953571,0.0,0.025625,0.128251,0.0,0.003202,7.812845,0.00051,1.0,1.985141,1.0,0.0,1.0,1.0,0.0,0.003202,7.812845,0.00051,1.0,1.985141,1.0,0.002684,1.967747,0.00051,0.20385,0.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.02,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 12161.0,35092.0,0.0,0.0,-512.0,-512.0,7.46,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

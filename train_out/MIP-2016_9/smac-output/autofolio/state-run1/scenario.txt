@@ -1,0 +1,10 @@
+execdir = .
+deterministic = 1
+run_obj = runtime
+overall_obj = mean
+cutoff_time = 1800
+wallclock-limit = 35981
+paramfile = train_out/MIP-2016_9/autofolio.pcs
+algo = python wrappers/flexfolio/ff_wrapper.py train_out/MIP-2016_9/config_wrapper.json
+test_instance_file = train_out/MIP-2016_9/test.txt
+instance_file = train_out/MIP-2016_9/train.txt

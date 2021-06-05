@@ -1,0 +1,512 @@
+21:41:19.675 [main] INFO  c.u.c.b.a.l.ComplexLoggingOptions - Logging to: /home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_5/smac-output/autofolio/log-run1.txt
+21:41:19.682 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Algorithm Execution & Abstraction Toolkit is v2.08.00-master-766 (85fc099c674a) 
+21:41:19.682 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Java Runtime Environment is OpenJDK 64-Bit Server VM (11.0.11) 
+21:41:19.682 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of OS is Linux 4.15.0-143-generic (amd64) 
+21:41:19.682 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Random Forest Library is v1.05.01-master-106 (7fba58fe4271) 
+21:41:19.682 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f) 
+21:41:19.682 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - Call String: smac --scenarioFile train_out/GRAPHS-2015_5/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/GRAPHS-2015_5/smac-output 
+21:41:19.683 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ********** The next bit of output can be ignored, it is merely useful for debugging **********
+21:41:19.683 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========Enviroment Variables===========
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/217748/bus
+FTP_PROXY=http://passage.inf.unibz.it:8080/
+HOME=/home/academic/toliu
+HTTPS_PROXY=http://passage.inf.unibz.it:8080/
+HTTP_PROXY=http://passage.inf.unibz.it:8080/
+LANG=C.UTF-8
+LANGUAGE=en_US:en
+LC_CTYPE=C.UTF-8
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LESSOPEN=| /usr/bin/lesspipe %s
+LOGNAME=toliu
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+MAIL=/var/mail/toliu
+NO_PROXY=127.0.0.1,localhost
+OLDPWD=/home/academic/toliu
+PATH=/home/academic/toliu/af/autofolio_asc/test/bin:/home/academic/toliu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:af/aspeed:af/aspeed
+PWD=/home/academic/toliu/af/autofolio_asc
+SHELL=/bin/bash
+SHLVL=2
+SSH_CLIENT=172.21.168.122 64709 22
+SSH_CONNECTION=172.21.168.122 64709 46.18.25.1 22
+SSH_TTY=/dev/pts/44
+STY=39612.pts-44.ismard
+TERM=screen.xterm-256color
+TERMCAP=SC|screen.xterm-256color|VT 100/ANSI X3.64 virtual terminal:\
+	:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC:UP=\E[%dA:bs:bt=\E[Z:\
+	:cd=\E[J:ce=\E[K:cl=\E[H\E[J:cm=\E[%i%d;%dH:ct=\E[3g:\
+	:do=^J:nd=\E[C:pt:rc=\E8:rs=\Ec:sc=\E7:st=\EH:up=\EM:\
+	:le=^H:bl=^G:cr=^M:it#8:ho=\E[H:nw=\EE:ta=^I:is=\E)0:\
+	:li#25:co#80:am:xn:xv:LP:sr=\EM:al=\E[L:AL=\E[%dL:\
+	:cs=\E[%i%d;%dr:dl=\E[M:DL=\E[%dM:dc=\E[P:DC=\E[%dP:\
+	:im=\E[4h:ei=\E[4l:mi:IC=\E[%d@:ks=\E[?1h\E=:\
+	:ke=\E[?1l\E>:vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l:\
+	:ti=\E[?1049h:te=\E[?1049l:us=\E[4m:ue=\E[24m:so=\E[3m:\
+	:se=\E[23m:mb=\E[5m:md=\E[1m:mh=\E[2m:mr=\E[7m:\
+	:me=\E[m:ms:\
+	:Co#8:pa#64:AF=\E[3%dm:AB=\E[4%dm:op=\E[39;49m:AX:\
+	:vb=\Eg:G0:as=\E(0:ae=\E(B:\
+	:ac=\140\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:\
+	:po=\E[5i:pf=\E[4i:Km=\E[M:k0=\E[10~:k1=\EOP:k2=\EOQ:\
+	:k3=\EOR:k4=\EOS:k5=\E[15~:k6=\E[17~:k7=\E[18~:\
+	:k8=\E[19~:k9=\E[20~:k;=\E[21~:F1=\E[23~:F2=\E[24~:\
+	:F3=\E[1;2P:F4=\E[1;2Q:F5=\E[1;2R:F6=\E[1;2S:\
+	:F7=\E[15;2~:F8=\E[17;2~:F9=\E[18;2~:FA=\E[19;2~:\
+	:FB=\E[20;2~:FC=\E[21;2~:FD=\E[23;2~:FE=\E[24;2~:kb=:\
+	:K2=\EOE:kB=\E[Z:kF=\E[1;2B:kR=\E[1;2A:*4=\E[3;2~:\
+	:*7=\E[1;2F:#2=\E[1;2H:#3=\E[2;2~:#4=\E[1;2D:%c=\E[6;2~:\
+	:%e=\E[5;2~:%i=\E[1;2C:kh=\E[1~:@1=\E[1~:kH=\E[4~:\
+	:@7=\E[4~:kN=\E[6~:kP=\E[5~:kI=\E[2~:kD=\E[3~:ku=\EOA:\
+	:kd=\EOB:kr=\EOC:kl=\EOD:km:
+USER=toliu
+VIRTUAL_ENV=/home/academic/toliu/af/autofolio_asc/test
+WINDOW=0
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XDG_RUNTIME_DIR=/run/user/217748
+XDG_SESSION_ID=2100
+ftp_proxy=http://passage.inf.unibz.it:8080/
+http_proxy=http://passage.inf.unibz.it:8080/
+https_proxy=http://passage.inf.unibz.it:8080/
+no_proxy=127.0.0.1,localhost
+
+21:41:19.683 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - Hostname:ismard
+21:41:19.683 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========System Properties==============
+ERRLOG=/home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_5/smac-output/autofolio/log-err1.txt
+NUMRUN=1
+OUTPUTDIR=/home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_5/smac-output/autofolio
+ROOT-LEVEL=INFO
+RUNLOG=/home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_5/smac-output/autofolio/log-run1.txt
+STDOUT-LEVEL=INFO
+WARNLOG=/home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_5/smac-output/autofolio/log-warn1.txt
+awt.toolkit=sun.awt.X11.XToolkit
+file.encoding=UTF-8
+file.separator=/
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.awt.printerjob=sun.print.PSPrinterJob
+java.class.path=/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/conf/:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/patches/:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/DomainInter.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/Jama-1.0.2.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk-src.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/commons-collections-3.2.1-sources.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/commons-collections-3.2.1.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/commons-io-2.1.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/commons-math-2.2.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/commons-math3-3.2.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/exp4j-0.3.10.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/fastrf-src.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/fastrf.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/guava-14.0.1.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/jackson-annotations-2.3.1.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/jackson-core-2.3.1.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/jackson-databind-2.3.1.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/jcip-annotations-src.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/jcip-annotations.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/jcommander.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/jmatharray.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/logback-access-1.1.2.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/logback-classic-1.1.2.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/logback-core-1.1.2.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/numerics4j-1.3.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/opencsv-2.3.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/slf4j-api-1.7.5.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/smac-src.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/smac.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/spi-0.2.4.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/*.jar:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/patches/
+java.class.version=55.0
+java.home=/usr/lib/jvm/java-11-openjdk-amd64
+java.io.tmpdir=/tmp
+java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+java.runtime.name=OpenJDK Runtime Environment
+java.runtime.version=11.0.11+9-Ubuntu-0ubuntu2.18.04
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=11
+java.vendor=Ubuntu
+java.vendor.url=https://ubuntu.com/
+java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+java.version=11.0.11
+java.version.date=2021-04-20
+java.vm.compressedOopsMode=32-bit
+java.vm.info=mixed mode, sharing
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=11
+java.vm.vendor=Ubuntu
+java.vm.version=11.0.11+9-Ubuntu-0ubuntu2.18.04
+jdk.debug=release
+line.separator=
+
+logback.configurationFile=ca/ubc/cs/beta/aeatk/logging/complex-logback.xml
+os.arch=amd64
+os.name=Linux
+os.version=4.15.0-143-generic
+path.separator=:
+sun.arch.data.model=64
+sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib
+sun.cpu.endian=little
+sun.cpu.isalist=
+sun.io.unicode.encoding=UnicodeLittle
+sun.java.command=ca.ubc.cs.beta.aeatk.ant.execscript.Launcher ca.ubc.cs.beta.smac.executors.SMACExecutor --scenarioFile train_out/GRAPHS-2015_5/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/GRAPHS-2015_5/smac-output
+sun.java.launcher=SUN_STANDARD
+sun.jnu.encoding=UTF-8
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+sun.os.patch.level=unknown
+user.dir=/home/academic/toliu/af/autofolio_asc
+user.home=/home/academic/toliu
+user.language=en
+user.name=toliu
+user.timezone=Europe/Rome
+
+21:41:19.684 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - ==========Configuration Options==========
+[SMACOptions]
+ adaptiveCapping = true
+ alwaysRunInitialConfiguration = true
+ capAddSlack = 1.0
+ capSlack = 1.3
+classicInitModeOpts = [ClassicInitializationProcedureOptions]
+		 initialIncumbentRuns = 1
+
+dciModeOpts = [DoublingCappingInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+
+ucip = [UnbiasChallengerInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+		 cpulimit = 0
+
+ deterministicInstanceOrdering = false
+ doValidation = false
+ execMode = SMAC
+ experimentDir = /home/academic/toliu/af/autofolio_asc/
+ expFunc = null
+help = [HelpOptions]
+		 showHiddenParameters = false
+		 showHelp = false
+		 helpLevel = BASIC
+		 showVersion = false
+		 helpDefaults = /home/academic/toliu/.aeatk/help.opt
+
+ initialChallengeRuns = 1
+ initialIncumbent = DEFAULT
+ initializationMode = CLASSIC
+ intensificationPercentage = 0.5
+ iterativeCappingBreakOnFirstCompletion = false
+ iterativeCappingK = 1
+logOptions = [ComplexLoggingOptions]
+		 consoleLogLevel = INFO
+		 logLevel = INFO
+
+ maxIncumbentRuns = 2000
+mbOptions = [ModelBuildingOptions]
+		 maskCensoredDataAsKappaMax = false
+		 maskInactiveConditionalParametersAsDefaultValue = true
+		 maskCensoredDataAsUncensored = false
+		 imputationIterations = 2
+
+ modelHashCodeFile = null
+ numberOfChallengers = 10
+ numberOfRandomConfigsInEI = 10000
+ numPCA = 7
+ optionFile = null
+ optionFile2 = null
+randomForestOptions = [RandomForestOptions]
+		 brokenVarianceCalculation = false
+		 freeMemoryPercentageToSubsample = 0.25
+		 fullTreeBootstrap = false
+		 ignoreConditionality = false
+		 imputeMean = false
+		 logModel = true
+		 minVariance = 1.0E-14
+		 numTrees = 10
+		 penalizeImputedValues = false
+		 preprocessMarginal = true
+		 ratioFeatures = 0.8333333333333334
+		 shuffleImputedValues = false
+		 splitMin = 10
+		 storeDataInLeaves = false
+		 subsamplePercentage = 0.9
+		 subsampleValuesWhenLowMemory = false
+
+runGroupOptions = [RunGroupOptions]
+		 runGroupName = %SCENARIO_NAME
+		 runGroupExit = false
+		 replacementChar = %
+
+scenarioConfig = [ScenarioOptions]
+		 _runObj = RUNTIME
+		 intraInstanceObj = MEAN
+		 interInstanceObj = MEAN
+		limitOptions = [TerminationCriteriaOptions]
+				 tunerTimeout = 2147483647
+				 numIterations = 2147483647
+				 runtimeLimit = 35074
+				 totalNumRunsLimit = 9223372036854775807
+				 countSMACTimeAsTunerTime = true
+				 challengeIncumbentAttempts = 1000
+				 fileToWatch = null
+
+		instanceOptions = [ProblemInstanceOptions]
+				 instanceFile = train_out/GRAPHS-2015_5/train.txt
+				 instanceFeatureFile = null
+				 testInstanceFile = train_out/GRAPHS-2015_5/test.txt
+				 checkInstanceFilesExist = false
+				 useInstances = true
+				 instanceSuffix = null
+				 testInstanceSuffix = null
+				 ignoreFeatures = false
+
+		 scenarioFile = /home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_5/autofolio.scen
+		 outputDirectory = train_out/GRAPHS-2015_5/smac-output
+		 invalidScenarioReason = null
+		algoExecOptions = [AlgorithmExecutionOptions]
+				 algoExec = python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_5/config_wrapper.json
+				 algoExecDir = .
+				 deterministic = true
+				 cutoffTime = 1800.0
+				 cutoffLength = -1.0
+				 additionalContext = {}
+				taeOpts = [TargetAlgorithmEvaluatorOptions]
+						 targetAlgorithmEvaluator = CLI
+						 abortOnCrash = false
+						 abortOnFirstRunCrash = true
+						 retryCount = 0
+						 cacheRuns = false
+						 cacheDebug = false
+						 useDynamicCappingExclusively = false
+						 reportStrictlyIncreasingRuntimes = false
+						 boundRuns = false
+						 maxConcurrentAlgoExecs = 1
+						 exitOnFailure = false
+						 runHashCodeFile = null
+						 leakMemory = false
+						 leakMemoryAmount = 1024
+						 verifySAT = null
+						 checkSATConsistency = true
+						 checkSATConsistencyException = true
+						 callObserverBeforeCompletion = true
+						prePostOptions = [PrePostCommandOptions]
+								 preCommand = null
+								 postCommand = null
+								 exceptionOnError = false
+								 logOutput = true
+								 directory = /home/academic/toliu/af/autofolio_asc/.
+
+						 checkResultOrderConsistent = false
+						 skipOutstandingEvaluationsTAE = false
+						 logRequestResponses = false
+						 logRequestResponsesRCOnly = false
+						 trackRunsScheduled = false
+						 trackRunsScheduledResolution = 1.0
+						 uncleanShutdownCheck = true
+						 killCaptimeExceedingRun = true
+						 killCaptimeExceedingRunFactor = 10.0
+						 checkRunConfigsUnique = true
+						 checkRunConfigsUniqueException = true
+						 observeWalltimeIfNoRuntime = true
+						 observeWalltimeScale = 0.95
+						 observeWalltimeDelay = 5.0
+						 synchronousObserver = true
+						 taeDefaults = /home/academic/toliu/.aeatk/tae.opt
+						ttaedo = [TransformTargetAlgorithmEvaluatorDecoratorOptions]
+								 transform = false
+								 transformValidValuesOnly = true
+								 SAT_runtime_transform = R
+								 SAT_quality_transform = Q
+								 UNSAT_runtime_transform = R
+								 UNSAT_quality_transform = Q
+								 TIMEOUT_runtime_transform = R
+								 TIMEOUT_quality_transform = Q
+								 other_runtime_transform = R
+								 other_quality_transform = Q
+
+						tForkOptions = [ForkingTargetAlgorithmEvaluatorDecoratorOptions]
+								 forkToTAE = null
+								fPolicyOptions = [ForkingTargetAlgorithmEvaluatorDecoratorPolicyOptions]
+										 fPolicy = null
+										 duplicateOnSlaveQuickTimeout = 5
+
+
+						 fileToWatch = null
+						 warnIfNoResponseFromTAE = 120
+						 taeStopProcessingOnShutdown = true
+						 filecache = false
+						 fileCacheSource = null
+						 fileCacheOutput = null
+						 fileCacheCrashOnMiss = false
+
+				paramFileDelegate = [ParamConfigurationSpaceOptions]
+						 paramFile = train_out/GRAPHS-2015_5/autofolio.pcs
+						 searchSubspace = null
+						 searchSubspaceFile = null
+						 continuousNeighbours = 4
+
+
+
+seedOptions = [SeedOptions]
+		 seedOffset = 0
+		 numRun = 1
+		 initialSeedMap = {}
+
+ smacDefaults = /home/academic/toliu/.aeatk/smac.opt
+stateOpts = [StateFactoryOptions]
+		 stateSerializer = LEGACY
+		 statedeSerializer = LEGACY
+		 restoreStateFrom = null
+		 restoreIteration = null
+		 restoreScenario = null
+		 cleanOldStatesOnSuccess = true
+		 saveContextWithState = true
+
+trackingOptions = [ParamConfigurationOriginTrackingOptions]
+		 configTracking = false
+
+validationOptions = [ValidationOptions]
+		 maxTimestamp = -1.0
+		 minTimestamp = 0.0
+		 multFactor = 2.0
+		 numberOfTestInstances = 2147483647
+		 numberOfTestSeedsPerInstance = 1000
+		 numberOfValidationRuns = 1
+		 outputFileSuffix = 
+		 saveStateFile = false
+		 useWallClockTime = true
+		 validateAll = false
+		 validateOnlyIfTunerTimeReached = 0.0
+		 validateOnlyIfWallTimeReached = 0.0
+		 validateOnlyLastIncumbent = true
+		 validationHeaders = true
+		 validationRoundingMode = UP
+
+warmStartOptions = [WarmStartOptions]
+		 warmStartStateFrom = null
+		 restoreIteration = 2147483647
+
+ validationSeed = 0
+ saveRunsEveryIteration = false
+ stateQuickSaves = true
+ shutdownTAEWhenDone = true
+ validationCores = null
+ shareModelMode = false
+ shareRunDataFrequency = 300
+
+[AnalyticTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ cores = 0
+ observerFrequency = 100
+ func = CAMELBACK
+ scaleDelay = 1.0
+
+[BlackHoleTargetAlgorithmEvaluatorOptions]
+ warnings = true
+
+[CommandLineTargetAlgorithmEvaluatorOptions]
+ observerFrequency = 500
+ concurrentExecution = true
+ cores = 1
+ logAllCallStrings = false
+ logAllResultLines = false
+ logAllCallsAndResultLines = false
+ logAllProcessOutput = false
+ listenForUpdates = true
+ paramArgumentsContainQuotes = false
+ pgEnvKillCommand = null
+ pgNiceKillCommand = bash -c "kill -s TERM -%pid"
+ pgForceKillCommand = bash -c "kill -s KILL -%pid"
+ procNiceKillCommand = kill -s TERM %pid
+ procForceKillCommand = kill -s KILL %pid
+ smacDefaults = /home/academic/toliu/.aeatk/cli-tae.opt
+
+[ConstantTargetAlgorithmEvaluatorOptions]
+ runResult = SAT
+ runtime = 1.0
+ quality = 0.0
+ runlength = 0.0
+ additionalRunData = 
+
+[IPCTargetAlgorithmEvaluatorOptions]
+ persistent = false
+ ipcMechanism = UDP
+ encodingMechanism = CALL_STRING
+ remoteHost = 127.0.0.1
+ remotePort = 5050
+ udpPacketSize = 4096
+ localPort = 0
+ execScript = null
+ execScriptOutput = false
+ poolConnections = false
+ ipcDefaults = /home/academic/toliu/.aeatk/ipc-tae.opt
+ asyncThreads = 65
+
+[PreloadedResponseTargetAlgorithmEvaluatorOptions]
+ preloadedResponses = 
+ runLength = -1.0
+ quality = 0.0
+ additionalRunData = 
+
+[RandomResponseTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ additionalRunData = 
+ cores = 0
+ maxResponse = 10.0
+ minResponse = 0.0
+ observerFrequency = 500
+ trendCoefficient = 0.0
+ seed = 1622662879304
+ persistent = false
+ scaleDelay = 1.0
+
+
+21:41:19.922 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - SMAC started at: Jun 2, 2021, 9:41:19 PM. Minimizing mean runtime.
+21:41:49.356 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 29.0; estimate based on 1 runs.
+21:41:49.358 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_5/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_5' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+21:42:19.481 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 29.0; estimate now based on 2 runs.
+21:43:06.691 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported a runtime of 47.0 (secs) that exceeded it's cutoff time of 38.702600317421556 (secs) by 8.297399682578444 (secs). Next warning at 9.297399682578444 (secs)  
+21:43:37.067 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 29.333333333333332; estimate now based on 3 runs.
+21:44:40.641 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported a runtime of 63.0 (secs) that exceeded it's cutoff time of 38.702600317421556 (secs) by 24.297399682578444 (secs). Next warning at 25.297399682578444 (secs)  
+21:44:40.641 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported wallclock time of 63.523 (secs) that exceeded it's cutoff time of 38.702600317421556 (secs) by 24.820399682578447 (secs). Next warning at 25.820399682578447 (secs)  
+21:45:11.877 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 29.5; estimate now based on 4 runs.
+21:46:44.313 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 4 (internal ID: 0xA1C2), with mean runtime: 22.75; estimate based on 4 runs.
+21:46:44.314 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 4 (internal ID: 0xA1C2): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_5/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_5' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+21:47:09.034 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 23.0; estimate now based on 5 runs.
+21:47:33.341 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 23.0; estimate now based on 6 runs.
+21:50:44.663 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 5 (internal ID: 0x11FE8), with mean runtime: 22.666666666666668; estimate based on 6 runs.
+21:50:44.664 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 5 (internal ID: 0x11FE8): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_5/config_wrapper.json 3 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_5' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+21:51:09.550 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 22.857142857142858; estimate now based on 7 runs.
+21:52:32.224 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 23.0; estimate now based on 8 runs.
+21:54:28.838 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 23.11111111111111; estimate now based on 9 runs.
+21:55:24.463 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported a runtime of 55.0 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 25.397399358105655 (secs). Next warning at 26.397399358105655 (secs)  
+21:55:24.464 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported wallclock time of 55.593 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 25.99039935810566 (secs). Next warning at 26.99039935810566 (secs)  
+21:55:47.957 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Updated estimated mean runtime of the same incumbent: 23.1; estimate now based on 10 runs.
+22:16:04.621 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported a runtime of 57.0 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 27.397399358105655 (secs). Next warning at 28.397399358105655 (secs)  
+22:16:04.622 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported wallclock time of 57.286 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 27.683399358105657 (secs). Next warning at 28.683399358105657 (secs)  
+23:35:43.019 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 115 (internal ID: 0x1B84C5), with mean runtime: 22.9; estimate based on 10 runs.
+23:35:43.020 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 115 (internal ID: 0x1B84C5): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_5/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_5' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'zscore' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+00:19:13.867 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported a runtime of 69.0 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 39.39739935810566 (secs). Next warning at 40.39739935810566 (secs)  
+00:19:13.867 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported wallclock time of 69.219 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 39.61639935810565 (secs). Next warning at 40.61639935810565 (secs)  
+00:20:26.059 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported wallclock time of 71.885 (secs) that exceeded it's cutoff time of 30.90260012854934 (secs) by 40.98239987145067 (secs). Next warning at 41.98239987145067 (secs)  
+00:21:38.683 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported a runtime of 72.0 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 42.39739935810566 (secs). Next warning at 43.39739935810566 (secs)  
+00:21:38.683 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported wallclock time of 72.552 (secs) that exceeded it's cutoff time of 29.602600641894345 (secs) by 42.949399358105666 (secs). Next warning at 43.949399358105666 (secs)  
+01:09:12.503 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported a runtime of 76.0 (secs) that exceeded it's cutoff time of 32.20260070485175 (secs) by 43.79739929514825 (secs). Next warning at 44.79739929514825 (secs)  
+01:26:58.179 [main] WARN  c.u.c.b.a.t.d.s.TimingCheckerTargetAlgorithmEvaluator - Algorithm Run Result reported wallclock time of 76.606 (secs) that exceeded it's cutoff time of 32.20260070485175 (secs) by 44.40339929514825 (secs). Next warning at 45.40339929514825 (secs)  
+07:19:44.934 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 152 (internal ID: 0xA27489), with mean runtime: 18.9; estimate based on 10 runs.
+07:19:44.935 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 152 (internal ID: 0xA27489): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_5/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_5' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+07:23:57.588 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 506 (internal ID: 0xA2BA1E), with mean runtime: 17.8; estimate based on 10 runs.
+07:23:57.589 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 506 (internal ID: 0xA2BA1E): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_5/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_5' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+07:25:54.355 [main] INFO  c.u.c.b.a.e.h.LogRuntimeStatistics - *****Developer Statistics*****
+ Count: 354
+ Incumbent ID: 506 (internal ID:0xA2BA1E)
+ Number of PISPs for Incumbent: 10
+ Number of Instances for Incumbent: 10
+ Number of Configurations Run: 509
+ Performance of the Incumbent: 17.800
+ Configuration Time Budget used: 34724.76 s (0%)
+ Configuration Time Budget remaining: 2.15E9 s
+ Wall-clock Time Budget used: 35074.44 s (100%)
+ Wall-clock Time Budget remaining: -0.44 s
+ Algorithm Runs used: 742.00  (0%)
+ Algorithm Runs remaining: 9.22E18 
+ Model/Iteration used: 353.00  (0%)
+ Model/Iteration remaining: 2.15E9 
+ Sum of Target Algorithm Execution Times (treating minimum value as 0.1): 34574.100 s
+ CPU time of Configurator: 150.656 s
+ User time of Configurator: 150.656 s
+ Outstanding Runs on Target Algorithm Evaluator: 0
+ Outstanding Requests on Target Algorithm Evaluator: 0
+ Total Reported Algorithm Runtime: 34568.000 s
+ Sum of Measured Wallclock Runtime: 34930.070 s
+ Max Memory: 1024 MB
+ Total Java Memory: 1024 MB
+ Free Java Memory: 846 MB
+ * PISP count is roughly the number of runs, but doesn't included redundant runs on the same problem instance & seed
+07:25:54.357 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - 
+=======================================================================================
+SMAC has finished. Reason: wall-clock time limit (35074.446 s) has been reached.   
+Total number of runs performed: 742, total configurations tried: 509.
+Total CPU time used: 34725 s, total wallclock time used: 35074 s.
+SMAC's final incumbent: config 506 (internal ID: 0xA2BA1E), with estimated mean runtime: 17.8, based on 10 run(s) on 10 training instance(s).
+Sample call for this final incumbent:
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/GRAPHS-2015_5/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'nrmsd' -@1:aslib-dir 'autofolio_arff/train/GRAPHS-2015_5' -@1:aspeed:time-limit '100' -@1:impute 'none' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'
+=======================================================================================
+07:25:54.358 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Additional information about run 1 in:/home/academic/toliu/af/autofolio_asc/train_out/GRAPHS-2015_5/smac-output/autofolio
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

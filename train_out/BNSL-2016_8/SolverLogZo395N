@@ -1,0 +1,52 @@
+% [WARNING]: Not found: autofolio_arff/train/BNSL-2016_8/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/BNSL-2016_8/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/BNSL-2016_8/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/BNSL-2016_8/tmplrKjIh --test-set (1;6) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;5),(1;7),(1;8),(1;9) --normalize pca --approx-weights None --mem-limit 2048 --aslib-dir autofolio_arff/train/BNSL-2016_8 --performance_trans zscore --time-limit 100 --impute mean --pca-dims 8 --approach SBS
+% Read autofolio_arff/train/BNSL-2016_8/description.txt
+% Read autofolio_arff/train/BNSL-2016_8/algorithm_runs.arff
+% Read autofolio_arff/train/BNSL-2016_8/feature_values.arff
+% Read autofolio_arff/train/BNSL-2016_8/feature_runstatus.arff
+% Read autofolio_arff/train/BNSL-2016_8/cv.arff
+% 1-th repetition: 106,106,106,106,106,107,106,106,106,106 distribution
+% Used Feature Steps: basic,basic_extended,lower_bounding,greedy_probing,A*_probing,ILP_probing,CP_probing
+% Used features: Pattern-database-lower-bound-Leaf-Count,Pattern-database-lower-bound-NTC-Max,Pattern-database-lower-bound-NTC-Count,Greedy-hill-climbing-Total-Degree-Mean,Simple-lower-bound-In-degree-Maximum,Pattern-database-lower-bound-NTC-Mean,Greedy-hill-climbing-Out-degree-Standard-Deviation,GOBNILP-In-degree-Standard-Deviation,GOBNILP-Total-Degree-Mean,Pattern-database-lower-bound-Out-degree-Standard-Deviation,GOBNILP-Root-Count,Anytime-window-A*-Error-bound,Anytime-window-A*-Out-degree-Maximum,CPBayes-Out-degree-Mean,GOBNILP-Total-Degree-Maximum,PSS-Maximum,CPBayes-Out-degree-Standard-Deviation,Anytime-window-A*-Out-degree-Standard-Deviation,VPOPS-Maximum,Pattern-database-lower-bound-In-degree-Mean,CPBayes-In-degree-Maximum,Simple-lower-bound-Root-Count,PSS-Mean,GOBNILP-Out-degree-Mean,Greedy-hill-climbing-In-degree-Standard-Deviation,GOBNILP-Total-Degree-Standard-Deviation,Simple-lower-bound-Out-degree-Mean,Simple-lower-bound-Out-degree-Standard-Deviation,Anytime-window-A*-Total-Degree-Mean,Greedy-hill-climbing-Out-degree-Mean,Anytime-window-A*-Out-degree-Mean,Simple-lower-bound-NTC-Max,Greedy-hill-climbing-Total-Degree-Maximum,VPOPS-Standard-Deviation,Greedy-hill-climbing-In-degree-Maximum,Simple-lower-bound-NTC-Standard-Deviation,Pattern-database-lower-bound-In-degree-Maximum,Simple-lower-bound-In-degree-Standard-Deviation,Anytime-window-A*-Root-Count,GOBNILP-Out-degree-Maximum,Pattern-database-lower-bound-NTC-Standard-Deviation,CPBayes-In-degree-Mean,Anytime-window-A*-Total-Degree-Maximum,Anytime-window-A*-In-degree-Mean,CPBayes-Total-Degree-Mean,Greedy-hill-climbing-Error-bound,GOBNILP-Error-bound,Pattern-database-lower-bound-In-degree-Standard-Deviation,Variable-Count,CPBayes-Total-Degree-Standard-Deviation,Simple-lower-bound-Total-Degree-Mean,Pattern-database-lower-bound-Total-Degree-Mean,Pattern-database-lower-bound-Root-Count,Pattern-database-lower-bound-Total-Degree-Maximum,CPBayes-Leaf-Count,Greedy-hill-climbing-In-degree-Mean,Simple-lower-bound-In-degree-Mean,CPBayes-Out-degree-Maximum,Anytime-window-A*-Leaf-Count,GOBNILP-Leaf-Count,GOBNILP-Out-degree-Standard-Deviation,Simple-lower-bound-NTC-Count,Pattern-database-lower-bound-Out-degree-Mean,PSS-Standard-Deviation,POPS-Count,Anytime-window-A*-In-degree-Maximum,CPBayes-Root-Count,Anytime-window-A*-Total-Degree-Standard-Deviation,Pattern-database-lower-bound-Total-Degree-Standard-Deviation,CPBayes-Error-bound,GOBNILP-In-degree-Maximum,GOBNILP-In-degree-Mean,Simple-lower-bound-Total-Degree-Standard-Deviation,Simple-lower-bound-NTC-Mean,VPOPS-Mean,Greedy-hill-climbing-Root-Count,Anytime-window-A*-In-degree-Standard-Deviation,Simple-lower-bound-Leaf-Count,Greedy-hill-climbing-Out-degree-Maximum,Simple-lower-bound-Total-Degree-Maximum,Greedy-hill-climbing-Total-Degree-Standard-Deviation,CPBayes-In-degree-Standard-Deviation,Greedy-hill-climbing-Leaf-Count,Simple-lower-bound-Out-degree-Maximum,Pattern-database-lower-bound-Out-degree-Maximum,CPBayes-Total-Degree-Maximum
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 1061
+% Algorithms: 		 8
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 0
+% Unsolvable Instances (runtime): 	 0
+% Valid Instances: 	 1061
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 848
+% Size Test Set: 107
+% Backup Solver: ilp-141-nc
+% Input Instances for Training: 848 (-unsolvable)
+% Used Instances for Training: 848 (-unsolvable)
+Traceback (most recent call last):
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 567, in <module>
+    trainer.main(sys.argv[1:])
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 150, in main
+    evaluator.evaluate(self, meta_info, instance_dic, config_dic)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/ttValidator.py", line 56, in evaluate
+    selection_dic, solver_schedule = self.training(instance_train, meta_info, config_dic, trainer)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/validator.py", line 118, in training
+    selection_dic = trainer.train(meta_info, instance_train, config_dic, save_models=False)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 289, in train
+    instance_dic, norm_stats, feature_indicator = normalizer.normalize(instance_dic, args_.norm, feature_indicator, args_.pca_dims)  
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/featurepreprocessing/normalizer.py", line 48, in normalize
+    normed_feature_dic = normalizer.normalize_features()
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/featurepreprocessing/PCAPreprocessorSklearn.py", line 57, in normalize_features
+    self.__STD_SCALER = scaler.std_.tolist()
+AttributeError: 'StandardScaler' object has no attribute 'std_'
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

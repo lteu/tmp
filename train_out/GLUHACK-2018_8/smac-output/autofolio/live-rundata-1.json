@@ -1,0 +1,3973 @@
+[ {
+  "@pi-id" : 2,
+  "pi-name" : "1",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 1
+}, {
+  "@pi-id" : 3,
+  "pi-name" : "2",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 2
+}, {
+  "@pi-id" : 4,
+  "pi-name" : "3",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 3
+}, {
+  "@pi-id" : 5,
+  "pi-name" : "4",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 4
+}, {
+  "@pi-id" : 6,
+  "pi-name" : "5",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 5
+}, {
+  "@pi-id" : 7,
+  "pi-name" : "6",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 6
+}, {
+  "@pi-id" : 8,
+  "pi-name" : "7",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 7
+}, {
+  "@pi-id" : 9,
+  "pi-name" : "8",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 8
+}, {
+  "@pi-id" : 10,
+  "pi-name" : "9",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 9
+}, {
+  "@pi-id" : 11,
+  "pi-name" : "10",
+  "pi-instance-specific-info" : "0",
+  "pi-features" : { },
+  "pi-instance-id(deprecated)" : 10
+} ] {
+  "r-rc" : {
+    "@rc-id" : 2,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2,
+      "algo-exec" : "python wrappers/flexfolio/ff_wrapper.py train_out/GLUHACK-2018_8/config_wrapper.json",
+      "algo-exec-dir" : "/home/academic/toliu/af/autofolio_asc/.",
+      "algo-pcs" : {
+        "@pcs-id" : 2,
+        "pcs-filename" : "/home/academic/toliu/af/autofolio_asc/train_out/GLUHACK-2018_8/autofolio.pcs",
+        "pcs-text" : "# claspfolio-2.0.0 parameter file\n# *** NOTE: *** works only with revision clasp-2.1.0 or higher!\n# F: flag (yes = flag set; no = flag removed)\n# S: skip (only to model constraints for the parameters; won't be given to\n# clasp)\n# :[String]: will not be parsed for clasp (only syntatic sugar for the parameter file)\n# :[int]: alignment of complex parameters\n# i : integer range\n# l : logarithmic transformation (n > 0)\n# ---\n@1:separator {W}[W] \n@1:solver {selectors/flexfolio/src/flexfolio_train.py}[selectors/flexfolio/src/flexfolio_train.py]\n# ---\n@1:approach {CLASSVOTER, SBS}[CLASSVOTER]\n@1:classifier {SVM, GRADIENTBOOSTING, RANDOMFOREST}[RANDOMFOREST]\n#@1:max-feature-time [1,600][60]il\n# Performance Preprocessing\n@1:approx-weights {None,max,rmsd,nrmsd}[None]\n@1:performance_trans {None,log,zscore}[None]\n#@1:contr-filter [0.0,0.32][0.0] # removing this option since it has some problems with the pre-specified pre-solver\n#normalization\n@1:normalize {zscore,linear,dec,pca,none}[zscore]\n@1:pca-dims[2,12][7]i\n@1:impute {none, median, mean, most_frequent}[mean]\n#svm\n@1:voting:svm-gamma[0.001,1.0][1]l\n@1:voting:svm-C[0.1,102.4][1.6]l\n#random forrest\n@1:voting:rf-max_features {sqrt, log2, None}[sqrt]\n@1:voting:rf-criterion {gini,entropy} [entropy]\n@1:voting:rf-min_samples_leaf [1,128][10]li\n#gradient boosting\n@1:voting:gb-max_depth [1,16][4]i\n@1:voting:gb-min_samples_leaf [1,128][16]li\n@1:voting:gb-max_features {sqrt, log2, None}[sqrt]\n\n#--aspeed-opt\n@1:F:aspeed-opt {no,yes}[no]\n@1:F:concentrate {yes,no}[no]\n@1:max-solver [1,100][3]il\n@1:opt-mode {1,2,3,4,5,6}[1]\n@1:aspeed:time-limit {100}[100] # maximal time for grounding and solving\n@1:time-pre-solvers [1,2048][256]il\n\n@1:classifier | @1:approach in {CLASSVOTER}\n@1:pca-dims | @1:normalize in {pca}\n@1:voting:svm-gamma | @1:classifier in {SVM}\n@1:voting:svm-C | @1:classifier in {SVM}\n@1:voting:rf-max_features | @1:classifier in {RANDOMFOREST}\n@1:voting:rf-criterion | @1:classifier in {RANDOMFOREST}\n@1:voting:rf-min_samples_leaf | @1:classifier in {RANDOMFOREST}\n@1:voting:gb-max_depth | @1:classifier in {GRADIENTBOOSTING}\n@1:voting:gb-min_samples_leaf | @1:classifier in {GRADIENTBOOSTING}\n@1:voting:gb-max_features | @1:classifier in {GRADIENTBOOSTING}\n\n@1:F:concentrate | @1:F:aspeed-opt in {yes}\n@1:max-solver | @1:F:aspeed-opt in {yes}\n@1:opt-mode | @1:F:aspeed-opt in {yes}\n@1:time-pre-solvers | @1:F:aspeed-opt in {yes}\n\n@1:aslib-dir{autofolio_arff/train/GLUHACK-2018_8}[autofolio_arff/train/GLUHACK-2018_8]\n@1:mem-limit {2048}[2048]\n",
+        "pcs-subspace" : { }
+      },
+      "algo-cutoff" : 1800.0,
+      "algo-deterministic" : true,
+      "algo-tae-context" : { }
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 2,
+      "pisp-pi" : {
+        "@pi-id" : 6
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "3",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "zscore",
+        "@1:opt-mode" : "1",
+        "@1:pca-dims" : "7",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "256",
+        "@1:voting:gb-max_depth" : "4",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "16",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "10",
+        "@1:voting:svm-C" : "1.6",
+        "@1:voting:svm-gamma" : "1.0"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:rf-criterion", "@1:voting:rf-max_features", "@1:voting:rf-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : true
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 111018.408336,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 2.625
+} {
+  "r-rc" : {
+    "@rc-id" : 3,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 3,
+      "pisp-pi" : {
+        "@pi-id" : 4
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 211731.01013,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 2.608
+} {
+  "r-rc" : {
+    "@rc-id" : 4,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.60260001232028,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 4,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "median",
+        "@1:max-solver" : "36",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "dec",
+        "@1:opt-mode" : "4",
+        "@1:pca-dims" : "11",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1",
+        "@1:voting:gb-max_depth" : "7",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "1",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "2",
+        "@1:voting:svm-C" : "0.629751460478415",
+        "@1:voting:svm-gamma" : "0.005424039753327186"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 3137933.89342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 2.348
+} {
+  "r-rc" : {
+    "@rc-id" : 5,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6039010513305665,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 4
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 4069288.95698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 2.304
+} {
+  "r-rc" : {
+    "@rc-id" : 6,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 6,
+      "pisp-pi" : {
+        "@pi-id" : 10
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 215404.254158,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 2.476
+} {
+  "r-rc" : {
+    "@rc-id" : 7,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.60260001232028,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 7,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "none",
+        "@1:max-solver" : "69",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "4",
+        "@1:pca-dims" : "5",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "17",
+        "@1:voting:gb-max_depth" : "9",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "43",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "3",
+        "@1:voting:svm-C" : "2.5963420995289663",
+        "@1:voting:svm-gamma" : "0.6742444893376904"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers", "@1:voting:svm-C", "@1:voting:svm-gamma" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 6.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 3137933.89342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 6.583
+} {
+  "r-rc" : {
+    "@rc-id" : 8,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 8,
+      "pisp-pi" : {
+        "@pi-id" : 7
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 122686.3748,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 2.607
+} {
+  "r-rc" : {
+    "@rc-id" : 9,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.60260001232028,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 9,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "GRADIENTBOOSTING",
+        "@1:impute" : "none",
+        "@1:max-solver" : "2",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "zscore",
+        "@1:opt-mode" : "3",
+        "@1:pca-dims" : "12",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "2",
+        "@1:voting:gb-max_depth" : "11",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "2",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "1",
+        "@1:voting:svm-C" : "43.92738534415931",
+        "@1:voting:svm-gamma" : "0.1344602415105447"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 411788.610449,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.201
+} {
+  "r-rc" : {
+    "@rc-id" : 10,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 7.505200550305844,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 9
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313793.389342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.309
+} {
+  "r-rc" : {
+    "@rc-id" : 11,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.205201063650847,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 9
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.256
+} {
+  "r-rc" : {
+    "@rc-id" : 12,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 7.506500499668718,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 9
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 309574.572517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.195
+} {
+  "r-rc" : {
+    "@rc-id" : 13,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 13,
+      "pisp-pi" : {
+        "@pi-id" : 9
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 9
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406911.051554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.3
+} {
+  "r-rc" : {
+    "@rc-id" : 14,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 0.0,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "TIMEOUT",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 0.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "",
+  "r-wallclock-time" : 0.0
+} {
+  "r-rc" : {
+    "@rc-id" : 15,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 0.0,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 7
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "TIMEOUT",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 0.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "",
+  "r-wallclock-time" : 0.0
+} {
+  "r-rc" : {
+    "@rc-id" : 16,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 16,
+      "pisp-pi" : {
+        "@pi-id" : 5
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 9
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 409007.230089,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.252
+} {
+  "r-rc" : {
+    "@rc-id" : 17,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 0.0,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "TIMEOUT",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 0.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "",
+  "r-wallclock-time" : 0.0
+} {
+  "r-rc" : {
+    "@rc-id" : 18,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 18,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "rmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "none",
+        "@1:max-solver" : "96",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "none",
+        "@1:opt-mode" : "4",
+        "@1:pca-dims" : "3",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1",
+        "@1:voting:gb-max_depth" : "15",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "16",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "log2",
+        "@1:voting:rf-min_samples_leaf" : "113",
+        "@1:voting:svm-C" : "26.275085826289995",
+        "@1:voting:svm-gamma" : "0.03881193111798306"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 4069110.51554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 2.181
+} {
+  "r-rc" : {
+    "@rc-id" : 19,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 19,
+      "pisp-pi" : {
+        "@pi-id" : 2
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 9
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.354
+} {
+  "r-rc" : {
+    "@rc-id" : 20,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 0.0,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "TIMEOUT",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 0.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "",
+  "r-wallclock-time" : 0.0
+} {
+  "r-rc" : {
+    "@rc-id" : 21,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 21,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "18",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "zscore",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "5",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "608",
+        "@1:voting:gb-max_depth" : "12",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "116",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "24",
+        "@1:voting:svm-C" : "1.4415476654415813",
+        "@1:voting:svm-gamma" : "0.1685357204237032"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers", "@1:voting:rf-criterion", "@1:voting:rf-max_features", "@1:voting:rf-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 5.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 3095745.72517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 5.374
+} {
+  "r-rc" : {
+    "@rc-id" : 22,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 22,
+      "pisp-pi" : {
+        "@pi-id" : 3
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 9
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.34
+} {
+  "r-rc" : {
+    "@rc-id" : 23,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0117006845504046,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 3.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 167415.58433,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 3.238
+} {
+  "r-rc" : {
+    "@rc-id" : 24,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 24,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "max",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "GRADIENTBOOSTING",
+        "@1:impute" : "none",
+        "@1:max-solver" : "14",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "9",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "44",
+        "@1:voting:gb-max_depth" : "3",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "2",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "17",
+        "@1:voting:svm-C" : "0.12357548091463479",
+        "@1:voting:svm-gamma" : "0.005095002598043909"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 409007.230089,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.109
+} {
+  "r-rc" : {
+    "@rc-id" : 25,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.192
+} {
+  "r-rc" : {
+    "@rc-id" : 26,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 309574.572517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.233
+} {
+  "r-rc" : {
+    "@rc-id" : 27,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.210400861102343,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 0.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.0
+} {
+  "r-rc" : {
+    "@rc-id" : 28,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.210400861102343,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313793.389342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.232
+} {
+  "r-rc" : {
+    "@rc-id" : 29,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.113
+} {
+  "r-rc" : {
+    "@rc-id" : 30,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406911.051554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.296
+} {
+  "r-rc" : {
+    "@rc-id" : 31,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6117007475078107,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 411788.610449,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.078
+} {
+  "r-rc" : {
+    "@rc-id" : 32,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 32,
+      "pisp-pi" : {
+        "@pi-id" : 11
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 317400.106894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.492
+} {
+  "r-rc" : {
+    "@rc-id" : 33,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 0.0,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "TIMEOUT",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 0.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "",
+  "r-wallclock-time" : 0.0
+} {
+  "r-rc" : {
+    "@rc-id" : 34,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 34,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "rmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "zscore",
+        "@1:opt-mode" : "3",
+        "@1:pca-dims" : "2",
+        "@1:performance_trans" : "log",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "941",
+        "@1:voting:gb-max_depth" : "1",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "6",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "log2",
+        "@1:voting:rf-min_samples_leaf" : "4",
+        "@1:voting:svm-C" : "0.1905930500257477",
+        "@1:voting:svm-gamma" : "0.03549754199112527"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:svm-C", "@1:voting:svm-gamma" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 224089.022939,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.34
+} {
+  "r-rc" : {
+    "@rc-id" : 35,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 34
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 217093.036815,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.596
+} {
+  "r-rc" : {
+    "@rc-id" : 36,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 34
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 119836.470591,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.284
+} {
+  "r-rc" : {
+    "@rc-id" : 37,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 34
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 307878.201558,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.344
+} {
+  "r-rc" : {
+    "@rc-id" : 38,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 34
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 161963.89242,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.2
+} {
+  "r-rc" : {
+    "@rc-id" : 39,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.310400221842527,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 34
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 260669.983419,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.309
+} {
+  "r-rc" : {
+    "@rc-id" : 40,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0104007351875306,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 34
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 3.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 268520.726906,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 3.191
+} {
+  "r-rc" : {
+    "@rc-id" : 41,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1800.0,
+    "rc-pisp" : {
+      "@pisp-id" : 41,
+      "pisp-pi" : {
+        "@pi-id" : 8
+      },
+      "pisp-seed" : -1
+    },
+    "rc-pc" : {
+      "@pc-id" : 24
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 266016.979699,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.282
+} {
+  "r-rc" : {
+    "@rc-id" : 42,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 0.0,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 2
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "TIMEOUT",
+  "r-runtime" : 0.0,
+  "r-run-length" : 0.0,
+  "r-quality" : 0.0,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "",
+  "r-wallclock-time" : 0.0
+} {
+  "r-rc" : {
+    "@rc-id" : 43,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 43,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "max",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "median",
+        "@1:max-solver" : "18",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "pca",
+        "@1:opt-mode" : "3",
+        "@1:pca-dims" : "11",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "177",
+        "@1:voting:gb-max_depth" : "15",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "5",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "2",
+        "@1:voting:svm-C" : "56.736716337753236",
+        "@1:voting:svm-gamma" : "0.16956868784863013"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:pca-dims", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:rf-criterion", "@1:voting:rf-max_features", "@1:voting:rf-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 4069110.51554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 2.291
+} {
+  "r-rc" : {
+    "@rc-id" : 44,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 44,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "none",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "none",
+        "@1:opt-mode" : "5",
+        "@1:pca-dims" : "12",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1857",
+        "@1:voting:gb-max_depth" : "9",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "66",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "1",
+        "@1:voting:svm-C" : "0.43481278010338464",
+        "@1:voting:svm-gamma" : "0.19116121224439486"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:rf-criterion", "@1:voting:rf-max_features", "@1:voting:rf-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 4.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 167830.766013,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 4.196
+} {
+  "r-rc" : {
+    "@rc-id" : 45,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 45,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "max",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "none",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "4",
+        "@1:pca-dims" : "10",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1782",
+        "@1:voting:gb-max_depth" : "8",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "12",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "log2",
+        "@1:voting:rf-min_samples_leaf" : "5",
+        "@1:voting:svm-C" : "42.912102319789575",
+        "@1:voting:svm-gamma" : "0.4483186606929318"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 3174001.06894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 2.274
+} {
+  "r-rc" : {
+    "@rc-id" : 46,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 46,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "5",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "3",
+        "@1:pca-dims" : "7",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "739",
+        "@1:voting:gb-max_depth" : "9",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "73",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "log2",
+        "@1:voting:rf-min_samples_leaf" : "69",
+        "@1:voting:svm-C" : "82.30812060046036",
+        "@1:voting:svm-gamma" : "0.20362663789767288"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406911.051554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.254
+} {
+  "r-rc" : {
+    "@rc-id" : 47,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 46
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.236
+} {
+  "r-rc" : {
+    "@rc-id" : 48,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0052009377360345,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 46
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.114
+} {
+  "r-rc" : {
+    "@rc-id" : 49,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 49,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "GRADIENTBOOSTING",
+        "@1:impute" : "none",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "zscore",
+        "@1:opt-mode" : "3",
+        "@1:pca-dims" : "2",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "12",
+        "@1:voting:gb-max_depth" : "5",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "21",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "17",
+        "@1:voting:svm-C" : "73.73551371872878",
+        "@1:voting:svm-gamma" : "0.1297479724775941"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 266016.979699,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.192
+} {
+  "r-rc" : {
+    "@rc-id" : 50,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 409007.230089,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.124
+} {
+  "r-rc" : {
+    "@rc-id" : 51,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406911.051554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.195
+} {
+  "r-rc" : {
+    "@rc-id" : 52,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.210400861102343,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313793.389342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.21
+} {
+  "r-rc" : {
+    "@rc-id" : 53,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 317400.106894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.204
+} {
+  "r-rc" : {
+    "@rc-id" : 54,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 309574.572517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.236
+} {
+  "r-rc" : {
+    "@rc-id" : 55,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.310400221842527,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.209
+} {
+  "r-rc" : {
+    "@rc-id" : 56,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6143006462335587,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.076
+} {
+  "r-rc" : {
+    "@rc-id" : 57,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.314300069931149,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.084
+} {
+  "r-rc" : {
+    "@rc-id" : 58,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0143005832761527,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 49
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 411788.610449,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.252
+} {
+  "r-rc" : {
+    "@rc-id" : 59,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 59,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "median",
+        "@1:max-solver" : "92",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "none",
+        "@1:opt-mode" : "1",
+        "@1:pca-dims" : "2",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1",
+        "@1:voting:gb-max_depth" : "10",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "14",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "40",
+        "@1:voting:svm-C" : "1.002747236804426",
+        "@1:voting:svm-gamma" : "0.6242605754295601"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 3174001.06894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 2.192
+} {
+  "r-rc" : {
+    "@rc-id" : 60,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 60,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "rmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "none",
+        "@1:max-solver" : "2",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "5",
+        "@1:pca-dims" : "11",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "24",
+        "@1:voting:gb-max_depth" : "14",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "1",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "10",
+        "@1:voting:svm-C" : "0.16650706875128343",
+        "@1:voting:svm-gamma" : "0.21268493001267763"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:svm-C", "@1:voting:svm-gamma" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 213800.366138,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.304
+} {
+  "r-rc" : {
+    "@rc-id" : 61,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 60
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 113797.876623,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.4
+} {
+  "r-rc" : {
+    "@rc-id" : 62,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0052009377360345,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 60
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 3.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 210238.999566,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 3.216
+} {
+  "r-rc" : {
+    "@rc-id" : 63,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 63,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "dec",
+        "@1:opt-mode" : "5",
+        "@1:pca-dims" : "2",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1",
+        "@1:voting:gb-max_depth" : "2",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "86",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "1",
+        "@1:voting:svm-C" : "0.10424001598262102",
+        "@1:voting:svm-gamma" : "0.48455977146764356"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406911.051554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.124
+} {
+  "r-rc" : {
+    "@rc-id" : 64,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.106
+} {
+  "r-rc" : {
+    "@rc-id" : 65,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 266016.979699,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.236
+} {
+  "r-rc" : {
+    "@rc-id" : 66,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.210400861102343,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 317400.106894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.228
+} {
+  "r-rc" : {
+    "@rc-id" : 67,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 409007.230089,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.143
+} {
+  "r-rc" : {
+    "@rc-id" : 68,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 411788.610449,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.088
+} {
+  "r-rc" : {
+    "@rc-id" : 69,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.310400221842527,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313793.389342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.259
+} {
+  "r-rc" : {
+    "@rc-id" : 70,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6143006462335587,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.222
+} {
+  "r-rc" : {
+    "@rc-id" : 71,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.314300069931149,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 309574.572517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.297
+} {
+  "r-rc" : {
+    "@rc-id" : 72,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0143005832761527,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 63
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.244
+} {
+  "r-rc" : {
+    "@rc-id" : 73,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 73,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "max",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "most_frequent",
+        "@1:max-solver" : "7",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "none",
+        "@1:opt-mode" : "6",
+        "@1:pca-dims" : "9",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "18",
+        "@1:voting:gb-max_depth" : "8",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "2",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "2",
+        "@1:voting:svm-C" : "7.786836345005137",
+        "@1:voting:svm-gamma" : "0.025419544638109203"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.513
+} {
+  "r-rc" : {
+    "@rc-id" : 74,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 73
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.213
+} {
+  "r-rc" : {
+    "@rc-id" : 75,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0052009377360345,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 73
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.124
+} {
+  "r-rc" : {
+    "@rc-id" : 76,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 76,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "GRADIENTBOOSTING",
+        "@1:impute" : "median",
+        "@1:max-solver" : "28",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "7",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "12",
+        "@1:voting:gb-max_depth" : "13",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "1",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "log2",
+        "@1:voting:rf-min_samples_leaf" : "87",
+        "@1:voting:svm-C" : "0.8058075787556039",
+        "@1:voting:svm-gamma" : "0.20756827546637197"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:gb-max_depth", "@1:voting:gb-max_features", "@1:voting:gb-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 5.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 4069288.95698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 5.392
+} {
+  "r-rc" : {
+    "@rc-id" : 77,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 77,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "max",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "median",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "12",
+        "@1:performance_trans" : "log",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "303",
+        "@1:voting:gb-max_depth" : "14",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "15",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "70",
+        "@1:voting:svm-C" : "2.8271568898204644",
+        "@1:voting:svm-gamma" : "0.2280311267198865"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 309574.572517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.288
+} {
+  "r-rc" : {
+    "@rc-id" : 78,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 77
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 411788.610449,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.232
+} {
+  "r-rc" : {
+    "@rc-id" : 79,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 77
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.232
+} {
+  "r-rc" : {
+    "@rc-id" : 80,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 77
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406911.051554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.317
+} {
+  "r-rc" : {
+    "@rc-id" : 81,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 77
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 317400.106894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.088
+} {
+  "r-rc" : {
+    "@rc-id" : 82,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.310400221842527,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 77
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.229
+} {
+  "r-rc" : {
+    "@rc-id" : 83,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0104007351875306,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 77
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313793.389342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.234
+} {
+  "r-rc" : {
+    "@rc-id" : 84,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 84,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "GRADIENTBOOSTING",
+        "@1:impute" : "median",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "1",
+        "@1:pca-dims" : "7",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "73",
+        "@1:voting:gb-max_depth" : "2",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "64",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "17",
+        "@1:voting:svm-C" : "1.1095105930825349",
+        "@1:voting:svm-gamma" : "0.7829721880340264"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:gb-max_depth", "@1:voting:gb-max_features", "@1:voting:gb-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 270412.620895,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.89
+} {
+  "r-rc" : {
+    "@rc-id" : 85,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 84
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 214083.541007,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 2.106
+} {
+  "r-rc" : {
+    "@rc-id" : 86,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0052009377360345,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 84
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 3.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 220221.980518,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 3.228
+} {
+  "r-rc" : {
+    "@rc-id" : 87,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 87,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "max",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "none",
+        "@1:max-solver" : "18",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "3",
+        "@1:pca-dims" : "11",
+        "@1:performance_trans" : "log",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "177",
+        "@1:voting:gb-max_depth" : "15",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "5",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "2",
+        "@1:voting:svm-C" : "56.736716337753236",
+        "@1:voting:svm-gamma" : "0.16956868784863013"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:svm-C", "@1:voting:svm-gamma" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 355388.78056,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.404
+} {
+  "r-rc" : {
+    "@rc-id" : 88,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 110712.191592,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.304
+} {
+  "r-rc" : {
+    "@rc-id" : 89,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 165384.433974,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.412
+} {
+  "r-rc" : {
+    "@rc-id" : 90,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.210400861102343,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 161956.36817,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.428
+} {
+  "r-rc" : {
+    "@rc-id" : 91,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 115596.365479,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.332
+} {
+  "r-rc" : {
+    "@rc-id" : 92,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 361704.261964,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.387
+} {
+  "r-rc" : {
+    "@rc-id" : 93,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.310400221842527,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 270701.952145,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.428
+} {
+  "r-rc" : {
+    "@rc-id" : 94,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6143006462335587,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 160785.523613,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.319
+} {
+  "r-rc" : {
+    "@rc-id" : 95,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.314300069931149,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 209931.725944,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.191
+} {
+  "r-rc" : {
+    "@rc-id" : 96,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0143005832761527,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 87
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 3.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313303.582225,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 3.256
+} {
+  "r-rc" : {
+    "@rc-id" : 97,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 97,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "most_frequent",
+        "@1:max-solver" : "2",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "none",
+        "@1:opt-mode" : "5",
+        "@1:pca-dims" : "9",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1920",
+        "@1:voting:gb-max_depth" : "8",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "2",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "2",
+        "@1:voting:svm-C" : "44.51369694699852",
+        "@1:voting:svm-gamma" : "0.21576204688721226"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 266016.979699,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.256
+} {
+  "r-rc" : {
+    "@rc-id" : 98,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 411788.610449,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.156
+} {
+  "r-rc" : {
+    "@rc-id" : 99,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.14
+} {
+  "r-rc" : {
+    "@rc-id" : 100,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.210400861102343,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 317400.106894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.312
+} {
+  "r-rc" : {
+    "@rc-id" : 101,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.111
+} {
+  "r-rc" : {
+    "@rc-id" : 102,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313793.389342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.103
+} {
+  "r-rc" : {
+    "@rc-id" : 103,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.310400221842527,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 309574.572517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.343
+} {
+  "r-rc" : {
+    "@rc-id" : 104,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6143006462335587,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406911.051554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.118
+} {
+  "r-rc" : {
+    "@rc-id" : 105,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.314300069931149,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 409007.230089,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.219
+} {
+  "r-rc" : {
+    "@rc-id" : 106,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0143005832761527,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 97
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.124
+} {
+  "r-rc" : {
+    "@rc-id" : 107,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 107,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "rmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "most_frequent",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "none",
+        "@1:opt-mode" : "1",
+        "@1:pca-dims" : "12",
+        "@1:performance_trans" : "log",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "454",
+        "@1:voting:gb-max_depth" : "11",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "3",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "68",
+        "@1:voting:svm-C" : "59.82099840498155",
+        "@1:voting:svm-gamma" : "0.28256863050236236"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:rf-criterion", "@1:voting:rf-max_features", "@1:voting:rf-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 4.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313460.772678,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 4.198
+} {
+  "r-rc" : {
+    "@rc-id" : 108,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 108,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "GRADIENTBOOSTING",
+        "@1:impute" : "none",
+        "@1:max-solver" : "2",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "dec",
+        "@1:opt-mode" : "3",
+        "@1:pca-dims" : "2",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1",
+        "@1:voting:gb-max_depth" : "3",
+        "@1:voting:gb-max_features" : "sqrt",
+        "@1:voting:gb-min_samples_leaf" : "1",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "73",
+        "@1:voting:svm-C" : "17.22654650180075",
+        "@1:voting:svm-gamma" : "0.014379649903617193"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.246
+} {
+  "r-rc" : {
+    "@rc-id" : 109,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 309574.572517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.283
+} {
+  "r-rc" : {
+    "@rc-id" : 110,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 409007.230089,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.326
+} {
+  "r-rc" : {
+    "@rc-id" : 111,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.210400861102343,
+    "rc-pisp" : {
+      "@pisp-id" : 3
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 313793.389342,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.101
+} {
+  "r-rc" : {
+    "@rc-id" : 112,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 317400.106894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.134
+} {
+  "r-rc" : {
+    "@rc-id" : 113,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406911.051554,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.126
+} {
+  "r-rc" : {
+    "@rc-id" : 114,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.310400221842527,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 266016.979699,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.311
+} {
+  "r-rc" : {
+    "@rc-id" : 115,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6143006462335587,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 411788.610449,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.238
+} {
+  "r-rc" : {
+    "@rc-id" : 116,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.314300069931149,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.235
+} {
+  "r-rc" : {
+    "@rc-id" : 117,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0143005832761527,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 108
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.184
+} {
+  "r-rc" : {
+    "@rc-id" : 118,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 118,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "most_frequent",
+        "@1:max-solver" : "44",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "5",
+        "@1:pca-dims" : "3",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "58",
+        "@1:voting:gb-max_depth" : "15",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "10",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "1",
+        "@1:voting:svm-C" : "2.4278091983737182",
+        "@1:voting:svm-gamma" : "0.009793906093976392"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 470571.596064,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.388
+} {
+  "r-rc" : {
+    "@rc-id" : 119,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 2
+    },
+    "rc-pc" : {
+      "@pc-id" : 118
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 406928.895698,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.211
+} {
+  "r-rc" : {
+    "@rc-id" : 120,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 118
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 317400.106894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.088
+} {
+  "r-rc" : {
+    "@rc-id" : 121,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 118
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 309574.572517,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.204
+} {
+  "r-rc" : {
+    "@rc-id" : 122,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 118
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 409007.230089,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.228
+} {
+  "r-rc" : {
+    "@rc-id" : 123,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.310400221842527,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 118
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 266016.979699,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.217
+} {
+  "r-rc" : {
+    "@rc-id" : 124,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 1.0104007351875306,
+    "rc-pisp" : {
+      "@pisp-id" : 22
+    },
+    "rc-pc" : {
+      "@pc-id" : 118
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265039.729639,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.135
+} {
+  "r-rc" : {
+    "@rc-id" : 125,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 125,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "max",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "RANDOMFOREST",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "60",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "dec",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "5",
+        "@1:performance_trans" : "zscore",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "14",
+        "@1:voting:gb-max_depth" : "15",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "126",
+        "@1:voting:rf-criterion" : "gini",
+        "@1:voting:rf-max_features" : "log2",
+        "@1:voting:rf-min_samples_leaf" : "1",
+        "@1:voting:svm-C" : "0.8670815663984943",
+        "@1:voting:svm-gamma" : "0.15008712740473415"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:rf-criterion", "@1:voting:rf-max_features", "@1:voting:rf-min_samples_leaf" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 4.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 265857.790805,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 4.189
+} {
+  "r-rc" : {
+    "@rc-id" : 126,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 16
+    },
+    "rc-pc" : {
+      "@pc-id" : 126,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "yes",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "max",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "mean",
+        "@1:max-solver" : "1",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "1",
+        "@1:pca-dims" : "2",
+        "@1:performance_trans" : "log",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "2",
+        "@1:voting:gb-max_depth" : "16",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "112",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "11",
+        "@1:voting:svm-C" : "16.047082546247918",
+        "@1:voting:svm-gamma" : "0.12560585366139962"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:F:concentrate", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:max-solver", "@1:mem-limit", "@1:normalize", "@1:opt-mode", "@1:performance_trans", "@1:separator", "@1:solver", "@1:time-pre-solvers", "@1:voting:svm-C", "@1:voting:svm-gamma" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 5.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 4090072.30089,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 5.365
+} {
+  "r-rc" : {
+    "@rc-id" : 127,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 127,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "yes",
+        "@1:approach" : "SBS",
+        "@1:approx-weights" : "nrmsd",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "GRADIENTBOOSTING",
+        "@1:impute" : "median",
+        "@1:max-solver" : "42",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "pca",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "10",
+        "@1:performance_trans" : "None",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "2",
+        "@1:voting:gb-max_depth" : "10",
+        "@1:voting:gb-max_features" : "log2",
+        "@1:voting:gb-min_samples_leaf" : "2",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "sqrt",
+        "@1:voting:rf-min_samples_leaf" : "41",
+        "@1:voting:svm-C" : "19.57716308969778",
+        "@1:voting:svm-gamma" : "0.006010637081707453"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:pca-dims", "@1:performance_trans", "@1:separator", "@1:solver" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 2.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 3174001.06894,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "configuration crashed; runnning SBS",
+  "r-wallclock-time" : 2.284
+} {
+  "r-rc" : {
+    "@rc-id" : 128,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.302600525665283,
+    "rc-pisp" : {
+      "@pisp-id" : 8
+    },
+    "rc-pc" : {
+      "@pc-id" : 128,
+      "pc-pcs" : {
+        "@pcs-id" : 2
+      },
+      "pc-settings" : {
+        "@1:F:aspeed-opt" : "no",
+        "@1:F:concentrate" : "no",
+        "@1:approach" : "CLASSVOTER",
+        "@1:approx-weights" : "None",
+        "@1:aslib-dir" : "autofolio_arff/train/GLUHACK-2018_8",
+        "@1:aspeed:time-limit" : "100",
+        "@1:classifier" : "SVM",
+        "@1:impute" : "none",
+        "@1:max-solver" : "2",
+        "@1:mem-limit" : "2048",
+        "@1:normalize" : "linear",
+        "@1:opt-mode" : "2",
+        "@1:pca-dims" : "2",
+        "@1:performance_trans" : "log",
+        "@1:separator" : "W",
+        "@1:solver" : "selectors/flexfolio/src/flexfolio_train.py",
+        "@1:time-pre-solvers" : "1",
+        "@1:voting:gb-max_depth" : "5",
+        "@1:voting:gb-max_features" : "None",
+        "@1:voting:gb-min_samples_leaf" : "48",
+        "@1:voting:rf-criterion" : "entropy",
+        "@1:voting:rf-max_features" : "None",
+        "@1:voting:rf-min_samples_leaf" : "26",
+        "@1:voting:svm-C" : "4.176920330763737",
+        "@1:voting:svm-gamma" : "0.1657509871182045"
+      },
+      "pc-active-parameters" : [ "@1:F:aspeed-opt", "@1:approach", "@1:approx-weights", "@1:aslib-dir", "@1:aspeed:time-limit", "@1:classifier", "@1:impute", "@1:mem-limit", "@1:normalize", "@1:performance_trans", "@1:separator", "@1:solver", "@1:voting:svm-C", "@1:voting:svm-gamma" ],
+      "pc-forbidden" : false,
+      "pc-default" : false
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 166001.879413,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.39
+} {
+  "r-rc" : {
+    "@rc-id" : 129,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6052010006934405,
+    "rc-pisp" : {
+      "@pisp-id" : 13
+    },
+    "rc-pc" : {
+      "@pc-id" : 128
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 163824.500687,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.216
+} {
+  "r-rc" : {
+    "@rc-id" : 130,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 2.305200424391031,
+    "rc-pisp" : {
+      "@pisp-id" : 41
+    },
+    "rc-pc" : {
+      "@pc-id" : 128
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 108315.282043,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.408
+} {
+  "r-rc" : {
+    "@rc-id" : 131,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 6.210400861102343,
+    "rc-pisp" : {
+      "@pisp-id" : 6
+    },
+    "rc-pc" : {
+      "@pc-id" : 128
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 218692.660327,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.416
+} {
+  "r-rc" : {
+    "@rc-id" : 132,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 4.910400284799934,
+    "rc-pisp" : {
+      "@pisp-id" : 19
+    },
+    "rc-pc" : {
+      "@pc-id" : 128
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 267771.895826,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.396
+} {
+  "r-rc" : {
+    "@rc-id" : 133,
+    "rc-algo-exec-config" : {
+      "@algo-exec-config-id" : 2
+    },
+    "rc-cutoff" : 3.6104007981449366,
+    "rc-pisp" : {
+      "@pisp-id" : 32
+    },
+    "rc-pc" : {
+      "@pc-id" : 128
+    },
+    "rc-sample-idx" : 0
+  },
+  "r-run-result" : "SAT",
+  "r-runtime" : 1.0,
+  "r-run-length" : -1.0,
+  "r-quality" : 212291.655414,
+  "r-result-seed" : -1,
+  "r-addl-run-data" : "everything ok",
+  "r-wallclock-time" : 1.228
+}

@@ -1,0 +1,10 @@
+execdir = .
+deterministic = 1
+run_obj = runtime
+overall_obj = mean
+cutoff_time = 1800
+wallclock-limit = 71606
+paramfile = train_out/Magnus/autofolio.pcs
+algo = python wrappers/flexfolio/ff_wrapper.py train_out/Magnus/config_wrapper.json
+test_instance_file = train_out/Magnus/test.txt
+instance_file = train_out/Magnus/train.txt

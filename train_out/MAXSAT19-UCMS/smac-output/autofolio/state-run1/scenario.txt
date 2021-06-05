@@ -1,0 +1,10 @@
+execdir = .
+deterministic = 1
+run_obj = runtime
+overall_obj = mean
+cutoff_time = 1800
+wallclock-limit = 71933
+paramfile = train_out/MAXSAT19-UCMS/autofolio.pcs
+algo = python wrappers/flexfolio/ff_wrapper.py train_out/MAXSAT19-UCMS/config_wrapper.json
+test_instance_file = train_out/MAXSAT19-UCMS/test.txt
+instance_file = train_out/MAXSAT19-UCMS/train.txt

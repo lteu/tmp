@@ -1,0 +1,28 @@
+17:35:24.362 [main] ERROR c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - SMAC has encountered an exception, and encountered another exception while trying to save the local state. NOTE: THIS PARTICULAR ERROR DID NOT CAUSE SMAC TO FAIL, the original culprit follows further below. (This second error is potentially another / seperate issue, or a disk failure of some kind.) When submitting bug/error reports, please include enough context for *BOTH* exceptions 
+  
+java.lang.IllegalStateException: File: /home/academic/toliu/af/autofolio_asc/train_out/smac-output/autofolio/state-run1/java_obj_dump-v2-CRASH16.obj already exists 
+	at ca.ubc.cs.beta.aeatk.state.legacy.LegacyStateSerializer.save(LegacyStateSerializer.java:215) ~[aeatk.jar:na]
+	at ca.ubc.cs.beta.smac.configurator.AbstractAlgorithmFramework.saveState(AbstractAlgorithmFramework.java:431) ~[smac.jar:na]
+	at ca.ubc.cs.beta.smac.configurator.AbstractAlgorithmFramework.run(AbstractAlgorithmFramework.java:587) ~[smac.jar:na]
+	at ca.ubc.cs.beta.smac.executors.SMACExecutor.oldMain(SMACExecutor.java:140) ~[smac.jar:na]
+	at ca.ubc.cs.beta.smac.executors.SMACExecutor.main(SMACExecutor.java:104) ~[smac.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at ca.ubc.cs.beta.aeatk.ant.execscript.Launcher.main(Launcher.java:37) ~[aeatk.jar:na]
+17:35:24.367 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Message: File: /home/academic/toliu/af/autofolio_asc/train_out/smac-output/autofolio/state-run1/java_obj_dump-v2-it16.obj already exists 
+17:35:24.367 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - Exception:java.lang.IllegalStateException
+17:35:24.368 [main] ERROR c.u.c.b.smac.executors.SMACExecutor - StackTrace:java.lang.IllegalStateException: File: /home/academic/toliu/af/autofolio_asc/train_out/smac-output/autofolio/state-run1/java_obj_dump-v2-it16.obj already exists 
+	at ca.ubc.cs.beta.aeatk.state.legacy.LegacyStateSerializer.save(LegacyStateSerializer.java:215)
+	at ca.ubc.cs.beta.smac.configurator.AbstractAlgorithmFramework.saveState(AbstractAlgorithmFramework.java:431)
+	at ca.ubc.cs.beta.smac.configurator.AbstractAlgorithmFramework.saveState(AbstractAlgorithmFramework.java:395)
+	at ca.ubc.cs.beta.smac.configurator.AbstractAlgorithmFramework.run(AbstractAlgorithmFramework.java:539)
+	at ca.ubc.cs.beta.smac.executors.SMACExecutor.oldMain(SMACExecutor.java:140)
+	at ca.ubc.cs.beta.smac.executors.SMACExecutor.main(SMACExecutor.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at ca.ubc.cs.beta.aeatk.ant.execscript.Launcher.main(Launcher.java:37)
+

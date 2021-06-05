@@ -1,0 +1,55 @@
+[INFO ] Logging to: /home/academic/toliu/af/autofolio_asc/train_out/TSP-LION2015_1/smac-output/autofolio/log-run1.txt
+[INFO ] Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f), running on OpenJDK 64-Bit Server VM (11.0.11) and Linux 4.15.0-143-generic (amd64) 
+[INFO ] Call String: smac --scenarioFile train_out/TSP-LION2015_1/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/TSP-LION2015_1/smac-output 
+[INFO ] Found previous run data in state output folder: /home/academic/toliu/af/autofolio_asc/train_out/TSP-LION2015_1/smac-output/autofolio , renamed to: old-state-state-run1-1622865289820
+[INFO ] SMAC started at: Jun 5, 2021, 5:54:49 AM. Minimizing mean runtime.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun (file:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar) to field java.lang.ProcessImpl.pid
+WARNING: Please consider reporting this to the maintainers of ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO ] First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 10.0; estimate based on 1 runs.
+[INFO ] Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/TSP-LION2015_1/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/TSP-LION2015_1' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 2 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 3 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 4 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 5 runs.
+[WARN ] Algorithm Run Result reported a runtime of 15.0 (secs) that exceeded it's cutoff time of 8.803900087597967 (secs) by 6.196099912402033 (secs). Next warning at 7.196099912402033 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 6 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 7 runs.
+[WARN ] Algorithm Run Result reported a runtime of 22.0 (secs) that exceeded it's cutoff time of 14.002600264149905 (secs) by 7.997399735850095 (secs). Next warning at 8.997399735850095 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 8 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 9 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 10.0; estimate now based on 10 runs.
+[INFO ] Incumbent changed to: config 9 (internal ID: 0x2096A), with mean runtime: 8.6; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 9 (internal ID: 0x2096A): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/TSP-LION2015_1/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/TSP-LION2015_1' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'gini' -@1:voting:rf-max_features 'log2' -@1:voting:rf-min_samples_leaf '71'  
+[INFO ] Incumbent changed to: config 11 (internal ID: 0x29DF5), with mean runtime: 6.3; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 11 (internal ID: 0x29DF5): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/TSP-LION2015_1/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/TSP-LION2015_1' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'linear' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 15 (internal ID: 0x3722A), with mean runtime: 6.1; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 15 (internal ID: 0x3722A): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/TSP-LION2015_1/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/TSP-LION2015_1' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 17 (internal ID: 0x3F674), with mean runtime: 6.0; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 17 (internal ID: 0x3F674): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/TSP-LION2015_1/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'max' -@1:aslib-dir 'autofolio_arff/train/TSP-LION2015_1' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 71 (internal ID: 0x355C70), with mean runtime: 3.6; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 71 (internal ID: 0x355C70): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/TSP-LION2015_1/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/TSP-LION2015_1' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'dec' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] Incumbent changed to: config 211 (internal ID: 0x38A20A), with mean runtime: 3.0; estimate based on 10 runs.
+[INFO ] Sample call for new incumbent config 211 (internal ID: 0x38A20A): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/TSP-LION2015_1/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/TSP-LION2015_1' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'  
+[INFO ] 
+=======================================================================================
+SMAC has finished. Reason: wall-clock time limit (34601.244 s) has been reached.   
+Total number of runs performed: 4431, total configurations tried: 3285.
+Total CPU time used: 32090 s, total wallclock time used: 34601 s.
+SMAC's final incumbent: config 211 (internal ID: 0x38A20A), with estimated mean runtime: 3.0, based on 10 run(s) on 10 training instance(s).
+Sample call for this final incumbent:
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/TSP-LION2015_1/config_wrapper.json 1 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'SBS' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/TSP-LION2015_1' -@1:aspeed:time-limit '100' -@1:impute 'median' -@1:mem-limit '2048' -@1:normalize 'none' -@1:performance_trans 'log' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py'
+=======================================================================================
+[INFO ] 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Additional information about run 1 in:/home/academic/toliu/af/autofolio_asc/train_out/TSP-LION2015_1/smac-output/autofolio
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

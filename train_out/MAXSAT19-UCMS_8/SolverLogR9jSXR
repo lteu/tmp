@@ -1,0 +1,76 @@
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_8/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_8/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/MAXSAT19-UCMS_8/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1309.0,0.0,0.0,-512.0,-512.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.01,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+% [WARNING]: Feature vector found twice: 280.0,1476.0,0.0,0.0,-512.0,-512.0,0.02,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,-512.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-512.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+/home/academic/toliu/af/autofolio_asc/test/local/lib/python2.7/site-packages/sklearn/ensemble/forest.py:246: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
+  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/MAXSAT19-UCMS_8/tmp0otjC0 --test-set (1;5) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;6),(1;7),(1;8),(1;9) --normalize zscore --rf-min_samples_leaf 18 --approx-weights None --mem-limit 2048 --aslib-dir autofolio_arff/train/MAXSAT19-UCMS_8 --performance_trans None --rf-criterion gini --time-limit 100 --impute mean --rf-max_features None --approach CLASSVOTER --classifier RANDOMFOREST
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/description.txt
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/algorithm_runs.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/feature_values.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/feature_runstatus.arff
+% Read autofolio_arff/train/MAXSAT19-UCMS_8/cv.arff
+% 1-th repetition: 52,51,51,52,52,51,51,52,52,51 distribution
+% Used Feature Steps: ALL
+% Used features: reducedVars,VCG.CLAUSE.entropy,POSNEG.RATIO.VAR.entropy,HORNY.VAR.entropy,cluster.coeff.min,VCG.VAR.mean,VCG.VAR.entropy,HORNY.VAR.mean,nvarsOrig,POSNEG.RATIO.VAR.stdev,POSNEG.RATIO.VAR.max,nclauses,HORNY.VAR.min,VCG.VAR.coeff.variation,TRINARY.,VG.min,CG.entropy,cluster.coeff.coeff.variation,UNARY,cluster.coeff.entropy,horn.clauses.fraction,cluster.coeff.mean,CG.min,CG.max,Basic.featuretime,VG.max,VCG.VAR.min,Pre.featuretime,CG.featuretime,cluster.coeff.max,VCG.CLAUSE.min,VCG.VAR.max,VG.mean,nvars,POSNEG.RATIO.CLAUSE.coeff.variation,VCG.CLAUSE.mean,BINARY.,KLB.featuretime,POSNEG.RATIO.CLAUSE.min,VCG.CLAUSE.coeff.variation,VCG.CLAUSE.max,HORNY.VAR.coeff.variation,HORNY.VAR.max,POSNEG.RATIO.VAR.mean,POSNEG.RATIO.CLAUSE.entropy,POSNEG.RATIO.CLAUSE.max,POSNEG.RATIO.CLAUSE.mean,nclausesOrig,POSNEG.RATIO.VAR.min,CG.coeff.variation,vars.clauses.ratio,VG.coeff.variation,reducedClauses,CG.mean
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 515
+% Algorithms: 		 7
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 118
+% Unsolvable Instances (runtime): 	 118
+% Valid Instances: 	 397
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 412
+% Size Test Set: 52
+% Backup Solver: UWrMaxSAT
+% Input Instances for Training: 412 (-unsolvable)
+% Used Instances for Training: 412 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 6394.51 (52 instances)
+% 
+%  >>> Instances: 52 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 554.936805 (81.260308)
+% Par10 time: 4916.340652 (81.104753)
+% #TOs: 7 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 9
+% Solved (perc) (with unsolved): 0.8269
+% PAR1 (with unsolved): 786.82
+% PAR10 (with unsolved): 6394.51
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 9
+% Solved (perc) (without unsolved): 0.8269
+% PAR1 (without unsolved): 786.82
+% PAR10 (without unsolved): 6394.51
+% 
+% Time used by each solver: {'QMaxSAT2018': 0, 'UWrMaxSAT': 10837.805917000002, 'Open.WBO.ms.pre': 13855.364418000001, 'Open.WBO.g': 0, 'MaxHS': 11019.416150000001, 'Open.WBO.ms': 1495.3269, 'maxino2018': 3706.67621}
+% Optimal Time used by each solver: {'QMaxSAT2018': 25509.750157, 'UWrMaxSAT': 88.812453, 'Open.WBO.ms.pre': 1473.4904999999999, 'Open.WBO.g': 275.33880600000003, 'MaxHS': 352.36078, 'Open.WBO.ms': 937.79463, 'maxino2018': 219.16655599999999}
+Result for SMAC: 80514.589595
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

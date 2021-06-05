@@ -1,0 +1,69 @@
+% [WARNING]: Not found: autofolio_arff/train/SAT18-EXP_1/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/SAT18-EXP_1/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/SAT18-EXP_1/citation.bib (maybe you want to add it)
+% [WARNING]: Cannot read ALGORITHM_CUTOFF_MEMORY
+% [WARNING]: Cannot read FEATURES_CUTOFF_TIME
+% [WARNING]: Cannot read FEATURES_CUTOFF_MEMORY
+% [WARNING]: Have not found algorithm_cutoff_memory
+% [WARNING]: Have not found features_cutoff_time
+% [WARNING]: Assumption FEATURES_CUTOFF_TIME == ALGORITHM_CUTOFF_TIME 
+% [WARNING]: Have not found features_cutoff_memory
+% [WARNING]: Have not found algorithms_stochastic
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/SAT18-EXP_1/tmpfu5vkF --test-set (1;7) --train-set (1;0),(1;1),(1;2),(1;3),(1;4),(1;5),(1;6),(1;8),(1;9) --normalize none --approx-weights rmsd --mem-limit 2048 --aslib-dir autofolio_arff/train/SAT18-EXP_1 --performance_trans None --time-limit 100 --impute most_frequent --approach SBS
+% Read autofolio_arff/train/SAT18-EXP_1/description.txt
+% Read autofolio_arff/train/SAT18-EXP_1/algorithm_runs.arff
+% Read autofolio_arff/train/SAT18-EXP_1/feature_values.arff
+% Read autofolio_arff/train/SAT18-EXP_1/feature_runstatus.arff
+% Read autofolio_arff/train/SAT18-EXP_1/cv.arff
+% 1-th repetition: 32,32,31,32,32,32,32,31,32,32 distribution
+% Used Feature Steps: ALL
+% Used features: reducedVars,VCG.CLAUSE.entropy,POSNEG.RATIO.VAR.entropy,HORNY.VAR.entropy,cluster.coeff.min,VCG.VAR.mean,VCG.VAR.entropy,HORNY.VAR.mean,nvarsOrig,POSNEG.RATIO.VAR.stdev,POSNEG.RATIO.VAR.max,nclauses,HORNY.VAR.min,VCG.VAR.coeff.variation,TRINARY.,VG.min,CG.entropy,cluster.coeff.coeff.variation,UNARY,cluster.coeff.entropy,horn.clauses.fraction,cluster.coeff.mean,CG.min,CG.max,VG.max,VCG.VAR.min,VCG.CLAUSE.coeff.variation,VCG.CLAUSE.min,VCG.VAR.max,VG.mean,nvars,POSNEG.RATIO.CLAUSE.coeff.variation,VCG.CLAUSE.mean,BINARY.,POSNEG.RATIO.CLAUSE.min,cluster.coeff.max,VCG.CLAUSE.max,HORNY.VAR.coeff.variation,HORNY.VAR.max,POSNEG.RATIO.VAR.mean,POSNEG.RATIO.CLAUSE.entropy,POSNEG.RATIO.CLAUSE.max,POSNEG.RATIO.CLAUSE.mean,nclausesOrig,POSNEG.RATIO.VAR.min,CG.coeff.variation,vars.clauses.ratio,VG.coeff.variation,reducedClauses,CG.mean
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 318
+% Algorithms: 		 37
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 59
+% Unsolvable Instances (runtime): 	 59
+% Valid Instances: 	 259
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 254
+% Size Test Set: 32
+% Backup Solver: MapleLCMDistChronoBT
+% Input Instances for Training: 254 (-unsolvable)
+% Used Instances for Training: 254 (-unsolvable)
+% Train with SBS
+% PAR10 on current test set: 23735.19 (32 instances)
+% 
+%  >>> Instances: 32 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 1369.011124 (352.334239)
+% Par10 time: 11212.542374 (352.054239)
+% #TOs: 7 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 15
+% Solved (perc) (with unsolved): 0.5312
+% PAR1 (with unsolved): 2641.44
+% PAR10 (with unsolved): 23735.19
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 15
+% Solved (perc) (without unsolved): 0.5312
+% PAR1 (without unsolved): 2641.44
+% PAR10 (without unsolved): 23735.19
+% 
+% Time used by each solver: {'expGlucose': 0, 'expMC_VSIDS_LRB_Switch_2500': 0, 'Riss7.1-fix': 0, 'glucose4.2.1': 0, 'Maple_LCM_Scavel_fix2': 0, 'inIDGlucose': 0, 'Glucose_Hack_Kiel_fastBVE': 0, 'Maple_CM': 0, 'Maple_LCM_M1': 0, 'glucose-3.0_PADC_10': 0, 'Maple_CM_ordUIP': 0, 'expMC_LRB_VSIDS_Switch_2500': 0, 'MapleCOMSPS_LRB_VSIDS_2_fix': 0, 'Maple_CM_Dist': 0, 'glu_mix': 0, 'Maple_LCM_Scavel_200_fix2': 0, 'Lingeling': 0, 'Maple_LCM+BCrestart': 0, 'smallsat': 0, 'GHackCOMSPS_drup': 0, 'gluHack': 0, 'Maple_LCM+BCrestart_M1': 0, 'glucose3.0': 0, 'Candy': 0, 'MapleCOMSPS_LRB_VSIDS_drup': 0, 'glucose-3.0_PADC_3': 0, 'YalSAT': 0, 'cms55-main-all4fixed': 0, 'COMiniSatPS_Pulsar_drup': 0, 'CaDiCaL': 0, 'Maple_CM_ordUIP+': 0, 'abcdsat_r18': 0, 'MapleLCMDistChronoBT': 84526.04274860499, 'expMC_LRB_VSIDS_Switch': 0, 'Sparrow2Riss-2018-fixfix': 0, 'Minisat-v2.2.0-106-ge2dd095': 0, 'MapleCOMSPS_CHB_VSIDS_drup': 0}
+% Optimal Time used by each solver: {'expGlucose': 35007.0, 'expMC_VSIDS_LRB_Switch_2500': 0, 'Riss7.1-fix': 0, 'glucose4.2.1': 0, 'Maple_LCM_Scavel_fix2': 0, 'inIDGlucose': 1.593049765, 'Glucose_Hack_Kiel_fastBVE': 0, 'Maple_CM': 0, 'Maple_LCM_M1': 0, 'glucose-3.0_PADC_10': 0, 'Maple_CM_ordUIP': 0, 'expMC_LRB_VSIDS_Switch_2500': 98.32159495, 'MapleCOMSPS_LRB_VSIDS_2_fix': 202.71177101, 'Maple_CM_Dist': 0, 'glu_mix': 1480.097107, 'Maple_LCM_Scavel_200_fix2': 0, 'Lingeling': 0, 'Maple_LCM+BCrestart': 160.071537, 'smallsat': 550.3590939, 'GHackCOMSPS_drup': 0, 'gluHack': 305.0273051, 'Maple_LCM+BCrestart_M1': 0, 'glucose3.0': 978.288511, 'Candy': 0, 'MapleCOMSPS_LRB_VSIDS_drup': 0, 'glucose-3.0_PADC_3': 85.30227804, 'YalSAT': 12.488621949999999, 'cms55-main-all4fixed': 2.731826067, 'COMiniSatPS_Pulsar_drup': 473.223319989, 'CaDiCaL': 2392.216338105, 'Maple_CM_ordUIP+': 1966.893698, 'abcdsat_r18': 23.39508915, 'MapleLCMDistChronoBT': 0, 'expMC_LRB_VSIDS_Switch': 0, 'Sparrow2Riss-2018-fixfix': 68.63482809, 'Minisat-v2.2.0-106-ge2dd095': 0, 'MapleCOMSPS_CHB_VSIDS_drup': 0}
+Result for SMAC: 409526.042749
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+
