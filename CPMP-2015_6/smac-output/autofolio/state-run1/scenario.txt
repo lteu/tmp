@@ -1,0 +1,10 @@
+execdir = .
+deterministic = 1
+run_obj = runtime
+overall_obj = mean
+cutoff_time = 1800
+wallclock-limit = 64758
+paramfile = train_out/CPMP-2015_6/autofolio.pcs
+algo = python wrappers/flexfolio/ff_wrapper.py train_out/CPMP-2015_6/config_wrapper.json
+test_instance_file = train_out/CPMP-2015_6/test.txt
+instance_file = train_out/CPMP-2015_6/train.txt

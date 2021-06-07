@@ -1,0 +1,24 @@
+[INFO ] Logging to: /home/academic/toliu/af/autofolio_asc/train_out/CPMP-2015_3/smac-output/autofolio/log-run1.txt
+[INFO ] Version of SMAC is v2.08.00-master-731 (0e43c26c3d1f), running on OpenJDK 64-Bit Server VM (11.0.11) and Linux 4.15.0-143-generic (amd64) 
+[INFO ] Call String: smac --scenarioFile train_out/CPMP-2015_3/autofolio.scen --seed 1 --always-run-initial-config True --validation False --output-dir train_out/CPMP-2015_3/smac-output 
+[INFO ] Found previous run data in state output folder: /home/academic/toliu/af/autofolio_asc/train_out/CPMP-2015_3/smac-output/autofolio , renamed to: old-state-state-run1-1622946075070
+[INFO ] SMAC started at: Jun 6, 2021, 4:21:15 AM. Minimizing mean runtime.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun (file:/home/academic/toliu/af/autofolio_asc/configurators/smac-v2.08.00-master-731/lib/aeatk.jar) to field java.lang.ProcessImpl.pid
+WARNING: Please consider reporting this to the maintainers of ca.ubc.cs.beta.aeatk.targetalgorithmevaluator.base.cli.CommandLineAlgorithmRun
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO ] First incumbent: config 1 (internal ID: 0x000D), with mean runtime: 1.0; estimate based on 1 runs.
+[INFO ] Sample call for new incumbent config 1 (internal ID: 0x000D): 
+cd /home/academic/toliu/af/autofolio_asc/.; python wrappers/flexfolio/ff_wrapper.py train_out/CPMP-2015_3/config_wrapper.json 5 0 1800.0 2147483647 -1 -@1:F:aspeed-opt 'no' -@1:approach 'CLASSVOTER' -@1:approx-weights 'None' -@1:aslib-dir 'autofolio_arff/train/CPMP-2015_3' -@1:aspeed:time-limit '100' -@1:classifier 'RANDOMFOREST' -@1:impute 'mean' -@1:mem-limit '2048' -@1:normalize 'zscore' -@1:performance_trans 'None' -@1:separator 'W' -@1:solver 'selectors/flexfolio/src/flexfolio_train.py' -@1:voting:rf-criterion 'entropy' -@1:voting:rf-max_features 'sqrt' -@1:voting:rf-min_samples_leaf '10'  
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 2 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 3 runs.
+[WARN ] Algorithm Run Result reported a runtime of 5.0 (secs) that exceeded it's cutoff time of 2.302600525665283 (secs) by 2.697399474334717 (secs). Next warning at 3.697399474334717 (secs)  
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 4 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 5 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 6 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 7 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 8 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 9 runs.
+[INFO ] Updated estimated mean runtime of the same incumbent: 1.0; estimate now based on 10 runs.
+[INFO ] Making best attempt to save state. This state may be dirty, in that it was taken in the middle of an iteration and consequently may not be restorable. It may also be corrupt depending on the exact reason we are shutting down.

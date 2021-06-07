@@ -1,0 +1,91 @@
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/citation.bib (maybe you want to add it)
+% [WARNING]: Have not found algorithms_stochastic
+/home/academic/toliu/af/autofolio_asc/test/local/lib/python2.7/site-packages/sklearn/ensemble/forest.py:246: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
+  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/CPMP-2015_10/tmpB0FsvY --test-set (1;4) --train-set (1;0),(1;1),(1;2),(1;3),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize linear --rf-min_samples_leaf 3 --approx-weights rmsd --mem-limit 2048 --aslib-dir autofolio_arff/train/CPMP-2015_10 --time-pre-solvers 856 --performance_trans log --opt-mode 2 --time-limit 100 --impute most_frequent --aspeed-opt --max-solver 7 --rf-max_features sqrt --approach CLASSVOTER --classifier RANDOMFOREST --rf-criterion entropy
+% Read autofolio_arff/train/CPMP-2015_10/description.txt
+% Read autofolio_arff/train/CPMP-2015_10/algorithm_runs.arff
+% Read autofolio_arff/train/CPMP-2015_10/feature_values.arff
+% Read autofolio_arff/train/CPMP-2015_10/feature_runstatus.arff
+% Read autofolio_arff/train/CPMP-2015_10/cv.arff
+% 1-th repetition: 48,47,47,48,48,47,47,48,48,47 distribution
+% Used Feature Steps: orig,lfa1,lfa2
+% Used features: avg-l1-top-left-lg-group,top-good-min,container-density,group-same-min,empty-stack-pct,tier-weighted-groups,pct-bottom-pct-on-top,group-same-max,overstowing-2cont-stack-pct,cont-empty-grt-estack,bflb,overstowage-pct,group-same-stdev,tiers,top-good-mean,group-same-mean,stack-tier-ratio,top-good-max,overstowing-stack-pct,left-density,top-good-stdev,stacks
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 475
+% Algorithms: 		 4
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 0
+% Unsolvable Instances (runtime): 	 0
+% Valid Instances: 	 475
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 380
+% Size Test Set: 48
+% Backup Solver: idastar-symmulgt-transmul
+% 
+% >>> Algorithm Scheduler: Aspeed <<<
+% 
+% >>> 1-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 7802.88 (38 instances)
+% >>> 2-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 2966.72 (38 instances)
+% >>> 3-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 4830.10 (38 instances)
+% >>> 4-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 6828.10 (38 instances)
+% >>> 5-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 6853.32 (38 instances)
+% >>> 6-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 4841.38 (38 instances)
+% >>> 7-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 4942.96 (38 instances)
+% >>> 8-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 6753.96 (38 instances)
+% >>> 9-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Training: 342 (-unsolvable)
+% Train with RANDOMFOREST-CLASSVOTER
+% PAR10 on current test set: 6029.40 (38 instances)
+% >>> 10-[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

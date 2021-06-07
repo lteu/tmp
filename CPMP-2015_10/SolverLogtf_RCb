@@ -1,0 +1,62 @@
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/citation.bib (maybe you want to add it)
+% [WARNING]: Have not found algorithms_stochastic
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/CPMP-2015_10/tmpKxWpDe --test-set (1;4) --train-set (1;0),(1;1),(1;2),(1;3),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize linear --gb-max_depth 14 --approx-weights max --gb-max_features None --mem-limit 2048 --aslib-dir autofolio_arff/train/CPMP-2015_10 --performance_trans None --time-limit 100 --impute median --gb-min_samples_leaf 2 --approach CLASSVOTER --classifier GRADIENTBOOSTING
+% Read autofolio_arff/train/CPMP-2015_10/description.txt
+% Read autofolio_arff/train/CPMP-2015_10/algorithm_runs.arff
+% Read autofolio_arff/train/CPMP-2015_10/feature_values.arff
+% Read autofolio_arff/train/CPMP-2015_10/feature_runstatus.arff
+% Read autofolio_arff/train/CPMP-2015_10/cv.arff
+% 1-th repetition: 48,47,47,48,48,47,47,48,48,47 distribution
+% Used Feature Steps: orig,lfa1,lfa2
+% Used features: avg-l1-top-left-lg-group,top-good-min,container-density,group-same-min,empty-stack-pct,tier-weighted-groups,pct-bottom-pct-on-top,group-same-max,overstowing-2cont-stack-pct,cont-empty-grt-estack,bflb,overstowage-pct,group-same-stdev,tiers,top-good-mean,group-same-mean,stack-tier-ratio,top-good-max,overstowing-stack-pct,left-density,top-good-stdev,stacks
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 475
+% Algorithms: 		 4
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 0
+% Unsolvable Instances (runtime): 	 0
+% Valid Instances: 	 475
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 380
+% Size Test Set: 48
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 380 (-unsolvable)
+% Used Instances for Training: 380 (-unsolvable)
+% Train with GRADIENTBOOSTING-CLASSVOTER
+% PAR10 on current test set: 3939.03 (48 instances)
+% 
+%  >>> Instances: 48 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 210.455875 (210.455875)
+% Par10 time: 210.455875 (210.455875)
+% #TOs: 0 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 5
+% Solved (perc) (with unsolved): 0.8958
+% PAR1 (with unsolved): 564.03
+% PAR10 (with unsolved): 3939.03
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 5
+% Solved (perc) (without unsolved): 0.8958
+% PAR1 (without unsolved): 564.03
+% PAR10 (without unsolved): 3939.03
+% 
+% Time used by each solver: {'astar-symmulgt-transmul': 3650.17, 'idastar-symmulgt-transmul': 7997.569, 'idastar-symmullt-transmul': 11789.616000000002, 'astar-symmullt-transmul': 3636.266}
+% Optimal Time used by each solver: {'astar-symmulgt-transmul': 38.425999999999995, 'idastar-symmulgt-transmul': 471.70500000000004, 'idastar-symmullt-transmul': 9091.576000000003, 'astar-symmullt-transmul': 500.175}
+Result for SMAC: 189073.621000
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+

@@ -1,0 +1,146 @@
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/ground_truth.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/feature_costs.arff (maybe you want to add it)
+% [WARNING]: Not found: autofolio_arff/train/CPMP-2015_10/citation.bib (maybe you want to add it)
+% [WARNING]: Have not found algorithms_stochastic
+% flexfolio Trainer!
+% Published under GPLv2
+% https://bitbucket.org/mlindauer/flexfolio
+% Command line arguments:
+% --smac --model-dir train_out/CPMP-2015_10/tmpVMkJU8 --test-set (1;3) --train-set (1;0),(1;1),(1;2),(1;4),(1;5),(1;6),(1;7),(1;8),(1;9) --normalize dec --svm-C 0.7681 --approx-weights None --mem-limit 2048 --aslib-dir autofolio_arff/train/CPMP-2015_10 --time-pre-solvers 12 --performance_trans None --opt-mode 4 --time-limit 100 --impute median --aspeed-opt --max-solver 34 --svm-gamma 0.1064 --approach CLASSVOTER --classifier SVM
+% Read autofolio_arff/train/CPMP-2015_10/description.txt
+% Read autofolio_arff/train/CPMP-2015_10/algorithm_runs.arff
+% Read autofolio_arff/train/CPMP-2015_10/feature_values.arff
+% Read autofolio_arff/train/CPMP-2015_10/feature_runstatus.arff
+% Read autofolio_arff/train/CPMP-2015_10/cv.arff
+% 1-th repetition: 48,47,47,48,48,47,47,48,48,47 distribution
+% Used Feature Steps: orig,lfa1,lfa2
+% Used features: avg-l1-top-left-lg-group,top-good-min,container-density,group-same-min,empty-stack-pct,tier-weighted-groups,pct-bottom-pct-on-top,group-same-max,overstowing-2cont-stack-pct,cont-empty-grt-estack,bflb,overstowage-pct,group-same-stdev,tiers,top-good-mean,group-same-mean,stack-tier-ratio,top-good-max,overstowing-stack-pct,left-density,top-good-stdev,stacks
+% 
+% Check Consistency and Completeness of input data
+% Instances: 		 475
+% Algorithms: 		 4
+% Incomplete Feature Vector: 	 0 (maybe imputed)
+% Unsolvable Instances (status): 	 0
+% Unsolvable Instances (runtime): 	 0
+% Valid Instances: 	 475
+% Presolved: 		 0
+% Average Feature Costs: 	 0.0000
+% Size Training Set: 381
+% Size Test Set: 47
+% Backup Solver: idastar-symmulgt-transmul
+% 
+% >>> Algorithm Scheduler: Aspeed <<<
+% 
+% >>> 1-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 6847.65 (38 instances)
+% >>> 2-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 6887.41 (38 instances)
+% >>> 3-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 6734.70 (38 instances)
+% >>> 4-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 10520.17 (38 instances)
+% >>> 5-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 7738.37 (38 instances)
+% >>> 6-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 4985.89 (38 instances)
+% >>> 7-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 5977.61 (38 instances)
+% >>> 8-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 1110.63 (38 instances)
+% >>> 9-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 343 (-unsolvable)
+% Used Instances for Training: 343 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 7829.87 (38 instances)
+% >>> 10-th iteration<<<
+% Backup Solver: idastar-symmulgt-transmul
+% Input Instances for Training: 342 (-unsolvable)
+% Used Instances for Traiwrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+ning: 342 (-unsolvable)
+% Train with SVM-CLASSVOTER
+% PAR10 on current test set: 3991.12 (39 instances)
+% 
+%  >>> Instances: 381 <<<
+%  >>> Oracle Evaluation (w/o unsolved) <<<
+% 
+% Unsolved (not by any algorithm and not by feature computation): 0
+% PAR1 time: 224.940578 (224.940578)
+% Par10 time: 224.940578 (224.940578)
+% #TOs: 0 (0)
+% 
+%  >>> Cross Fold Evaluation <<<
+% 
+% Presolved: 0
+% >>>With Unsolvable Instances
+% Timeouts (with unsolved): 64
+% Solved (perc) (with unsolved): 0.8320
+% PAR1 (with unsolved): 813.86
+% PAR10 (with unsolved): 6256.38
+% >>>Without Unsolved Instances (depends on pre-solved in feature groups)
+% Timeouts (without unsolved): 64
+% Solved (perc) (without unsolved): 0.8320
+% PAR1 (without unsolved): 813.86
+% PAR10 (without unsolved): 6256.38
+% 
+% Time used by each solver: {'astar-symmulgt-transmul': 70454.39499999999, 'idastar-symmulgt-transmul': 79369.61902000001, 'idastar-symmullt-transmul': 94472.31300000002, 'astar-symmullt-transmul': 65784.692}
+% Optimal Time used by each solver: {'astar-symmulgt-transmul': 672.128, 'idastar-symmulgt-transmul': 20332.88404000002, 'idastar-symmullt-transmul': 62667.52500000001, 'astar-symmullt-transmul': 2029.823}
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/gringo wrappers/flexfolio/../../selectors/flexfolio/src/trainer/aspeed/enc/encoding-bounded-paper-Step1.lp /home/academic/toliu/af/autofolio_asc/train_out/CPMP-2015_10/tmpVMkJU8/ASPEEDXFkggn.facts -c maxsolver=34 -c optMode=4 -c maxPreSlice=12 -c cores=1 -c featTime=360
+% wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/runsolver -w /dev/null -M 2048 -W 100 wrappers/flexfolio/../../selectors/flexfolio/src/../binaries/clasp /home/academic/toliu/af/autofolio_asc/train_out/CPMP-2015_10/tmpVMkJU8/GROUNDda2bvr.gr --quiet=1,1
+% 
+% Schedule {1: {'claspfolio': 3600.0}}
+% 
+% >>> End of Algorithm Scheduler <<<
+% 
+% Input Instances for Training: 381 (-unsolvable)
+% Used Instances for Training: 381 (-unsolvable)
+% Train with SVM-CLASSVOTER
+Traceback (most recent call last):
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 567, in <module>
+    trainer.main(sys.argv[1:])
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 150, in main
+    evaluator.evaluate(self, meta_info, instance_dic, config_dic)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/ttValidator.py", line 56, in evaluate
+    selection_dic, solver_schedule = self.training(instance_train, meta_info, config_dic, trainer)
+  File "/home/academic/toliu/af/autofolio_asc/selectors/flexfolio/src/trainer/evalutor/validator.py", line 118, in training
+    selection_dic = trainer.train(meta_info, instance_train, config_dic, save_models=False)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 454, in train
+    self.__add_schedule_2_selection_dict(selection_dic, pre_solver_dict, args_.pre_schedule)
+  File "wrappers/flexfolio/../../selectors/flexfolio/src/flexfolio_train.py", line 547, in __add_schedule_2_selection_dict
+    for pre_entry in external_pre_schedule:
+TypeError: 'NoneType' object is not iterable
+[AEATK] No environment variable "AEATK_SET_TASK_AFFINITY" detected, cores will be treated normally
+
